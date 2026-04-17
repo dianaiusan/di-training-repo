@@ -64,3 +64,10 @@ By the end of this workshop, you will be able to:
 - Advanced MPI Optimization
 
 ---
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Data Science Bootcamp Week](../explore/bundles/data-science-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

@@ -54,3 +54,10 @@ Links to slides, exercises, recordings, etc.
 - [Scientific Workflow Management on HPC](workflow-management.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
 - [File Transfer 201](file-transfer-201.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Intro to HPC Week](../explore/bundles/intro-hpc-week/)
+
+<!-- GENERATED:bundle-links:end -->

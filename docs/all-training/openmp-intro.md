@@ -90,5 +90,12 @@ This course provides a comprehensive introduction to shared memory parallel prog
 ## Related Courses
 
 - [MPI Introduction](mpi-intro.md) - Distributed memory parallelism
-- [Hybrid Programming with OpenMP and MPI](hybrid-programming.md) - Combined approaches
+<!-- - [Hybrid Programming with OpenMP and MPI](hybrid-programming.md) - Combined approaches -->
 - [Performance Tuning](performance-tuning.md) - Advanced optimization techniques
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

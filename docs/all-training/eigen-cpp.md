@@ -16,9 +16,7 @@ learning_paths: ["developer"]
 #external_url: "https://example.com/course"  # Optional external link
 #provider: "ENCCS"  # Provider name if external
 
-materials:
-  - title: "Recording"
-    url: "recordings/2026-03-05-eigen-cpp.mp4"
+materials: []
 
 icon: lucide/calculator
 ---
@@ -50,13 +48,17 @@ This course introduced high-performance array computing in C++ using the Eigen l
 ## Materials
 
 ### Recordings
-- [Full course recording](recordings/2026-03-05-eigen-cpp.mp4)
+<!-- - [Full course recording](recordings/2026-03-05-eigen-cpp.mp4) -->
+
+Recording will be linked here once published.
 
 ### Resources
-- [Course slides](slides/eigen-cpp.pdf)
-- [Code examples](examples/eigen/)
-- [Performance benchmarks](benchmarks/eigen-performance/)
-- [Exercise problems](exercises/eigen/)
+<!-- - [Course slides](slides/eigen-cpp.pdf) -->
+<!-- - [Code examples](examples/eigen/) -->
+<!-- - [Performance benchmarks](benchmarks/eigen-performance/) -->
+<!-- - [Exercise problems](exercises/eigen/) -->
+
+Slides and supplementary resources will be added when available.
 
 ## Prerequisites
 
@@ -66,9 +68,11 @@ This course introduced high-performance array computing in C++ using the Eigen l
 
 ## Self-Study Resources
 
-- [C++ for scientific computing](../self-study/cpp-scientific.md)
-- [Eigen library tutorial](../self-study/eigen-tutorial.md)
-- [Linear algebra refresher](../self-study/linear-algebra.md)
+<!-- - [C++ for scientific computing](../self-study/cpp-scientific.md) -->
+<!-- - [Eigen library tutorial](../self-study/eigen-tutorial.md) -->
+<!-- - [Linear algebra refresher](../self-study/linear-algebra.md) -->
+
+Self-study resources will be added when available.
 
 ## Related Courses
 

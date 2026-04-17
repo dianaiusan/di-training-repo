@@ -16,11 +16,7 @@ learning_paths: ["developer"]
 #external_url: "https://example.com/course"  # Optional external link
 #provider: "ENCCS"  # Provider name if external
 
-materials:
-  - title: "Recording: Day 1"
-    url: "recordings/2026-03-30-gpu-session1.mp4"
-  - title: "Recording: Day 2"
-    url: "recordings/2026-03-31-gpu-session2.mp4"
+materials: []
 
 icon: lucide/cpu
 ---
@@ -58,14 +54,18 @@ This advanced course focused on efficiently using the Grace Hopper GPU nodes ava
 ## Materials
 
 ### Recordings
-- [Day 1: Architecture and Basics](recordings/2026-03-30-gpu-session1.mp4)
-- [Day 2: Advanced Optimization](recordings/2026-03-31-gpu-session2.mp4)
+<!-- - [Day 1: Architecture and Basics](recordings/2026-03-30-gpu-session1.mp4) -->
+<!-- - [Day 2: Advanced Optimization](recordings/2026-03-31-gpu-session2.mp4) -->
+
+Recordings will be linked here once published.
 
 ### Resources
-- [Course slides](slides/grace-hopper-gpu.pdf)
-- [Code examples](examples/gpu-optimization/)
-- [Performance benchmarks](benchmarks/gpu-performance/)
-- [Profiling guides](guides/gpu-profiling/)
+<!-- - [Course slides](slides/grace-hopper-gpu.pdf) -->
+<!-- - [Code examples](examples/gpu-optimization/) -->
+<!-- - [Performance benchmarks](benchmarks/gpu-performance/) -->
+<!-- - [Profiling guides](guides/gpu-profiling/) -->
+
+Slides and supplementary resources will be added when available.
 
 ## Prerequisites
 
@@ -75,9 +75,11 @@ This advanced course focused on efficiently using the Grace Hopper GPU nodes ava
 
 ## Self-Study Resources
 
-- [GPU computing fundamentals](../self-study/gpu-computing.md)
-- [CUDA programming basics](../self-study/cuda-basics.md)
-- [Grace Hopper architecture](../self-study/grace-hopper.md)
+<!-- - [GPU computing fundamentals](../self-study/gpu-computing.md) -->
+<!-- - [CUDA programming basics](../self-study/cuda-basics.md) -->
+<!-- - [Grace Hopper architecture](../self-study/grace-hopper.md) -->
+
+Self-study resources will be added when available.
 
 ## Related Courses
 

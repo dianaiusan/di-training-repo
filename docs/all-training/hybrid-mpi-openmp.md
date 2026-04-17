@@ -55,3 +55,10 @@ Links to slides, exercises, recordings, etc.
 - [An introduction to parallel programming using Message Passing with MPI](mpi-intro.md)
 - [Shared Memory Parallel Programming with OpenMP](openmp-intro.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

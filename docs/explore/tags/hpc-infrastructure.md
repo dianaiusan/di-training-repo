@@ -6,102 +6,142 @@ title: "HPC & Infrastructure"
 
 Systems, platforms, environments, and operations.
 
-[Back to Tags overview](/explore/tags/)
+<style>.tag-page-link { color: var(--md-accent-fg-color, #526cfe); text-decoration: none; } .tag-page-link:hover { text-decoration: underline; }</style>
+<a class="tag-page-link" href="../">← Back to Tags overview</a>
 
-## Apptainer
-
-- [Basic Singularity/Apptainer workshop](/all-training/singularity-workshop.md)
-
-## Aws
-
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-
-## Azure
-
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-
-## Cloud
-
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-
-## Conda
-
-- [Software Environment Management on HPC](/all-training/environment-management.md)
-
-## Containers
-
-- [Basic Singularity/Apptainer workshop](/all-training/singularity-workshop.md)
-
-## Environments
-
-- [Software Environment Management on HPC](/all-training/environment-management.md)
-
-## External Resource
-
-- [Advanced Performance Engineering for HPC](/all-training/performance-external.md)
-- [Introduction to Parallel Programming with OpenMP](/all-training/openmp-external.md)
-
-## File Transfer
-
-- [File Transfer 201](/all-training/file-transfer-201.md)
-
-## Filesystems
-
-- [HPC Filesystems and Storage Management](/all-training/filesystems-storage.md)
-
-## Hpc
-
-- [AI and HPC](/all-training/ai-hpc.md)
-- [Advanced Performance Engineering for HPC](/all-training/performance-external.md)
-- [An introduction to parallel programming using Message Passing with MPI](/all-training/mpi-intro.md)
-- [Basic Singularity/Apptainer workshop](/all-training/singularity-workshop.md)
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](/all-training/bianca-sensitive-data.md)
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-- [Debugging and Profiling Python on HPC](/all-training/python-debugging.md)
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](/all-training/gpu-nodes.md)
-- [File Transfer 201](/all-training/file-transfer-201.md)
-- [GPU Computing with Python: CuPy and JAX](/all-training/gpu-python.md)
-- [HPC Filesystems and Storage Management](/all-training/filesystems-storage.md)
-- [HPC Performance Analysis and Tuning](/all-training/performance-tuning.md)
-- [Hybrid Parallel Programming with MPI and OpenMP](/all-training/hybrid-mpi-openmp.md)
-- [Intro to HPC](/all-training/intro.md)
-- [Intro to Python for HPC](/all-training/python-hpc-intro.md)
-- [Introduction to Parallel Programming with OpenMP](/all-training/openmp-external.md)
-- [Introduction to Python and Using Python in an HPC environment](/all-training/python-hpc.md)
-- [Large Dataset Management for HPC](/all-training/data-management-large.md)
-- [NAISS Introduction training days](/all-training/naiss-intro.md)
-- [Parallel Python with MPI](/all-training/parallel-python-mpi.md)
-- [Programming Formalisms](/all-training/programming-formalisms.md)
-- [R Programming for HPC and Data Analysis](/all-training/r-hpc.md)
-- [Scaling Experiments with SLURM Job Arrays](/all-training/job-arrays.md)
-- [Scientific Visualization with ParaView](/all-training/paraview.md)
-- [Scientific Workflow Management on HPC](/all-training/workflow-management.md)
-- [Shared Memory Parallel Programming with OpenMP](/all-training/openmp-intro.md)
-- [Software Environment Management on HPC](/all-training/environment-management.md)
-
-## Infrastructure
-
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-
-## Linux
-
-- [Intro to HPC](/all-training/intro.md)
-- [NAISS Introduction training days](/all-training/naiss-intro.md)
-
-## Modules
-
-- [Software Environment Management on HPC](/all-training/environment-management.md)
-
-## Singularity
-
-- [Basic Singularity/Apptainer workshop](/all-training/singularity-workshop.md)
-
-## Slurm
-
-- [NAISS Introduction training days](/all-training/naiss-intro.md)
-- [Parallel Python with MPI](/all-training/parallel-python-mpi.md)
-- [Scaling Experiments with SLURM Job Arrays](/all-training/job-arrays.md)
-
-## Storage
-
-- [HPC Filesystems and Storage Management](/all-training/filesystems-storage.md)
+<style>.tag-grid {  display: grid;  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));  gap: 1rem;  margin: 0.8rem 0;}.tag-card {  border: 1px solid #ddd;  border-radius: 10px;  padding: 1rem;  background: #fff;  transition: transform 140ms ease, border-color 160ms ease, box-shadow 160ms ease;}.tag-card:hover {  transform: translateY(-3px);  border-color: var(--md-accent-fg-color, #526cfe);  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);}.tag-card-name {  margin: 0 0 0.5rem 0;  font-size: 0.95rem;  font-weight: 700;  color: var(--md-accent-fg-color, #526cfe);  line-height: 1.3;}.tag-card-courses {  margin: 0;  padding: 0;  list-style: none;}.tag-card-courses li {  margin: 0.35rem 0;  padding: 0;  font-size: 0.85rem;  list-style: none;}.tag-course-link {  color: inherit;  text-decoration: none;}.tag-card:hover .tag-course-link {  text-decoration: underline;  color: var(--md-accent-fg-color, #526cfe);}@media (max-width: 640px) {  .tag-grid {    grid-template-columns: 1fr;    gap: 0.9rem;  }  .tag-card {    padding: 0.9rem;  }}</style>
+<div class="tag-grid">
+<div class="tag-card">
+  <h4 class="tag-card-name">Apptainer</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/singularity-workshop/">Basic Singularity/Apptainer workshop</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Aws</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Azure</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Cloud</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Conda</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/environment-management/">Software Environment Management on HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Containers</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/singularity-workshop/">Basic Singularity/Apptainer workshop</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Environments</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/environment-management/">Software Environment Management on HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">External Resource</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-external/">Introduction to Parallel Programming with OpenMP</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">File Transfer</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/file-transfer-201/">File Transfer 201</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Filesystems</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Hpc</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/ai-hpc/">AI and HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/singularity-workshop/">Basic Singularity/Apptainer workshop</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/debugging-profiling-clinic/">Debugging and Profiling Clinic</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/python-debugging/">Debugging and Profiling Python on HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/file-transfer-201/">File Transfer 201</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/gpu-python/">GPU Computing with Python: CuPy and JAX</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/intro/">Intro to HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/python-hpc-intro/">Intro to Python for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-external/">Introduction to Parallel Programming with OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/data-management-large/">Large Dataset Management for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/naiss-intro/">NAISS Introduction training days</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/programming-formalisms/">Programming Formalisms</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/r-hpc/">R Programming for HPC and Data Analysis</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/job-arrays/">Scaling Experiments with SLURM Job Arrays</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/paraview/">Scientific Visualization with ParaView</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/workflow-management/">Scientific Workflow Management on HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/environment-management/">Software Environment Management on HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Infrastructure</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Linux</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/intro/">Intro to HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/naiss-intro/">NAISS Introduction training days</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Modules</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/environment-management/">Software Environment Management on HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Singularity</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/singularity-workshop/">Basic Singularity/Apptainer workshop</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Slurm</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/naiss-intro/">NAISS Introduction training days</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/job-arrays/">Scaling Experiments with SLURM Job Arrays</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Storage</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></li>
+  </ul>
+</div>
+</div>

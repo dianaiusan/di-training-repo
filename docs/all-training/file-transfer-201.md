@@ -75,3 +75,10 @@ Advanced file transfer techniques for HPC environments, including cluster-to-clu
 - Transfer scripts and examples
 - Performance benchmarking tools
 - Security best practices guide
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Intro to HPC Week](../explore/bundles/intro-hpc-week/)
+
+<!-- GENERATED:bundle-links:end -->

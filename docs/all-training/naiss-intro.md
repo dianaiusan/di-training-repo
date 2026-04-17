@@ -93,3 +93,10 @@ After this introduction, consider:
 - [Python for HPC](python-hpc.md)
 - [File Transfer 201](file-transfer-201.md)
 - [MPI Programming](mpi-intro.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Intro to HPC Week](../explore/bundles/intro-hpc-week/)
+
+<!-- GENERATED:bundle-links:end -->

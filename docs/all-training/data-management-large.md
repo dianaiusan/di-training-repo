@@ -56,3 +56,10 @@ Links to slides, exercises, recordings, etc.
 - [File Transfer 201](file-transfer-201.md)
 - [Scientific Workflow Management on HPC](workflow-management.md)
 - [Version Control and Reproducible Research with Git](git-version-control.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Data Science Bootcamp Week](../explore/bundles/data-science-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

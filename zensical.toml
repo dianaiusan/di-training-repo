@@ -81,6 +81,12 @@ nav = [
       { "Bioinformatics" = "explore/learning-paths/bioinformatics.md" },
       { "Sensitive Data" = "explore/learning-paths/sensitive-data.md" }
     ] },
+    { "Bundles" = [
+      { "Overview" = "explore/bundles/index.md" },
+      { "Intro to HPC Week" = "explore/bundles/intro-hpc-week.md" },
+      { "Developer Bootcamp Week" = "explore/bundles/developer-bootcamp-week.md" },
+      { "Data Science Bootcamp Week" = "explore/bundles/data-science-bootcamp-week.md" }
+    ] },
     { "Tags" = [
       { "Overview" = "explore/tags/index.md" },
       { "HPC & Infrastructure" = "explore/tags/hpc-infrastructure.md" },

@@ -99,3 +99,23 @@ This hybrid course introduces deep learning and AI workloads on HPC clusters. Yo
 
 - [Efficient use of GPU nodes](gpu-nodes.md)
 - [Scientific Visualization](paraview.md)
+
+<style>.tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 1rem 0; } .bd-badge { display: inline-block; padding: 0.12rem 0.45rem; border-radius: 999px; font-size: 0.74rem; font-weight: 600; border: 1px solid #d1d5db; color: #374151; background: #f9fafb; } .bd-badge-core { border-color: rgba(82,108,254,0.35); color: var(--md-accent-fg-color, #526cfe); background: rgba(82,108,254,0.08); }</style>
+
+## Tags
+
+<div class="tag-list">
+<span class="bd-badge bd-badge-core">ai</span>
+<span class="bd-badge bd-badge-core">machine-learning</span>
+<span class="bd-badge bd-badge-core">deep-learning</span>
+<span class="bd-badge bd-badge-core">gpu</span>
+<span class="bd-badge bd-badge-core">intermediate</span>
+<span class="bd-badge bd-badge-core">hpc</span>
+</div>
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Data Science Bootcamp Week](../explore/bundles/data-science-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

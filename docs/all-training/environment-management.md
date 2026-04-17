@@ -54,3 +54,10 @@ Links to slides, exercises, recordings, etc.
 - [Introduction to Python and Using Python in an HPC environment](python-hpc.md)
 - [Basic Singularity/Apptainer workshop](singularity-workshop.md)
 - [Version Control and Reproducible Research with Git](git-version-control.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Intro to HPC Week](../explore/bundles/intro-hpc-week/)
+
+<!-- GENERATED:bundle-links:end -->

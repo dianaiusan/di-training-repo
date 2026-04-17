@@ -16,9 +16,7 @@ learning_paths: ["data-science", "developer"]
 #external_url: "https://example.com/course"  # Optional external link
 #provider: "ENCCS"  # Provider name if external
 
-materials:
-  - title: "Recording"
-    url: "recordings/2026-04-07-paraview.mp4"
+materials: []
 
 icon: lucide/bar-chart
 ---
@@ -51,13 +49,17 @@ This course introduced scientific visualization using ParaView. Participants lea
 ## Materials
 
 ### Recordings
-- [Full workshop recording](recordings/2026-04-07-paraview.mp4)
+<!-- - [Full workshop recording](recordings/2026-04-07-paraview.mp4) -->
+
+Recording will be linked here once published.
 
 ### Resources
-- [Course slides](slides/paraview-visualization.pdf)
-- [Example datasets](data/paraview-examples/)
-- [Tutorial scripts](scripts/paraview-tutorials/)
-- [Visualization templates](templates/paraview/)
+<!-- - [Course slides](slides/paraview-visualization.pdf) -->
+<!-- - [Example datasets](data/paraview-examples/) -->
+<!-- - [Tutorial scripts](scripts/paraview-tutorials/) -->
+<!-- - [Visualization templates](templates/paraview/) -->
+
+Slides and supplementary resources will be added when available.
 
 ## Prerequisites
 
@@ -67,9 +69,11 @@ This course introduced scientific visualization using ParaView. Participants lea
 
 ## Self-Study Resources
 
-- [Data visualization principles](../self-study/data-visualization.md)
-- [ParaView basics](../self-study/paraview-basics.md)
-- [Scientific visualization guide](../self-study/scientific-vis.md)
+<!-- - [Data visualization principles](../self-study/data-visualization.md) -->
+<!-- - [ParaView basics](../self-study/paraview-basics.md) -->
+<!-- - [Scientific visualization guide](../self-study/scientific-vis.md) -->
+
+Self-study resources will be added when available.
 
 ## Related Courses
 

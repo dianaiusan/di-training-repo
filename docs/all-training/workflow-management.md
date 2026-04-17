@@ -118,3 +118,11 @@ This course introduces scientific workflow management systems that enable reprod
 - [Python for HPC](python-hpc.md) - Programming for workflows
 - [File Transfer Advanced](file-transfer-201.md) - Data movement in workflows
 - [Performance Tuning](performance-tuning.md) - Optimizing workflow performance
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Data Science Bootcamp Week](../explore/bundles/data-science-bootcamp-week/)
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

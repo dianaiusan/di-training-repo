@@ -16,9 +16,7 @@ learning_paths: ["developer", "beginner"]
 #external_url: "https://example.com/course"  # Optional external link
 #provider: "ENCCS"  # Provider name if external
 
-materials:
-  - title: "Recording"
-    url: "recordings/2026-02-09-singularity-workshop.mp4"
+materials: []
 
 icon: lucide/box
 ---
@@ -50,18 +48,24 @@ This workshop introduced the fundamental concepts of containerized software envi
 ## Materials
 
 ### Recordings
-- [Full workshop recording](recordings/2026-02-09-singularity-workshop.mp4)
+<!-- - [Full workshop recording](recordings/2026-02-09-singularity-workshop.mp4) -->
+
+Recording will be linked here once published.
 
 ### Slides and Exercises
-- [Workshop slides](slides/singularity-intro.pdf)
-- [Exercise files](exercises/singularity-workshop/)
-- [Container examples](examples/singularity/)
+<!-- - [Workshop slides](slides/singularity-intro.pdf) -->
+<!-- - [Exercise files](exercises/singularity-workshop/) -->
+<!-- - [Container examples](examples/singularity/) -->
+
+Slides and supplementary resources will be added when available.
 
 ## Self-Study Resources
 
-- [Containerization basics](../self-study/containers-intro.md)
-- [Singularity/Apptainer guide](../self-study/singularity-basics.md)
-- [Building containers](../self-study/container-building.md)
+<!-- - [Containerization basics](../self-study/containers-intro.md) -->
+<!-- - [Singularity/Apptainer guide](../self-study/singularity-basics.md) -->
+<!-- - [Building containers](../self-study/container-building.md) -->
+
+Self-study resources will be added when available.
 
 ## Related Courses
 

@@ -74,3 +74,10 @@ This course focuses on developing reliable academic software. You'll learn forma
 - Code quality tools
 - Version control workflows
 - Documentation templates
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

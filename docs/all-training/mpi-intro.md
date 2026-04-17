@@ -83,28 +83,43 @@ This course introduces the concepts behind message passing and distributed memor
 
 ## Related Courses
 
-- [Hybrid Programming with OpenMP and MPI](hybrid-programming.md)
-- [Advanced MPI Techniques](mpi-advanced.md)
+<!-- - [Hybrid Programming with OpenMP and MPI](hybrid-programming.md) -->
+<!-- - [Advanced MPI Techniques](mpi-advanced.md) -->
 
-- [Presentation slides](slides/mpi-intro.pdf)
-- [Exercise files](exercises/)
-- [Code examples](examples/)
+Unavailable related-course pages will be linked here once published.
+
+<!-- - [Presentation slides](slides/mpi-intro.pdf) -->
+<!-- - [Exercise files](exercises/) -->
+<!-- - [Code examples](examples/) -->
+
+Slides, exercises, and code examples will be added when available.
 
 ## Recordings
 
-- [Session 1: MPI Basics](recordings/2024-03-session1.mp4)
-- [Session 2: Advanced Topics](recordings/2024-03-session2.mp4)
+<!-- - [Session 1: MPI Basics](recordings/2024-03-session1.mp4) -->
+<!-- - [Session 2: Advanced Topics](recordings/2024-03-session2.mp4) -->
+
+Recordings will be linked here once published.
 
 ## Self-Study Resources
 
-- [MPI Basics](../self-study/mpi-basics.md)
-- [Point-to-Point Communication](../self-study/point-to-point.md)
-- [Collective Operations](../self-study/collective-ops.md)
+<!-- - [MPI Basics](../self-study/mpi-basics.md) -->
+<!-- - [Point-to-Point Communication](../self-study/point-to-point.md) -->
+<!-- - [Collective Operations](../self-study/collective-ops.md) -->
+
+Self-study resources will be added when available.
 
 ## Next Steps
 
 After this course, consider:
 
-- [Advanced MPI Techniques](mpi-advanced.md)
-- [Hybrid Programming](hybrid-programming.md)
+<!-- - [Advanced MPI Techniques](mpi-advanced.md) -->
+<!-- - [Hybrid Programming](hybrid-programming.md) -->
 - [Performance Tuning](performance-tuning.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

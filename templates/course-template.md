@@ -4,7 +4,7 @@
 # The frontmatter fields below will be used by scripts to generate lists
 
 title: "Course or Workshop Title"
-slug: "template" # Must match the file name without .md
+slug: "course-slug" # Use the target course file name without .md in docs/all-training/
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "2 hours"  # Free text: e.g., "2 hours", "1 day", "4 weeks"

@@ -2,9 +2,12 @@
 
 Rendered page: https://dianaiusan.github.io/di-training-repo/
 
-Build locally and then push to GitHub (for the moment).
+## Local Development
+
+After changes to content or scripts, regenerate and build:
 
 ```bash
 .venv/bin/python scripts/generate_all.py
-zensical build
 ```
+
+This runs all generators, builds the site, and validates internal links.

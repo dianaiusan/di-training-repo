@@ -6,75 +6,106 @@ title: "Parallel & Performance"
 
 Scaling, profiling, and high-performance programming.
 
-[Back to Tags overview](/explore/tags/)
+<style>.tag-page-link { color: var(--md-accent-fg-color, #526cfe); text-decoration: none; } .tag-page-link:hover { text-decoration: underline; }</style>
+<a class="tag-page-link" href="../">← Back to Tags overview</a>
 
-## Benchmarking
-
-- [Advanced Performance Engineering for HPC](/all-training/performance-external.md)
-- [HPC Performance Analysis and Tuning](/all-training/performance-tuning.md)
-
-## Distributed Computing
-
-- [An introduction to parallel programming using Message Passing with MPI](/all-training/mpi-intro.md)
-
-## Hybrid
-
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-- [Hybrid Parallel Programming with MPI and OpenMP](/all-training/hybrid-mpi-openmp.md)
-
-## Mpi
-
-- [An introduction to parallel programming using Message Passing with MPI](/all-training/mpi-intro.md)
-- [Hybrid Parallel Programming with MPI and OpenMP](/all-training/hybrid-mpi-openmp.md)
-- [Parallel Python with MPI](/all-training/parallel-python-mpi.md)
-
-## Openmp
-
-- [Hybrid Parallel Programming with MPI and OpenMP](/all-training/hybrid-mpi-openmp.md)
-- [Introduction to Parallel Programming with OpenMP](/all-training/openmp-external.md)
-- [Shared Memory Parallel Programming with OpenMP](/all-training/openmp-intro.md)
-
-## Optimization
-
-- [Advanced Performance Engineering for HPC](/all-training/performance-external.md)
-- [HPC Performance Analysis and Tuning](/all-training/performance-tuning.md)
-
-## Parallel
-
-- [An introduction to parallel programming using Message Passing with MPI](/all-training/mpi-intro.md)
-- [High-Performance Computing with Julia](/all-training/julia-hpc.md)
-- [Hybrid Parallel Programming with MPI and OpenMP](/all-training/hybrid-mpi-openmp.md)
-- [Introduction to Parallel Programming with OpenMP](/all-training/openmp-external.md)
-- [R Programming for HPC and Data Analysis](/all-training/r-hpc.md)
-- [Shared Memory Parallel Programming with OpenMP](/all-training/openmp-intro.md)
-
-## Parallel Computing
-
-- [Parallel Python with MPI](/all-training/parallel-python-mpi.md)
-
-## Performance
-
-- [Advanced Performance Engineering for HPC](/all-training/performance-external.md)
-- [Array computing in C++ using Eigen](/all-training/eigen-cpp.md)
-- [Debugging and Profiling Python on HPC](/all-training/python-debugging.md)
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](/all-training/gpu-nodes.md)
-- [HPC Performance Analysis and Tuning](/all-training/performance-tuning.md)
-- [High-Performance Computing with Julia](/all-training/julia-hpc.md)
-- [Hybrid Parallel Programming with MPI and OpenMP](/all-training/hybrid-mpi-openmp.md)
-- [Introduction to Parallel Programming with OpenMP](/all-training/openmp-external.md)
-- [Shared Memory Parallel Programming with OpenMP](/all-training/openmp-intro.md)
-
-## Profiling
-
-- [Advanced Performance Engineering for HPC](/all-training/performance-external.md)
-- [Debugging and Profiling Python on HPC](/all-training/python-debugging.md)
-- [HPC Performance Analysis and Tuning](/all-training/performance-tuning.md)
-
-## Scalability
-
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](/all-training/cloud-hpc.md)
-
-## Threading
-
-- [Introduction to Parallel Programming with OpenMP](/all-training/openmp-external.md)
-- [Shared Memory Parallel Programming with OpenMP](/all-training/openmp-intro.md)
+<style>.tag-grid {  display: grid;  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));  gap: 1rem;  margin: 0.8rem 0;}.tag-card {  border: 1px solid #ddd;  border-radius: 10px;  padding: 1rem;  background: #fff;  transition: transform 140ms ease, border-color 160ms ease, box-shadow 160ms ease;}.tag-card:hover {  transform: translateY(-3px);  border-color: var(--md-accent-fg-color, #526cfe);  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);}.tag-card-name {  margin: 0 0 0.5rem 0;  font-size: 0.95rem;  font-weight: 700;  color: var(--md-accent-fg-color, #526cfe);  line-height: 1.3;}.tag-card-courses {  margin: 0;  padding: 0;  list-style: none;}.tag-card-courses li {  margin: 0.35rem 0;  padding: 0;  font-size: 0.85rem;  list-style: none;}.tag-course-link {  color: inherit;  text-decoration: none;}.tag-card:hover .tag-course-link {  text-decoration: underline;  color: var(--md-accent-fg-color, #526cfe);}@media (max-width: 640px) {  .tag-grid {    grid-template-columns: 1fr;    gap: 0.9rem;  }  .tag-card {    padding: 0.9rem;  }}</style>
+<div class="tag-grid">
+<div class="tag-card">
+  <h4 class="tag-card-name">Benchmarking</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Distributed Computing</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Hybrid</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Mpi</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Openmp</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-external/">Introduction to Parallel Programming with OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Optimization</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Parallel</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/julia-hpc/">High-Performance Computing with Julia</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-external/">Introduction to Parallel Programming with OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/r-hpc/">R Programming for HPC and Data Analysis</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Parallel Computing</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Performance</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/eigen-cpp/">Array computing in C++ using Eigen</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/debugging-profiling-clinic/">Debugging and Profiling Clinic</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/python-debugging/">Debugging and Profiling Python on HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/julia-hpc/">High-Performance Computing with Julia</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-external/">Introduction to Parallel Programming with OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Profiling</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/debugging-profiling-clinic/">Debugging and Profiling Clinic</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/python-debugging/">Debugging and Profiling Python on HPC</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Scalability</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></li>
+  </ul>
+</div>
+<div class="tag-card">
+  <h4 class="tag-card-name">Threading</h4>
+  <ul class="tag-card-courses">
+    <li><a class="tag-course-link" href="../../../all-training/openmp-external/">Introduction to Parallel Programming with OpenMP</a></li>
+    <li><a class="tag-course-link" href="../../../all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></li>
+  </ul>
+</div>
+</div>

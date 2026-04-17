@@ -55,3 +55,10 @@ Links to slides, exercises, recordings, etc.
 - [AI and HPC](ai-hpc.md)
 - [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](gpu-nodes.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Data Science Bootcamp Week](../explore/bundles/data-science-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

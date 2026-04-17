@@ -109,3 +109,10 @@ This advanced course teaches systematic approaches to performance analysis, prof
 - [MPI Introduction](mpi-intro.md) - Distributed memory parallelism
 - [GPU Nodes Workshop](gpu-nodes.md) - GPU optimization
 - [Eigen C++ Course](eigen-cpp.md) - Linear algebra optimization
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

@@ -16,9 +16,7 @@ learning_paths: ["beginner", "data-science"]
 #external_url: "https://example.com/course"  # Optional external link
 #provider: "ENCCS"  # Provider name if external
 
-materials:
-  - title: "Recording"
-    url: "recordings/2026-03-03-python-hpc.mp4"
+materials: []
 
 icon: lucide/code
 ---
@@ -50,21 +48,34 @@ This introductory course taught participants how to write and execute Python cod
 ## Materials
 
 ### Recordings
-- [Full course recording](recordings/2026-03-03-python-hpc.mp4)
+<!-- - [Full course recording](recordings/2026-03-03-python-hpc.mp4) -->
+
+Recording will be linked here once published.
 
 ### Resources
-- [Course slides](slides/python-hpc-intro.pdf)
-- [Code examples](examples/python-hpc/)
-- [Job script templates](templates/python-jobs/)
-- [Exercise solutions](solutions/python-exercises/)
+<!-- - [Course slides](slides/python-hpc-intro.pdf) -->
+<!-- - [Code examples](examples/python-hpc/) -->
+<!-- - [Job script templates](templates/python-jobs/) -->
+<!-- - [Exercise solutions](solutions/python-exercises/) -->
+
+Slides and supplementary resources will be added when available.
 
 ## Self-Study Resources
 
-- [Python basics](../self-study/python-basics.md)
-- [Python on HPC](../self-study/python-hpc.md)
-- [Scientific Python](../self-study/scientific-python.md)
+<!-- - [Python basics](../self-study/python-basics.md) -->
+<!-- - [Python on HPC](../self-study/python-hpc.md) -->
+<!-- - [Scientific Python](../self-study/scientific-python.md) -->
+
+Self-study resources will be added when available.
 
 ## Related Courses
 
 - [Introduction to Python and HPC](python-hpc.md) (upcoming advanced version)
 - [Data Science Path](../explore/learning-paths/data-science.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Data Science Bootcamp Week](../explore/bundles/data-science-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->

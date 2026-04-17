@@ -54,3 +54,10 @@ Links to slides, exercises, recordings, etc.
 - [Programming Formalisms](programming-formalisms.md)
 - [Scientific Workflow Management on HPC](workflow-management.md)
 - [Basic Singularity/Apptainer workshop](singularity-workshop.md)
+
+<!-- GENERATED:bundle-links:start -->
+## Part of bundles
+
+- [Developer Bootcamp Week](../explore/bundles/developer-bootcamp-week/)
+
+<!-- GENERATED:bundle-links:end -->
