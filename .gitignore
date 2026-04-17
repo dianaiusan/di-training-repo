@@ -1,0 +1,14 @@
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local/build output
+site/
+.cache/
+
+# Scripts
+scripts/
+
+# macOS
+.DS_Store
