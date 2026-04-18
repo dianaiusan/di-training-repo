@@ -4,10 +4,13 @@ slug: "job-arrays"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "half day"
+level: "beginner"
+start_date: ""
+end_date: ""
 short_description: "Learn to scale parameter sweeps and batch experiments efficiently using SLURM job arrays."
 registration_url: ""
 
-tags: ["slurm", "job-arrays", "hpc", "automation", "beginner", "intermediate"]
+tags: ["slurm", "job-arrays", "hpc", "automation"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "computational-science"]
 related: ["workflow-management", "performance-tuning", "file-transfer-201"]
@@ -54,6 +57,16 @@ Links to slides, exercises, recordings, etc.
 - [Scientific Workflow Management on HPC](workflow-management.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
 - [File Transfer 201](file-transfer-201.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-workflow-automation">automation</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-workflow-automation">job-arrays</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">slurm</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

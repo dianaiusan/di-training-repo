@@ -4,10 +4,13 @@ slug: "performance-external"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "5 days"
+level: "advanced"
+start_date: ""
+end_date: ""
 short_description: "External OLCF course on advanced performance analysis, profiling, and optimization techniques for HPC systems."
 registration_url: ""
 
-tags: ["performance", "profiling", "optimization", "benchmarking", "advanced", "hpc", "external-resource"]
+tags: ["performance", "profiling", "optimization", "benchmarking", "hpc", "external-resource"]
 prerequisites: ["performance-tuning"]
 scientific_domains: ["general-hpc"]
 related: ["performance-tuning", "gpu-nodes"]
@@ -47,3 +50,15 @@ OLCF provides world-class training on performance engineering for the most advan
 - [HPC Performance Analysis and Tuning](performance-tuning.md) - General performance optimization
 - [GPU Nodes Workshop](gpu-nodes.md) - GPU-specific performance
 - [AI and HPC](ai-hpc.md) - ML performance optimization
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-advanced">advanced</span>
+<span class="bd-badge bd-badge-parallel-performance">benchmarking</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">external-resource</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">optimization</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-parallel-performance">profiling</span>
+</div>

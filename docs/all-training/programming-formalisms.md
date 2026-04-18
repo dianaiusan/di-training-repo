@@ -1,24 +1,32 @@
 ---
-title: "Programming Formalisms"
-slug: "programming-formalisms"  # Must match the file name without .md
-status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
-format: "online"  # Options: online, on-site, hybrid, self-study
-duration: "5 days"
-short_description: "Best practices for developing reliable academic software, covering testing, code quality, and formal methods."
-registration_url: ""
-
-tags: ["programming", "software-engineering", "testing", "intermediate", "hpc", "best-practices", "reproducibility"]
+title: Programming Formalisms
+slug: programming-formalisms
+status: upcoming
+format: online
+duration: 5 days
+level: "intermediate"
+short_description: Best practices for developing reliable academic software, covering
+  testing, code quality, and formal methods.
+registration_url: ''
+tags:
+- programming
+- software-engineering
+- testing
+- hpc
+- best-practices
+- reproducibility
 prerequisites: []
-scientific_domains: ["general-hpc"]
-related: ["workflow-management", "singularity-workshop"]
-learning_paths: ["developer"]
-
-#external_url: "https://example.com/course"  # Optional external link
-#provider: "ENCCS"  # Provider name if external
-
+scientific_domains:
+- general-hpc
+related:
+- workflow-management
+- singularity-workshop
+learning_paths:
+- developer
 materials: []
-
 icon: lucide/settings
+start_date: '2026-05-04'
+end_date: '2026-05-08'
 ---
 
 # Programming Formalisms
@@ -74,6 +82,18 @@ This course focuses on developing reliable academic software. You'll learn forma
 - Code quality tools
 - Version control workflows
 - Documentation templates
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-software-development">best-practices</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-software-development">programming</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+<span class="bd-badge bd-badge-software-development">software-engineering</span>
+<span class="bd-badge bd-badge-software-development">testing</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

@@ -4,10 +4,13 @@ slug: "data-management-large"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Strategies and tools for managing, versioning, and sharing large datasets in HPC and data-intensive research workflows."
 registration_url: ""
 
-tags: ["data-management", "dvc", "hdf5", "big-data", "reproducibility", "intermediate", "hpc"]
+tags: ["data-management", "dvc", "hdf5", "big-data", "reproducibility", "hpc"]
 prerequisites: ["naiss-intro", "git-version-control"]
 scientific_domains: ["general-hpc", "data-science", "bioinformatics", "computational-biology"]
 related: ["filesystems-storage", "file-transfer-201", "workflow-management", "git-version-control"]
@@ -56,6 +59,18 @@ Links to slides, exercises, recordings, etc.
 - [File Transfer 201](file-transfer-201.md)
 - [Scientific Workflow Management on HPC](workflow-management.md)
 - [Version Control and Reproducible Research with Git](git-version-control.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-data-ai">big-data</span>
+<span class="bd-badge bd-badge-data-ai">data-management</span>
+<span class="bd-badge bd-badge-data-ai">dvc</span>
+<span class="bd-badge bd-badge-data-ai">hdf5</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

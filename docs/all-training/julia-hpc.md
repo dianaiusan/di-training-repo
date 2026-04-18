@@ -4,10 +4,13 @@ slug: "julia-hpc"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "4 days"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Introduction to Julia for high-performance scientific computing, covering performance, parallelism, and the scientific ecosystem."
 registration_url: ""
 
-tags: ["julia", "performance", "scientific-computing", "parallel", "intermediate"]
+tags: ["julia", "performance", "scientific-computing", "parallel"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["computational-chemistry", "computational-physics", "data-science", "machine-learning"]
 related: ["python-hpc", "mpi-intro", "performance-tuning"]
@@ -118,3 +121,13 @@ This course introduces Julia, a modern programming language designed for high-pe
 - [C++ with Eigen](eigen-cpp.md) - Traditional high-performance computing
 - [AI and HPC](ai-hpc.md) - Machine learning applications
 - [Performance Tuning](performance-tuning.md) - Advanced optimization techniques
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-software-development">julia</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-domains-visualization">scientific-computing</span>
+</div>

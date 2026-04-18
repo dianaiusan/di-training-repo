@@ -4,10 +4,13 @@ slug: "hybrid-mpi-openmp"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "2 days"
+level: "advanced"
+start_date: ""
+end_date: ""
 short_description: "Combine MPI for distributed memory and OpenMP for shared memory parallelism to fully exploit modern multi-node, multi-core HPC systems."
 registration_url: ""
 
-tags: ["mpi", "openmp", "parallel", "hybrid", "advanced", "hpc", "performance"]
+tags: ["mpi", "openmp", "parallel", "hybrid", "hpc", "performance"]
 prerequisites: ["mpi-intro", "openmp-intro"]
 scientific_domains: ["general-hpc", "computational-science", "computational-physics"]
 related: ["mpi-intro", "openmp-intro", "performance-tuning"]
@@ -55,6 +58,18 @@ Links to slides, exercises, recordings, etc.
 - [An introduction to parallel programming using Message Passing with MPI](mpi-intro.md)
 - [Shared Memory Parallel Programming with OpenMP](openmp-intro.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-advanced">advanced</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">hybrid</span>
+<span class="bd-badge bd-badge-parallel-performance">mpi</span>
+<span class="bd-badge bd-badge-parallel-performance">openmp</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

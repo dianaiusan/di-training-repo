@@ -1,24 +1,35 @@
 ---
-title: "Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius"
-slug: "gpu-nodes"  # Must match the file name without .md
-status: "past"  # Options: upcoming, ongoing, past, cancelled
-format: "online"  # Options: online, on-site, hybrid, self-study
-duration: "2 days"
-short_description: "Efficient use of Grace Hopper GPU nodes on Dardel and Arrhenius, covering CUDA optimization and multi-GPU programming."
-registration_url: ""
-
-tags: ["gpu", "grace-hopper", "performance", "cuda", "advanced", "hpc"]
-prerequisites: ["naiss-intro", "performance-tuning"]
-scientific_domains: ["machine-learning", "computational-physics", "ai"]
-related: ["ai-hpc", "performance-tuning"]
-learning_paths: ["developer"]
-
-#external_url: "https://example.com/course"  # Optional external link
-#provider: "ENCCS"  # Provider name if external
-
+title: Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius
+slug: gpu-nodes
+status: past
+format: online
+duration: 2 days
+level: "advanced"
+short_description: Efficient use of Grace Hopper GPU nodes on Dardel and Arrhenius,
+  covering CUDA optimization and multi-GPU programming.
+registration_url: ''
+tags:
+- gpu
+- grace-hopper
+- performance
+- cuda
+- hpc
+prerequisites:
+- naiss-intro
+- performance-tuning
+scientific_domains:
+- machine-learning
+- computational-physics
+- ai
+related:
+- ai-hpc
+- performance-tuning
+learning_paths:
+- developer
 materials: []
-
 icon: lucide/cpu
+start_date: '2026-03-30'
+end_date: '2026-03-31'
 ---
 
 # Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius
@@ -85,3 +96,14 @@ Self-study resources will be added when available.
 
 - [AI and HPC](ai-hpc.md)
 - [Scientific Visualization with ParaView](paraview.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-advanced">advanced</span>
+<span class="bd-badge bd-badge-gpu">cuda</span>
+<span class="bd-badge bd-badge-gpu">gpu</span>
+<span class="bd-badge bd-badge-gpu">grace-hopper</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+</div>

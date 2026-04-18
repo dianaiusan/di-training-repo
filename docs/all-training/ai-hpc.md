@@ -4,10 +4,13 @@ slug: "ai-hpc"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "hybrid"  # Options: online, on-site, hybrid, self-study
 duration: "3 days"
+level: "intermediate"
+start_date: "2026-06-03"
+end_date: "2026-06-05"
 short_description: "Introduction to deep learning and AI workloads on HPC clusters, covering GPU computing and machine learning frameworks."
 registration_url: ""
 
-tags: ["ai", "machine-learning", "deep-learning", "gpu", "intermediate", "hpc"]
+tags: ["ai", "machine-learning", "deep-learning", "gpu", "hpc"]
 prerequisites: ["naiss-intro", "python-hpc"]
 scientific_domains: ["machine-learning", "data-science", "computational-biology", "computational-physics"]
 related: ["gpu-nodes", "python-hpc", "performance-tuning"]
@@ -100,17 +103,15 @@ This hybrid course introduces deep learning and AI workloads on HPC clusters. Yo
 - [Efficient use of GPU nodes](gpu-nodes.md)
 - [Scientific Visualization](paraview.md)
 
-<style>.tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 1rem 0; } .bd-badge { display: inline-block; padding: 0.12rem 0.45rem; border-radius: 999px; font-size: 0.74rem; font-weight: 600; border: 1px solid #d1d5db; color: #374151; background: #f9fafb; } .bd-badge-core { border-color: rgba(82,108,254,0.35); color: var(--md-accent-fg-color, #526cfe); background: rgba(82,108,254,0.08); }</style>
-
 ## Tags
 
 <div class="tag-list">
-<span class="bd-badge bd-badge-core">ai</span>
-<span class="bd-badge bd-badge-core">machine-learning</span>
-<span class="bd-badge bd-badge-core">deep-learning</span>
-<span class="bd-badge bd-badge-core">gpu</span>
-<span class="bd-badge bd-badge-core">intermediate</span>
-<span class="bd-badge bd-badge-core">hpc</span>
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-data-ai">ai</span>
+<span class="bd-badge bd-badge-data-ai">deep-learning</span>
+<span class="bd-badge bd-badge-gpu">gpu</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-data-ai">machine-learning</span>
 </div>
 
 <!-- GENERATED:bundle-links:start -->

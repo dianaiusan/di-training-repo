@@ -4,10 +4,13 @@ slug: "workflow-management"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "3 days"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Design and manage reproducible scientific workflows on HPC systems using Nextflow and Snakemake."
 registration_url: ""
 
-tags: ["workflow", "automation", "reproducibility", "nextflow", "snakemake", "intermediate", "hpc"]
+tags: ["workflow", "automation", "reproducibility", "nextflow", "snakemake", "hpc"]
 prerequisites: ["naiss-intro", "python-hpc"]
 scientific_domains: ["bioinformatics", "genomics", "data-science", "computational-biology"]
 related: ["programming-formalisms", "singularity-workshop"]
@@ -118,6 +121,18 @@ This course introduces scientific workflow management systems that enable reprod
 - [Python for HPC](python-hpc.md) - Programming for workflows
 - [File Transfer Advanced](file-transfer-201.md) - Data movement in workflows
 - [Performance Tuning](performance-tuning.md) - Optimizing workflow performance
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-workflow-automation">automation</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-workflow-automation">nextflow</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+<span class="bd-badge bd-badge-workflow-automation">snakemake</span>
+<span class="bd-badge bd-badge-workflow-automation">workflow</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

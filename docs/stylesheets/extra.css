@@ -1,0 +1,995 @@
+/* ==========================================================================
+   NAISS Training – shared custom styles
+   Loaded via extra_css in zensical.toml and applied site-wide.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+  Global links — remove underlines site-wide
+  -------------------------------------------------------------------------- */
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Color tokens — define once, reference everywhere
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* Surfaces & structure */
+  --clr-surface:        #ffffff;
+  --clr-border:         #d4d8e0;
+  --clr-border-light:   #e8eaed;
+  --clr-shadow:         rgba(15, 23, 42, 0.12);
+  --clr-shadow-lg:      rgba(15, 23, 42, 0.14);
+
+  /* Text */
+  --clr-text-primary:   #1a2332;
+  --clr-text-secondary: #4a5568;
+  --clr-text-muted:     #6b7280;
+
+  /* Accent — muted steel blue */
+  --clr-accent:         #2e5fa3;
+  --clr-accent-bg:      rgba(46, 95, 163, 0.08);
+
+  /* Category badge palette */
+  --clr-cat-hpc:         #2e5fa3;  /* steel blue        */
+  --clr-cat-parallel:    #1e6b5e;  /* dark teal         */
+  --clr-cat-gpu:         #4a3f8c;  /* muted indigo      */
+  --clr-cat-data:        #2d6a4f;  /* forest green      */
+  --clr-cat-software:    #3d5a80;  /* slate blue        */
+  --clr-cat-workflow:    #4a7c59;  /* sage green        */
+  --clr-cat-foundations: #4a5568;  /* grey-slate        */
+  --clr-cat-domains:     #1e5f74;  /* teal-navy         */
+  --clr-cat-security:    #374151;  /* dark charcoal     */
+
+  /* Difficulty levels */
+  --clr-diff-beginner:      #3d6649;  /* muted green       */
+  --clr-diff-intermediate:  #2f4d66;  /* steel blue-grey   */
+  --clr-diff-advanced:      #1a2b38;  /* deep slate        */
+
+  /* Event status */
+  --clr-ev-upcoming:    #1e6b5e;  /* teal-green        */
+  --clr-ev-ongoing:     #2e5fa3;  /* steel blue        */
+  --clr-ev-past:        #4a5568;  /* slate grey        */
+  --clr-ev-cancelled:   #5c3d3d;  /* muted brick       */
+}
+
+
+/* --------------------------------------------------------------------------
+   bd-* — Bundle track items and badge pills
+   Used by: explore/bundles/ pages
+   -------------------------------------------------------------------------- */
+
+.bd-track {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  max-width: 52rem;
+  margin: 1rem 0 1.25rem 0;
+}
+
+.bd-item {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+  background: var(--clr-surface);
+}
+
+.bd-item-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.bd-num {
+  flex-shrink: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.08em;
+}
+
+.bd-main {
+  min-width: 0;
+}
+
+.bd-title {
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bd-meta {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+  color: var(--clr-text-secondary);
+}
+
+.bd-desc {
+  margin: 0.45rem 0 0 0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--clr-text-secondary);
+}
+
+/* Badge pills – base (neutral grey) */
+.bd-badge {
+  display: inline-block;
+  margin-right: 0.35rem;
+  margin-top: 0.25rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+  color: var(--clr-text-secondary);
+  background: #f9fafb;
+}
+
+/* Badge pills – accent (standalone courses / core content) */
+.bd-badge-core {
+  color: var(--clr-accent);
+  background: var(--clr-accent-bg);
+  border-color: rgba(46, 95, 163, 0.30);
+}
+
+/* Badge pills – category colours */
+.bd-badge-hpc-infrastructure {
+  color: var(--clr-cat-hpc);
+  background: rgba(46, 95, 163, 0.08);
+  border-color: rgba(46, 95, 163, 0.28);
+}
+
+.bd-badge-parallel-performance {
+  color: var(--clr-cat-parallel);
+  background: rgba(30, 107, 94, 0.08);
+  border-color: rgba(30, 107, 94, 0.28);
+}
+
+.bd-badge-gpu {
+  color: var(--clr-cat-gpu);
+  background: rgba(74, 63, 140, 0.08);
+  border-color: rgba(74, 63, 140, 0.28);
+}
+
+.bd-badge-data-ai {
+  color: var(--clr-cat-data);
+  background: rgba(45, 106, 79, 0.08);
+  border-color: rgba(45, 106, 79, 0.28);
+}
+
+.bd-badge-software-development {
+  color: var(--clr-cat-software);
+  background: rgba(61, 90, 128, 0.08);
+  border-color: rgba(61, 90, 128, 0.28);
+}
+
+.bd-badge-workflow-automation {
+  color: var(--clr-cat-workflow);
+  background: rgba(74, 124, 89, 0.08);
+  border-color: rgba(74, 124, 89, 0.28);
+}
+
+.bd-badge-foundations-levels {
+  color: var(--clr-cat-foundations);
+  background: rgba(74, 85, 104, 0.08);
+  border-color: rgba(74, 85, 104, 0.28);
+}
+
+.bd-badge-domains-visualization {
+  color: var(--clr-cat-domains);
+  background: rgba(30, 95, 116, 0.08);
+  border-color: rgba(30, 95, 116, 0.28);
+}
+
+.bd-badge-security-sensitive-data {
+  color: var(--clr-cat-security);
+  background: rgba(55, 65, 81, 0.08);
+  border-color: rgba(55, 65, 81, 0.28);
+}
+
+.bd-topline {
+  margin: 0.5rem 0 0 0;
+  color: var(--clr-text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Bundle overview card grid */
+.bd-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.3rem 0 0.8rem 0;
+}
+
+.bd-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--clr-surface);
+  transition: transform 170ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.bd-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--clr-accent);
+  box-shadow: 0 10px 20px var(--clr-shadow);
+}
+
+.bd-card h3 {
+  margin: 0 0 0.45rem 0;
+  font-size: 1rem;
+}
+
+.bd-card p {
+  margin: 0.32rem 0;
+  font-size: 0.86rem;
+  color: var(--clr-text-secondary);
+}
+
+.bd-card-cta {
+  margin-top: 0.75rem;
+  font-weight: 700;
+}
+
+.bd-card a,
+.bd-card a:visited {
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.bd-card:hover a {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .bd-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .bd-item {
+    padding: 0.75rem 0.8rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   lp-* — Learning path card grid (overview page)
+   Used by: explore/learning-paths/index.md
+   -------------------------------------------------------------------------- */
+
+.lp-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.lp-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--clr-surface);
+  transition: transform 170ms ease, box-shadow 200ms ease, border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+.lp-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--clr-accent);
+  background: var(--clr-accent-bg);
+  box-shadow: 0 14px 28px var(--clr-shadow-lg);
+}
+
+.lp-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text-primary);
+}
+
+.lp-card-title {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.lp-card-desc {
+  margin: 0.5rem 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--clr-text-muted);
+}
+
+.lp-card-cta {
+  margin: 1rem 0 0 0;
+  font-weight: 700;
+}
+
+.lp-card a,
+.lp-card a:visited {
+  color: var(--clr-accent);
+}
+
+.lp-card-link,
+.lp-card-link:visited {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.lp-card-link:hover,
+.lp-card-link:focus,
+.lp-card-link:active {
+  text-decoration: none;
+}
+
+.lp-card-link .lp-card {
+  height: 100%;
+}
+
+.lp-card-cta a {
+  text-decoration: none;
+}
+
+.lp-card:hover .lp-card-cta a {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .lp-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .lp-card {
+    padding: 1.2rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   lp-swimlane — Learning path detail phase swimlane
+   Used by: explore/learning-paths/<slug>.md detail pages
+   -------------------------------------------------------------------------- */
+
+.lp-swimlane {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 36rem;
+  gap: 0;
+  padding: 0.75rem 0 1.25rem 0;
+  margin: 1.25rem 0;
+}
+
+.lp-phase {
+  width: 100%;
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lp-phase-header {
+  background: var(--clr-accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.9rem;
+  text-align: center;
+}
+
+.lp-phase-body {
+  padding: 0.75rem 0.9rem;
+  background: var(--clr-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lp-course-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font: inherit;
+  line-height: 1.45;
+}
+
+.lp-course-num {
+  flex-shrink: 0;
+  width: 1.45em;
+  height: 1.45em;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.08em;
+}
+
+.lp-phase-arrow {
+  align-self: center;
+  font-size: 1.15rem;
+  color: var(--clr-accent);
+  padding: 0.25rem 0;
+  user-select: none;
+}
+
+@media (max-width: 640px) {
+  .lp-swimlane {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .lp-phase-header {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.75rem;
+  }
+
+  .lp-phase-body {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .lp-course-item {
+    line-height: 1.4;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   tg-* — Tag category overview cards
+   Used by: explore/tags/index.md
+   -------------------------------------------------------------------------- */
+
+.tg-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.tg-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 1.1rem;
+  text-align: center;
+  background: var(--clr-surface);
+  transition: transform 170ms ease, box-shadow 200ms ease, border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+.tg-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--clr-accent);
+  background: var(--clr-accent-bg);
+  box-shadow: 0 14px 28px var(--clr-shadow-lg);
+}
+
+.tg-card-icon {
+  font-size: 1.45rem;
+  line-height: 1;
+  margin-bottom: 0.55rem;
+}
+
+.home-card-icon-svg {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+.home-card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.home-card-link:hover,
+.home-card-link:focus,
+.home-card-link:active {
+  text-decoration: none;
+}
+
+.home-card-link .tg-card {
+  height: 100%;
+}
+
+.home-card-link .tg-card-title {
+  color: var(--clr-text-primary);
+}
+
+.home-card-link .tg-card-desc {
+  color: var(--clr-text-muted);
+}
+
+.home-card-link .tg-card-icon {
+  color: var(--clr-text-primary);
+}
+
+.home-card-icon-svg.lucide-atom {
+  transform: scale(1.08);
+  transform-origin: center;
+}
+
+.tg-card-title {
+  margin: 0.35rem 0 0.45rem 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.tg-card-desc {
+  margin: 0.4rem 0 0.6rem 0;
+  font-size: 0.82rem;
+  color: var(--clr-text-muted);
+  line-height: 1.35;
+}
+
+.tg-card-meta {
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+}
+
+.tg-card-cta {
+  margin: 0.75rem 0 0 0;
+  font-weight: 700;
+}
+
+.tg-card a,
+.tg-card a:visited {
+  color: var(--clr-accent);
+}
+
+.tg-card-cta a {
+  text-decoration: none;
+}
+
+.tg-card:hover .tg-card-cta a {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .tg-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   tag-* — Tag detail page: sub-tag cards with course lists
+   Used by: explore/tags/<category>.md pages
+   -------------------------------------------------------------------------- */
+
+.tag-page-link {
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.tag-page-link:hover {
+  text-decoration: underline;
+}
+
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 0.8rem 0;
+}
+
+.tag-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--clr-surface);
+  transition: transform 140ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.tag-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--clr-accent);
+  box-shadow: 0 8px 20px var(--clr-shadow);
+}
+
+.tag-card-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  line-height: 1.3;
+}
+
+.tag-card-courses {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-card-courses li {
+  margin: 0.35rem 0;
+  padding: 0;
+  font-size: 0.85rem;
+  list-style: none;
+}
+
+.tag-course-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tag-card:hover .tag-course-link {
+  text-decoration: underline;
+  color: var(--clr-accent);
+}
+
+@media (max-width: 640px) {
+  .tag-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .tag-card {
+    padding: 0.9rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   sd-* — Scientific domain overview cards
+   Used by: explore/scientific-domains/index.md
+   -------------------------------------------------------------------------- */
+
+.sd-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.sd-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+  background: var(--clr-surface);
+  transition: transform 170ms ease, box-shadow 200ms ease, border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+.sd-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--clr-accent);
+  background: var(--clr-accent-bg);
+  box-shadow: 0 14px 28px var(--clr-shadow-lg);
+}
+
+.sd-card-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.sd-card-title {
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.sd-card-meta {
+  margin: 0.35rem 0;
+  font-size: 0.82rem;
+  color: var(--clr-text-muted);
+}
+
+.sd-card-cta {
+  margin: 0.75rem 0 0 0;
+  font-weight: 700;
+}
+
+.sd-card a,
+.sd-card a:visited {
+  color: var(--clr-accent);
+}
+
+.sd-card-link,
+.sd-card-link:visited {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sd-card-link:hover,
+.sd-card-link:focus,
+.sd-card-link:active {
+  text-decoration: none;
+}
+
+.sd-card-link .sd-card {
+  height: 100%;
+}
+
+.sd-card-cta a {
+  text-decoration: none;
+}
+
+.sd-card:hover .sd-card-cta a {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .sd-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   lp-related-* — Related learning paths compact grid
+   Used by: explore/learning-paths/<slug>.md detail pages
+   -------------------------------------------------------------------------- */
+
+.lp-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 0 0;
+}
+
+.lp-related-card {
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+  background: var(--clr-surface);
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.lp-related-card:hover {
+  border-color: var(--clr-accent);
+  background: var(--clr-accent-bg);
+}
+
+.lp-related-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.35rem 0;
+}
+
+.lp-related-icon {
+  color: var(--clr-accent);
+  line-height: 1;
+}
+
+.lp-related-title {
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+}
+
+.lp-related-desc {
+  margin: 0;
+  font: inherit;
+  color: var(--clr-text-secondary);
+  line-height: 1.4;
+}
+
+.lp-related-card a,
+.lp-related-card a:visited {
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.lp-related-card:hover a {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .lp-related-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .lp-related-card {
+    padding: 0.75rem 0.8rem;
+  }
+
+  .lp-related-head {
+    margin-bottom: 0.3rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   tag-list — Per-course tag pill row
+   Used by: all-training/<course>.md pages
+   -------------------------------------------------------------------------- */
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   ev-* — Event card grid and badges
+   Used by: events/upcoming.md, events/past-events.md
+   -------------------------------------------------------------------------- */
+
+.ev-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ev-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 1.2rem;
+  background: var(--clr-surface);
+  transition: transform 140ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.ev-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--clr-accent);
+  box-shadow: 0 8px 20px var(--clr-shadow);
+}
+
+.ev-card-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+  background: var(--clr-accent-bg);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  margin-bottom: 0.75rem;
+}
+
+.ev-card-title {
+  margin: 0 0 0.5rem 0;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--clr-text-primary);
+}
+
+.ev-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ev-card:hover .ev-card-title a {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+.ev-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--clr-border-light);
+}
+
+/* Event status badges */
+.ev-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ev-badge-upcoming {
+  color: var(--clr-ev-upcoming);
+  background: rgba(30, 107, 94, 0.10);
+  border: 1px solid rgba(30, 107, 94, 0.28);
+}
+
+.ev-badge-past {
+  color: var(--clr-ev-past);
+  background: rgba(74, 85, 104, 0.10);
+  border: 1px solid rgba(74, 85, 104, 0.25);
+}
+
+.ev-badge-ongoing {
+  color: var(--clr-ev-ongoing);
+  background: rgba(46, 95, 163, 0.10);
+  border: 1px solid rgba(46, 95, 163, 0.28);
+}
+
+.ev-badge-cancelled {
+  color: var(--clr-ev-cancelled);
+  background: rgba(92, 61, 61, 0.10);
+  border: 1px solid rgba(92, 61, 61, 0.28);
+}
+
+/* Event format badges */
+.ev-format {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--clr-text-secondary);
+  background: rgba(74, 85, 104, 0.08);
+  border: 1px solid rgba(74, 85, 104, 0.20);
+}
+
+@media (max-width: 640px) {
+  .ev-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .ev-card {
+    padding: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   diff-* — Difficulty / level badges
+   Used by: all-training course pages (## Tags section) and event cards
+   -------------------------------------------------------------------------- */
+
+.diff-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.diff-beginner {
+  color: var(--clr-diff-beginner);
+  background: rgba(61, 102, 73, 0.10);
+  border: 1px solid rgba(61, 102, 73, 0.28);
+}
+
+.diff-intermediate {
+  color: var(--clr-diff-intermediate);
+  background: rgba(47, 77, 102, 0.10);
+  border: 1px solid rgba(47, 77, 102, 0.28);
+}
+
+.diff-advanced {
+  color: var(--clr-diff-advanced);
+  background: rgba(26, 43, 56, 0.10);
+  border: 1px solid rgba(26, 43, 56, 0.28);
+}

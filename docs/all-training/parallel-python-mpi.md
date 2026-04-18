@@ -4,6 +4,9 @@ slug: "parallel-python-mpi"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "hybrid"  # Options: online, on-site, hybrid, self-study
 duration: "3 hours"
+level: ""
+start_date: ""
+end_date: ""
 short_description: "Learn how to scale Python workflows across HPC clusters using mpi4py."
 registration_url: ""
 
@@ -64,6 +67,16 @@ By the end of this workshop, you will be able to:
 - Advanced MPI Optimization
 
 ---
+
+## Tags
+
+<div class="tag-list">
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">mpi</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel-computing</span>
+<span class="bd-badge bd-badge-software-development">python</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">slurm</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

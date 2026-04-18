@@ -4,10 +4,13 @@ slug: "code-review-ci-hpc"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "0.5 day"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Branch strategies, pull requests, and continuous integration workflows adapted for HPC and research software projects."
 registration_url: ""
 
-tags: ["git", "ci-cd", "code-review", "reproducibility", "best-practices", "intermediate"]
+tags: ["git", "ci-cd", "code-review", "reproducibility", "best-practices"]
 prerequisites: ["git-version-control"]
 scientific_domains: ["general-hpc", "computational-science"]
 related: ["git-version-control", "programming-formalisms", "workflow-management"]
@@ -67,6 +70,17 @@ Consider these related courses to continue developing your software engineering 
 - [Programming Formalisms](programming-formalisms.md)
 - [Large Dataset Management for HPC](data-management-large.md)
 - [Workflow Management for HPC](workflow-management.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-software-development">best-practices</span>
+<span class="bd-badge bd-badge">ci-cd</span>
+<span class="bd-badge bd-badge">code-review</span>
+<span class="bd-badge bd-badge-software-development">git</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

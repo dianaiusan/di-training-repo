@@ -4,10 +4,13 @@ slug: "singularity-workshop"  # Must match the file name without .md
 status: "past"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "beginner"
+start_date: "2026-02-09"
+end_date: "2026-02-09"
 short_description: "Introduction to containerized software environments using Singularity/Apptainer for reproducible research computing."
 registration_url: ""
 
-tags: ["containers", "singularity", "apptainer", "software", "beginner", "hpc", "reproducibility"]
+tags: ["containers", "singularity", "apptainer", "software", "hpc", "reproducibility"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc"]
 related: ["workflow-management", "programming-formalisms"]
@@ -71,3 +74,15 @@ Self-study resources will be added when available.
 
 - [Software installation on Bianca](bianca-sensitive-data.md)
 - [Programming Formalisms](programming-formalisms.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">apptainer</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">containers</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">singularity</span>
+<span class="bd-badge bd-badge-software-development">software</span>
+</div>

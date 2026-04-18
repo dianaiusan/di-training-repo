@@ -1,24 +1,35 @@
 ---
-title: "An introduction to parallel programming using Message Passing with MPI"
-slug: "mpi-intro"  # Must match the file name without .md
-status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
-format: "online"  # Options: online, on-site, hybrid, self-study
-duration: "4 days"
-short_description: "Introduction to parallel programming using Message Passing Interface (MPI) for distributed memory computing."
-registration_url: ""
-
-tags: ["parallel", "mpi", "programming", "distributed-computing", "intermediate", "hpc"]
-prerequisites: ["naiss-intro"]
-scientific_domains: ["general-hpc", "computational-science", "computational-physics"]
-related: ["openmp-intro", "parallel-python-mpi", "performance-tuning"]
-learning_paths: ["developer"]
-
-#external_url: "https://example.com/course"  # Optional external link
-#provider: "ENCCS"  # Provider name if external
-
+title: An introduction to parallel programming using Message Passing with MPI
+slug: mpi-intro
+status: upcoming
+format: online
+duration: 4 days
+level: "intermediate"
+short_description: Introduction to parallel programming using Message Passing Interface
+  (MPI) for distributed memory computing.
+registration_url: ''
+tags:
+- parallel
+- mpi
+- programming
+- distributed-computing
+- hpc
+prerequisites:
+- naiss-intro
+scientific_domains:
+- general-hpc
+- computational-science
+- computational-physics
+related:
+- openmp-intro
+- parallel-python-mpi
+- performance-tuning
+learning_paths:
+- developer
 materials: []
-
 icon: lucide/network
+start_date: '2026-05-20'
+end_date: '2026-05-28'
 ---
 
 # An introduction to parallel programming using Message Passing with MPI
@@ -116,6 +127,17 @@ After this course, consider:
 <!-- - [Advanced MPI Techniques](mpi-advanced.md) -->
 <!-- - [Hybrid Programming](hybrid-programming.md) -->
 - [Performance Tuning](performance-tuning.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-parallel-performance">distributed-computing</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">mpi</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel</span>
+<span class="bd-badge bd-badge-software-development">programming</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

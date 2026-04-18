@@ -4,10 +4,13 @@ slug: "environment-management"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "beginner"
+start_date: ""
+end_date: ""
 short_description: "Master software modules, Conda, and virtual environments to create reproducible and portable computing environments on HPC systems."
 registration_url: ""
 
-tags: ["conda", "modules", "environments", "python", "reproducibility", "beginner", "hpc"]
+tags: ["conda", "modules", "environments", "python", "reproducibility", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "computational-science", "data-science"]
 related: ["python-hpc", "singularity-workshop", "git-version-control"]
@@ -54,6 +57,18 @@ Links to slides, exercises, recordings, etc.
 - [Introduction to Python and Using Python in an HPC environment](python-hpc.md)
 - [Basic Singularity/Apptainer workshop](singularity-workshop.md)
 - [Version Control and Reproducible Research with Git](git-version-control.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">conda</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">environments</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">modules</span>
+<span class="bd-badge bd-badge-software-development">python</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

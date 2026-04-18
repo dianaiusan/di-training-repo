@@ -4,10 +4,13 @@ slug: "debugging-profiling-clinic"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "0.5 day"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Hands-on troubleshooting and profiling clinic for HPC code — find bugs and bottlenecks before optimising."
 registration_url: ""
 
-tags: ["debugging", "profiling", "performance", "hpc", "intermediate"]
+tags: ["debugging", "profiling", "performance", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "computational-science"]
 related: ["performance-tuning", "python-debugging", "mpi-intro", "openmp-intro"]
@@ -68,6 +71,16 @@ Ready to move from profiling to optimisation? Continue with:
 
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
 - [Parallel Python with MPI](parallel-python-mpi.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-software-development">debugging</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-parallel-performance">profiling</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

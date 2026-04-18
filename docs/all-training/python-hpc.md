@@ -1,24 +1,34 @@
 ---
-title: "Introduction to Python and Using Python in an HPC environment"
-slug: "python-hpc"  # Must match the file name without .md
-status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
-format: "online"  # Options: online, on-site, hybrid, self-study
-duration: "4 days"
-short_description: "Comprehensive introduction to Python programming and its use in Sweden's academic HPC environment."
-registration_url: ""
-
-tags: ["python", "hpc", "programming", "beginner"]
-prerequisites: ["naiss-intro"]
-scientific_domains: ["general-hpc", "data-science", "computational-science"]
-related: ["python-hpc-intro", "parallel-python-mpi", "file-transfer-201"]
-learning_paths: ["beginner", "data-science"]
-
-#external_url: "https://example.com/course"  # Optional external link
-#provider: "ENCCS"  # Provider name if external
-
+title: Introduction to Python and Using Python in an HPC environment
+slug: python-hpc
+status: upcoming
+format: online
+duration: 4 days
+level: "beginner"
+short_description: Comprehensive introduction to Python programming and its use in
+  Sweden's academic HPC environment.
+registration_url: ''
+tags:
+- python
+- hpc
+- programming
+prerequisites:
+- naiss-intro
+scientific_domains:
+- general-hpc
+- data-science
+- computational-science
+related:
+- python-hpc-intro
+- parallel-python-mpi
+- file-transfer-201
+learning_paths:
+- beginner
+- data-science
 materials: []
-
 icon: lucide/code
+start_date: '2026-04-20'
+end_date: '2026-04-24'
 ---
 
 # Introduction to Python and Using Python in an HPC environment
@@ -89,3 +99,12 @@ Course materials will be provided during the workshop.
 
 - [Intro to Python for HPC](python-hpc-intro.md) (past course)
 - [Data Science Path](../explore/learning-paths/data-science.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-software-development">programming</span>
+<span class="bd-badge bd-badge-software-development">python</span>
+</div>

@@ -4,10 +4,13 @@ slug: "performance-tuning"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "4 days"
+level: "advanced"
+start_date: ""
+end_date: ""
 short_description: "Systematic approaches to performance analysis, profiling, and optimization of HPC applications."
 registration_url: ""
 
-tags: ["performance", "profiling", "optimization", "benchmarking", "advanced", "hpc"]
+tags: ["performance", "profiling", "optimization", "benchmarking", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc"]
 related: ["mpi-intro", "openmp-intro", "gpu-nodes", "performance-external"]
@@ -109,6 +112,17 @@ This advanced course teaches systematic approaches to performance analysis, prof
 - [MPI Introduction](mpi-intro.md) - Distributed memory parallelism
 - [GPU Nodes Workshop](gpu-nodes.md) - GPU optimization
 - [Eigen C++ Course](eigen-cpp.md) - Linear algebra optimization
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-advanced">advanced</span>
+<span class="bd-badge bd-badge-parallel-performance">benchmarking</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">optimization</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-parallel-performance">profiling</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

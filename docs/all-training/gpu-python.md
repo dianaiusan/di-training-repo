@@ -4,10 +4,13 @@ slug: "gpu-python"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Use CuPy and JAX to run GPU-accelerated Python code on NAISS systems without writing CUDA kernels."
 registration_url: ""
 
-tags: ["gpu", "python", "cupy", "jax", "machine-learning", "data-science", "intermediate", "hpc"]
+tags: ["gpu", "python", "cupy", "jax", "machine-learning", "data-science", "hpc"]
 prerequisites: ["python-hpc"]
 scientific_domains: ["machine-learning", "data-science", "computational-physics", "computational-science"]
 related: ["ai-hpc", "gpu-nodes", "performance-tuning", "python-debugging"]
@@ -55,6 +58,19 @@ Links to slides, exercises, recordings, etc.
 - [AI and HPC](ai-hpc.md)
 - [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](gpu-nodes.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-gpu">cupy</span>
+<span class="bd-badge bd-badge-data-ai">data-science</span>
+<span class="bd-badge bd-badge-gpu">gpu</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-gpu">jax</span>
+<span class="bd-badge bd-badge-data-ai">machine-learning</span>
+<span class="bd-badge bd-badge-software-development">python</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

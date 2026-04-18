@@ -4,10 +4,13 @@ slug: "openmp-external"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "3 days"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "External course from the OpenMP ARB on shared memory parallel programming using OpenMP."
 registration_url: ""
 
-tags: ["parallel", "openmp", "threading", "performance", "intermediate", "hpc", "external-resource"]
+tags: ["parallel", "openmp", "threading", "performance", "hpc", "external-resource"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc"]
 related: ["openmp-intro", "mpi-intro"]
@@ -45,3 +48,15 @@ This official OpenMP training provides vendor-neutral, standards-based instructi
 
 - [MPI Introduction](mpi-intro.md) - Distributed memory parallelism
 - [Performance Tuning](performance-tuning.md) - Advanced optimization techniques
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">external-resource</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">openmp</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-parallel-performance">threading</span>
+</div>

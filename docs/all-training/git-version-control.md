@@ -4,10 +4,13 @@ slug: "git-version-control"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "beginner"
+start_date: ""
+end_date: ""
 short_description: "Introduction to Git for version control and reproducible research workflows in an HPC context."
 registration_url: ""
 
-tags: ["git", "version-control", "reproducibility", "best-practices", "beginner"]
+tags: ["git", "version-control", "reproducibility", "best-practices"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "computational-science"]
 related: ["programming-formalisms", "workflow-management", "singularity-workshop"]
@@ -54,6 +57,16 @@ Links to slides, exercises, recordings, etc.
 - [Programming Formalisms](programming-formalisms.md)
 - [Scientific Workflow Management on HPC](workflow-management.md)
 - [Basic Singularity/Apptainer workshop](singularity-workshop.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-software-development">best-practices</span>
+<span class="bd-badge bd-badge-software-development">git</span>
+<span class="bd-badge bd-badge-software-development">reproducibility</span>
+<span class="bd-badge bd-badge-software-development">version-control</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

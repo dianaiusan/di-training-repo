@@ -4,10 +4,13 @@ slug: "cloud-hpc"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "3 days"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Learn to integrate cloud computing resources with traditional HPC systems for enhanced scalability and flexibility."
 registration_url: ""
 
-tags: ["cloud", "aws", "azure", "hybrid", "scalability", "intermediate", "hpc", "infrastructure"]
+tags: ["cloud", "aws", "azure", "hybrid", "scalability", "hpc", "infrastructure"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc"]
 related: ["performance-tuning"]
@@ -118,3 +121,16 @@ This course explores the integration of cloud computing with traditional HPC inf
 - [Workflow Management](workflow-management.md) - Orchestrating hybrid workflows
 - [File Transfer Advanced](file-transfer-201.md) - Data movement strategies
 - [AI and HPC](ai-hpc.md) - GPU cloud resources for ML
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">aws</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">azure</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">cloud</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">hybrid</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">infrastructure</span>
+<span class="bd-badge bd-badge-parallel-performance">scalability</span>
+</div>

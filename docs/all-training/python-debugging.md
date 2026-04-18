@@ -4,10 +4,13 @@ slug: "python-debugging"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Learn to find and fix bugs and performance bottlenecks in Python code running on HPC clusters."
 registration_url: ""
 
-tags: ["python", "debugging", "profiling", "performance", "hpc", "intermediate"]
+tags: ["python", "debugging", "profiling", "performance", "hpc"]
 prerequisites: ["python-hpc"]
 scientific_domains: ["general-hpc", "data-science", "computational-science"]
 related: ["python-hpc", "performance-tuning", "parallel-python-mpi"]
@@ -54,3 +57,14 @@ Links to slides, exercises, recordings, etc.
 - [Introduction to Python and Using Python in an HPC environment](python-hpc.md)
 - [HPC Performance Analysis and Tuning](performance-tuning.md)
 - [Parallel Python with MPI](parallel-python-mpi.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-software-development">debugging</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-parallel-performance">profiling</span>
+<span class="bd-badge bd-badge-software-development">python</span>
+</div>

@@ -4,10 +4,13 @@ slug: "python-hpc-intro"  # Must match the file name without .md
 status: "past"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "beginner"
+start_date: "2026-03-03"
+end_date: "2026-03-03"
 short_description: "Introductory 1-day course on writing and running Python code on an HPC cluster."
 registration_url: ""
 
-tags: ["python", "hpc", "programming", "beginner"]
+tags: ["python", "hpc", "programming"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "data-science", "computational-science"]
 related: ["python-hpc", "parallel-python-mpi"]
@@ -72,6 +75,15 @@ Self-study resources will be added when available.
 
 - [Introduction to Python and HPC](python-hpc.md) (upcoming advanced version)
 - [Data Science Path](../explore/learning-paths/data-science.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-software-development">programming</span>
+<span class="bd-badge bd-badge-software-development">python</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

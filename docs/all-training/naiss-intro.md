@@ -1,24 +1,31 @@
 ---
-title: "NAISS Introduction training days"
-slug: "naiss-intro"  # Must match the file name without .md
-status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
-format: "online"  # Options: online, on-site, hybrid, self-study
-duration: "3 days"
-short_description: "Introductory course for new NAISS users covering Linux, connecting to clusters, file transfer, software modules, and SLURM."
-registration_url: ""
-
-tags: ["introduction", "hpc", "linux", "slurm", "beginner"]
+title: NAISS Introduction training days
+slug: naiss-intro
+status: upcoming
+format: online
+duration: 3 days
+level: "beginner"
+short_description: Introductory course for new NAISS users covering Linux, connecting
+  to clusters, file transfer, software modules, and SLURM.
+registration_url: ''
+tags:
+- introduction
+- hpc
+- linux
+- slurm
 prerequisites: []
-scientific_domains: ["general-hpc"]
-related: ["python-hpc-intro", "python-hpc", "file-transfer-201"]
-learning_paths: ["beginner"]
-
-#external_url: "https://example.com/course"  # Optional external link
-#provider: "ENCCS"  # Provider name if external
-
+scientific_domains:
+- general-hpc
+related:
+- python-hpc-intro
+- python-hpc
+- file-transfer-201
+learning_paths:
+- beginner
 materials: []
-
 icon: lucide/user-plus
+start_date: '2026-06-01'
+end_date: '2026-06-03'
 ---
 
 # NAISS Introduction training days
@@ -93,6 +100,16 @@ After this introduction, consider:
 - [Python for HPC](python-hpc.md)
 - [File Transfer 201](file-transfer-201.md)
 - [MPI Programming](mpi-intro.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-foundations-levels">introduction</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">linux</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">slurm</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

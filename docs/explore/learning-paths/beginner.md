@@ -25,7 +25,6 @@ related_paths:
 
 A structured introduction to practical HPC usage, from first login to reliable day-to-day workflows.
 
-<style>.lp-swimlane {  display: flex;  flex-direction: column;  align-items: stretch;  max-width: 36rem;  gap: 0;  padding: 0.75rem 0 1.25rem 0;  margin: 1.25rem 0;}.lp-phase {  width: 100%;  border: 1px solid #ddd;  border-radius: 10px;  overflow: hidden;}.lp-phase-header {  background: var(--md-accent-fg-color, #526cfe);  color: #fff;  font-weight: 700;  font-size: 0.82rem;  text-transform: uppercase;  letter-spacing: 0.04em;  padding: 0.5rem 0.9rem;  text-align: center;}.lp-phase-body {  padding: 0.75rem 0.9rem;  background: #fff;  display: flex;  flex-direction: column;  gap: 0.5rem;}.lp-course-item {  display: flex;  align-items: flex-start;  gap: 0.5rem;  font: inherit;  line-height: 1.45;}.lp-course-num {  flex-shrink: 0;  width: 1.45em;  height: 1.45em;  border-radius: 50%;  background: var(--md-accent-fg-color, #526cfe);  color: #fff;  font-size: 0.74rem;  font-weight: 700;  display: flex;  align-items: center;  justify-content: center;  margin-top: 0.08em;}.lp-phase-arrow {  align-self: center;  font-size: 1.15rem;  color: var(--md-accent-fg-color, #526cfe);  padding: 0.25rem 0;  user-select: none;}@media (max-width: 640px) {  .lp-swimlane {    max-width: 100%;    margin: 1rem 0;  }  .lp-phase-header {    font-size: 0.78rem;    padding: 0.45rem 0.75rem;  }  .lp-phase-body {    padding: 0.65rem 0.75rem;  }  .lp-course-item {    line-height: 1.4;  }}</style>
 <div class="lp-swimlane">
   <div class="lp-phase">
     <div class="lp-phase-header">Foundation</div>
@@ -64,7 +63,6 @@ A structured introduction to practical HPC usage, from first login to reliable d
 
 ### Related paths
 
-<style>.lp-related-grid {  display: grid;  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));  gap: 0.8rem;  margin: 1rem 0 0 0;}.lp-related-card {  border: 1px solid #ddd;  border-radius: 10px;  padding: 0.8rem 0.9rem;  background: #fff;  transition: border-color 180ms ease, background-color 180ms ease;}.lp-related-card:hover {  border-color: var(--md-accent-fg-color, #526cfe);  background: var(--md-accent-fg-color--transparent, rgba(82, 108, 254, 0.12));}.lp-related-head {  display: flex;  align-items: center;  gap: 0.5rem;  margin: 0 0 0.35rem 0;}.lp-related-icon {  color: var(--md-accent-fg-color, #526cfe);  line-height: 1;}.lp-related-title {  margin: 0;  font: inherit;  font-weight: 700;}.lp-related-desc {  margin: 0;  font: inherit;  color: #4b5563;  line-height: 1.4;}.lp-related-card a, .lp-related-card a:visited {  color: var(--md-accent-fg-color, #526cfe);  text-decoration: none;}.lp-related-card:hover a {  text-decoration: underline;}@media (max-width: 640px) {  .lp-related-grid {    grid-template-columns: 1fr;    gap: 0.7rem;  }  .lp-related-card {    padding: 0.75rem 0.8rem;  }  .lp-related-head {    margin-bottom: 0.3rem;  }}</style>
 <div class="lp-related-grid">
 <div class="lp-related-card">
   <div class="lp-related-head">

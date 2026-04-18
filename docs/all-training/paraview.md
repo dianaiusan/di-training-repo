@@ -4,6 +4,9 @@ slug: "paraview"  # Must match the file name without .md
 status: "past"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: ""
+start_date: "2026-04-07"
+end_date: "2026-04-07"
 short_description: "Introduction to scientific data visualization using ParaView, covering data loading, processing, and visualization techniques."
 registration_url: ""
 
@@ -79,3 +82,13 @@ Self-study resources will be added when available.
 
 - [AI and HPC](ai-hpc.md)
 - [GPU Computing](gpu-nodes.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="bd-badge bd-badge-data-ai">data-analysis</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-domains-visualization">paraview</span>
+<span class="bd-badge bd-badge-domains-visualization">scientific-computing</span>
+<span class="bd-badge bd-badge-domains-visualization">visualization</span>
+</div>

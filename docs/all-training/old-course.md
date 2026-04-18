@@ -4,6 +4,9 @@ slug: "old-course"  # Must match the file name without .md
 status: "past"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "2 hours"
+level: ""
+start_date: ""
+end_date: ""
 short_description: "Archived example training used for past-event listings and testing."
 registration_url: ""
 
@@ -51,3 +54,9 @@ Links to slides, exercises, recordings, etc.
 ## Related training
 
 - [Intro to HPC](intro.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="bd-badge bd-badge">past</span>
+</div>

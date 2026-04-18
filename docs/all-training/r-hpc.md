@@ -4,10 +4,13 @@ slug: "r-hpc"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "3 days"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Using R for large-scale data analysis and statistical computing on HPC systems, including parallel computing."
 registration_url: ""
 
-tags: ["r", "statistics", "data-analysis", "parallel", "intermediate", "hpc"]
+tags: ["r", "statistics", "data-analysis", "parallel", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["bioinformatics", "statistics", "data-science", "biomedical"]
 related: ["python-hpc", "parallel-python-mpi"]
@@ -103,3 +106,14 @@ This course teaches how to scale R applications for HPC environments, covering p
 - [AI and HPC](ai-hpc.md) - Machine learning on HPC
 - [Scientific Visualization](paraview.md) - Data visualization
 - [Performance Tuning](performance-tuning.md) - Advanced optimization
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-data-ai">data-analysis</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel</span>
+<span class="bd-badge bd-badge-software-development">r</span>
+<span class="bd-badge bd-badge-domains-visualization">statistics</span>
+</div>

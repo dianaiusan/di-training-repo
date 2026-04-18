@@ -5,17 +5,21 @@
 
 title: "Course or Workshop Title"
 slug: "course-slug" # Use the target course file name without .md in docs/all-training/
-status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
-format: "online"  # Options: online, on-site, hybrid, self-study
+
+start_date="" # YYYY-MM-DD
+end_date="" # YYYY-MM-DD
 duration: "2 hours"  # Free text: e.g., "2 hours", "1 day", "4 weeks"
+status: "upcoming"  # Options: upcoming, past, cancelled, planned
+format: "online"  # Options: online, on-site, hybrid, self-study
+
 short_description: "One-sentence summary of the training"
 registration_url: ""
-
-tags: ["hpc", "beginner", "python"]  # Array of tags for filtering
 prerequisites: ["basic-linux", "python-basics"]  # Array of prerequisite course IDs or skills
-scientific_domains: ["computational-chemistry", "bioinformatics"]  # Array of scientific domain IDs
 related: ["advanced-hpc", "parallel-computing"]  # Array of related course IDs
+
+scientific_domains: ["computational-chemistry", "bioinformatics"]  # Array of scientific domain IDs
 learning_paths: ["introduction-to-hpc", "data-analysis"]  # Array of learning path IDs
+tags: ["hpc", "beginner", "python"]  # Array of tags for filtering
 
 #external_url: "https://example.com/course"  # Optional external link
 #provider: "ENCCS"  # Provider name if external

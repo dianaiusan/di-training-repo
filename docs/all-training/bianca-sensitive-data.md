@@ -4,10 +4,13 @@ slug: "bianca-sensitive-data"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "intermediate"
+start_date: "2026-05-22"
+end_date: "2026-05-22"
 short_description: "Advanced techniques for using the Bianca system, including terminal login, file transfer, advanced SLURM, and custom software installation."
 registration_url: ""
 
-tags: ["sensitive-data", "bianca", "security", "hpc", "intermediate", "data-management"]
+tags: ["sensitive-data", "bianca", "security", "hpc", "data-management"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["biomedical", "clinical-research", "genomics", "social-sciences"]
 related: ["file-transfer-201"]
@@ -84,3 +87,14 @@ This course focuses on effectively using the Bianca system for sensitive researc
 - Security best practices
 - SLURM configuration examples
 - Software installation tutorials
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-security-sensitive-data">bianca</span>
+<span class="bd-badge bd-badge-data-ai">data-management</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-security-sensitive-data">security</span>
+<span class="bd-badge bd-badge-security-sensitive-data">sensitive-data</span>
+</div>

@@ -2,6 +2,11 @@
 
 Rendered page: https://dianaiusan.github.io/di-training-repo/
 
+## Maintainer Docs
+
+- Repository architecture and rendering: [repo-architecture.md](repo-architecture.md)
+- Content authoring and maintenance workflow: [content-maintenance-guide.md](content-maintenance-guide.md)
+
 ## Collaborator Workflow
 
 Use this workflow whenever you update content in docs/all-training, docs/explore, docs/events, or any generator script under scripts.

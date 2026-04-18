@@ -9,13 +9,11 @@ Explore all available training courses for HPC users.
 
 ## Filter by Tag
 
-- [advanced](#tag-advanced)
 - [ai](#tag-ai)
 - [apptainer](#tag-apptainer)
 - [automation](#tag-automation)
 - [aws](#tag-aws)
 - [azure](#tag-azure)
-- [beginner](#tag-beginner)
 - [benchmarking](#tag-benchmarking)
 - [best-practices](#tag-best-practices)
 - [bianca](#tag-bianca)
@@ -48,7 +46,6 @@ Explore all available training courses for HPC users.
 - [hpc](#tag-hpc)
 - [hybrid](#tag-hybrid)
 - [infrastructure](#tag-infrastructure)
-- [intermediate](#tag-intermediate)
 - [introduction](#tag-introduction)
 - [jax](#tag-jax)
 - [job-arrays](#tag-job-arrays)
@@ -94,13 +91,13 @@ Explore all available training courses for HPC users.
 
 ### Advanced Performance Engineering for HPC
 
-**Level:** Advanced  
+**Level:** Unspecified  
 **Duration:** 5 days
 
 External OLCF course on advanced performance analysis, profiling, and optimization techniques for HPC systems.
 
 **Tags:**
-`performance` `profiling` `optimization` `benchmarking` `advanced` `hpc` `external-resource`
+`performance` `profiling` `optimization` `benchmarking` `hpc` `external-resource`
 
 [View course ->](../all-training/performance-external.md)
 
@@ -108,13 +105,13 @@ External OLCF course on advanced performance analysis, profiling, and optimizati
 
 ### AI and HPC
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 Introduction to deep learning and AI workloads on HPC clusters, covering GPU computing and machine learning frameworks.
 
 **Tags:**
-`ai` `machine-learning` `deep-learning` `gpu` `intermediate` `hpc`
+`ai` `machine-learning` `deep-learning` `gpu` `hpc`
 
 [View course ->](../all-training/ai-hpc.md)
 
@@ -122,13 +119,13 @@ Introduction to deep learning and AI workloads on HPC clusters, covering GPU com
 
 ### An introduction to parallel programming using Message Passing with MPI
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 4 days
 
 Introduction to parallel programming using Message Passing Interface (MPI) for distributed memory computing.
 
 **Tags:**
-`parallel` `mpi` `programming` `distributed-computing` `intermediate` `hpc`
+`parallel` `mpi` `programming` `distributed-computing` `hpc`
 
 [View course ->](../all-training/mpi-intro.md)
 
@@ -150,13 +147,13 @@ Archived example training used for past-event listings and testing.
 
 ### Array computing in C++ using Eigen
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Introduction to high-performance array computing in C++ using the Eigen library for linear algebra.
 
 **Tags:**
-`cpp` `eigen` `linear-algebra` `performance` `intermediate`
+`cpp` `eigen` `linear-algebra` `performance`
 
 [View course ->](../all-training/eigen-cpp.md)
 
@@ -164,13 +161,13 @@ Introduction to high-performance array computing in C++ using the Eigen library 
 
 ### Basic Singularity/Apptainer workshop
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Introduction to containerized software environments using Singularity/Apptainer for reproducible research computing.
 
 **Tags:**
-`containers` `singularity` `apptainer` `software` `beginner` `hpc` `reproducibility`
+`containers` `singularity` `apptainer` `software` `hpc` `reproducibility`
 
 [View course ->](../all-training/singularity-workshop.md)
 
@@ -178,13 +175,13 @@ Introduction to containerized software environments using Singularity/Apptainer 
 
 ### Bianca In-Depth: Improve Your Handling of Sensitive Research Data
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Advanced techniques for using the Bianca system, including terminal login, file transfer, advanced SLURM, and custom software installation.
 
 **Tags:**
-`sensitive-data` `bianca` `security` `hpc` `intermediate` `data-management`
+`sensitive-data` `bianca` `security` `hpc` `data-management`
 
 [View course ->](../all-training/bianca-sensitive-data.md)
 
@@ -192,13 +189,13 @@ Advanced techniques for using the Bianca system, including terminal login, file 
 
 ### Cloud HPC: Integrating Cloud Resources with Traditional HPC
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 Learn to integrate cloud computing resources with traditional HPC systems for enhanced scalability and flexibility.
 
 **Tags:**
-`cloud` `aws` `azure` `hybrid` `scalability` `intermediate` `hpc` `infrastructure`
+`cloud` `aws` `azure` `hybrid` `scalability` `hpc` `infrastructure`
 
 [View course ->](../all-training/cloud-hpc.md)
 
@@ -206,13 +203,13 @@ Learn to integrate cloud computing resources with traditional HPC systems for en
 
 ### Code Review and CI on HPC
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 0.5 day
 
 Branch strategies, pull requests, and continuous integration workflows adapted for HPC and research software projects.
 
 **Tags:**
-`git` `ci-cd` `code-review` `reproducibility` `best-practices` `intermediate`
+`git` `ci-cd` `code-review` `reproducibility` `best-practices`
 
 [View course ->](../all-training/code-review-ci-hpc.md)
 
@@ -234,13 +231,13 @@ Best practices for managing data lifecycle, retention policies, and secure archi
 
 ### Debugging and Profiling Clinic
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 0.5 day
 
 Hands-on troubleshooting and profiling clinic for HPC code — find bugs and bottlenecks before optimising.
 
 **Tags:**
-`debugging` `profiling` `performance` `hpc` `intermediate`
+`debugging` `profiling` `performance` `hpc`
 
 [View course ->](../all-training/debugging-profiling-clinic.md)
 
@@ -248,13 +245,13 @@ Hands-on troubleshooting and profiling clinic for HPC code — find bugs and bot
 
 ### Debugging and Profiling Python on HPC
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Learn to find and fix bugs and performance bottlenecks in Python code running on HPC clusters.
 
 **Tags:**
-`python` `debugging` `profiling` `performance` `hpc` `intermediate`
+`python` `debugging` `profiling` `performance` `hpc`
 
 [View course ->](../all-training/python-debugging.md)
 
@@ -262,13 +259,13 @@ Learn to find and fix bugs and performance bottlenecks in Python code running on
 
 ### Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius
 
-**Level:** Advanced  
+**Level:** Unspecified  
 **Duration:** 2 days
 
 Efficient use of Grace Hopper GPU nodes on Dardel and Arrhenius, covering CUDA optimization and multi-GPU programming.
 
 **Tags:**
-`gpu` `grace-hopper` `performance` `cuda` `advanced` `hpc`
+`gpu` `grace-hopper` `performance` `cuda` `hpc`
 
 [View course ->](../all-training/gpu-nodes.md)
 
@@ -276,13 +273,13 @@ Efficient use of Grace Hopper GPU nodes on Dardel and Arrhenius, covering CUDA o
 
 ### File Transfer 201
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Advanced file transfer techniques for HPC environments, including cluster-to-cluster transfers and large data management.
 
 **Tags:**
-`file-transfer` `data-management` `hpc` `intermediate`
+`file-transfer` `data-management` `hpc`
 
 [View course ->](../all-training/file-transfer-201.md)
 
@@ -290,13 +287,13 @@ Advanced file transfer techniques for HPC environments, including cluster-to-clu
 
 ### GPU Computing with Python: CuPy and JAX
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Use CuPy and JAX to run GPU-accelerated Python code on NAISS systems without writing CUDA kernels.
 
 **Tags:**
-`gpu` `python` `cupy` `jax` `machine-learning` `data-science` `intermediate` `hpc`
+`gpu` `python` `cupy` `jax` `machine-learning` `data-science` `hpc`
 
 [View course ->](../all-training/gpu-python.md)
 
@@ -304,13 +301,13 @@ Use CuPy and JAX to run GPU-accelerated Python code on NAISS systems without wri
 
 ### High-Performance Computing with Julia
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 4 days
 
 Introduction to Julia for high-performance scientific computing, covering performance, parallelism, and the scientific ecosystem.
 
 **Tags:**
-`julia` `performance` `scientific-computing` `parallel` `intermediate`
+`julia` `performance` `scientific-computing` `parallel`
 
 [View course ->](../all-training/julia-hpc.md)
 
@@ -318,13 +315,13 @@ Introduction to Julia for high-performance scientific computing, covering perfor
 
 ### HPC Filesystems and Storage Management
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** half day
 
 Understand HPC storage tiers — home, project, scratch, and archive — and learn best practices for managing data across them.
 
 **Tags:**
-`filesystems` `storage` `data-management` `hpc` `beginner`
+`filesystems` `storage` `data-management` `hpc`
 
 [View course ->](../all-training/filesystems-storage.md)
 
@@ -332,13 +329,13 @@ Understand HPC storage tiers — home, project, scratch, and archive — and lea
 
 ### HPC Performance Analysis and Tuning
 
-**Level:** Advanced  
+**Level:** Unspecified  
 **Duration:** 4 days
 
 Systematic approaches to performance analysis, profiling, and optimization of HPC applications.
 
 **Tags:**
-`performance` `profiling` `optimization` `benchmarking` `advanced` `hpc`
+`performance` `profiling` `optimization` `benchmarking` `hpc`
 
 [View course ->](../all-training/performance-tuning.md)
 
@@ -346,13 +343,13 @@ Systematic approaches to performance analysis, profiling, and optimization of HP
 
 ### Hybrid Parallel Programming with MPI and OpenMP
 
-**Level:** Advanced  
+**Level:** Unspecified  
 **Duration:** 2 days
 
 Combine MPI for distributed memory and OpenMP for shared memory parallelism to fully exploit modern multi-node, multi-core HPC systems.
 
 **Tags:**
-`mpi` `openmp` `parallel` `hybrid` `advanced` `hpc` `performance`
+`mpi` `openmp` `parallel` `hybrid` `hpc` `performance`
 
 [View course ->](../all-training/hybrid-mpi-openmp.md)
 
@@ -360,13 +357,13 @@ Combine MPI for distributed memory and OpenMP for shared memory parallelism to f
 
 ### Intro to HPC
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 2 hours
 
 A first introduction to HPC concepts, cluster usage, and common tools.
 
 **Tags:**
-`introduction` `hpc` `linux` `beginner`
+`introduction` `hpc` `linux`
 
 [View course ->](../all-training/intro.md)
 
@@ -374,13 +371,13 @@ A first introduction to HPC concepts, cluster usage, and common tools.
 
 ### Intro to Python for HPC
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Introductory 1-day course on writing and running Python code on an HPC cluster.
 
 **Tags:**
-`python` `hpc` `programming` `beginner`
+`python` `hpc` `programming`
 
 [View course ->](../all-training/python-hpc-intro.md)
 
@@ -388,13 +385,13 @@ Introductory 1-day course on writing and running Python code on an HPC cluster.
 
 ### Introduction to Parallel Programming with OpenMP
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 External course from the OpenMP ARB on shared memory parallel programming using OpenMP.
 
 **Tags:**
-`parallel` `openmp` `threading` `performance` `intermediate` `hpc` `external-resource`
+`parallel` `openmp` `threading` `performance` `hpc` `external-resource`
 
 [View course ->](../all-training/openmp-external.md)
 
@@ -402,13 +399,13 @@ External course from the OpenMP ARB on shared memory parallel programming using 
 
 ### Introduction to Python and Using Python in an HPC environment
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 4 days
 
 Comprehensive introduction to Python programming and its use in Sweden's academic HPC environment.
 
 **Tags:**
-`python` `hpc` `programming` `beginner`
+`python` `hpc` `programming`
 
 [View course ->](../all-training/python-hpc.md)
 
@@ -416,13 +413,13 @@ Comprehensive introduction to Python programming and its use in Sweden's academi
 
 ### Large Dataset Management for HPC
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Strategies and tools for managing, versioning, and sharing large datasets in HPC and data-intensive research workflows.
 
 **Tags:**
-`data-management` `dvc` `hdf5` `big-data` `reproducibility` `intermediate` `hpc`
+`data-management` `dvc` `hdf5` `big-data` `reproducibility` `hpc`
 
 [View course ->](../all-training/data-management-large.md)
 
@@ -430,13 +427,13 @@ Strategies and tools for managing, versioning, and sharing large datasets in HPC
 
 ### NAISS Introduction training days
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 Introductory course for new NAISS users covering Linux, connecting to clusters, file transfer, software modules, and SLURM.
 
 **Tags:**
-`introduction` `hpc` `linux` `slurm` `beginner`
+`introduction` `hpc` `linux` `slurm`
 
 [View course ->](../all-training/naiss-intro.md)
 
@@ -458,13 +455,13 @@ Learn how to scale Python workflows across HPC clusters using mpi4py.
 
 ### Programming Formalisms
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 5 days
 
 Best practices for developing reliable academic software, covering testing, code quality, and formal methods.
 
 **Tags:**
-`programming` `software-engineering` `testing` `intermediate` `hpc` `best-practices` `reproducibility`
+`programming` `software-engineering` `testing` `hpc` `best-practices` `reproducibility`
 
 [View course ->](../all-training/programming-formalisms.md)
 
@@ -472,13 +469,13 @@ Best practices for developing reliable academic software, covering testing, code
 
 ### R Programming for HPC and Data Analysis
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 Using R for large-scale data analysis and statistical computing on HPC systems, including parallel computing.
 
 **Tags:**
-`r` `statistics` `data-analysis` `parallel` `intermediate` `hpc`
+`r` `statistics` `data-analysis` `parallel` `hpc`
 
 [View course ->](../all-training/r-hpc.md)
 
@@ -486,13 +483,13 @@ Using R for large-scale data analysis and statistical computing on HPC systems, 
 
 ### Scaling Experiments with SLURM Job Arrays
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** half day
 
 Learn to scale parameter sweeps and batch experiments efficiently using SLURM job arrays.
 
 **Tags:**
-`slurm` `job-arrays` `hpc` `automation` `beginner` `intermediate`
+`slurm` `job-arrays` `hpc` `automation`
 
 [View course ->](../all-training/job-arrays.md)
 
@@ -514,13 +511,13 @@ Introduction to scientific data visualization using ParaView, covering data load
 
 ### Scientific Workflow Management on HPC
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 Design and manage reproducible scientific workflows on HPC systems using Nextflow and Snakemake.
 
 **Tags:**
-`workflow` `automation` `reproducibility` `nextflow` `snakemake` `intermediate` `hpc`
+`workflow` `automation` `reproducibility` `nextflow` `snakemake` `hpc`
 
 [View course ->](../all-training/workflow-management.md)
 
@@ -528,13 +525,13 @@ Design and manage reproducible scientific workflows on HPC systems using Nextflo
 
 ### Shared Memory Parallel Programming with OpenMP
 
-**Level:** Intermediate  
+**Level:** Unspecified  
 **Duration:** 3 days
 
 Introduction to shared memory parallel programming using OpenMP for multi-core systems.
 
 **Tags:**
-`parallel` `openmp` `threading` `performance` `intermediate` `hpc`
+`parallel` `openmp` `threading` `performance` `hpc`
 
 [View course ->](../all-training/openmp-intro.md)
 
@@ -542,13 +539,13 @@ Introduction to shared memory parallel programming using OpenMP for multi-core s
 
 ### Software Environment Management on HPC
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Master software modules, Conda, and virtual environments to create reproducible and portable computing environments on HPC systems.
 
 **Tags:**
-`conda` `modules` `environments` `python` `reproducibility` `beginner` `hpc`
+`conda` `modules` `environments` `python` `reproducibility` `hpc`
 
 [View course ->](../all-training/environment-management.md)
 
@@ -556,13 +553,13 @@ Master software modules, Conda, and virtual environments to create reproducible 
 
 ### Version Control and Reproducible Research with Git
 
-**Level:** Beginner  
+**Level:** Unspecified  
 **Duration:** 1 day
 
 Introduction to Git for version control and reproducible research workflows in an HPC context.
 
 **Tags:**
-`git` `version-control` `reproducibility` `best-practices` `beginner`
+`git` `version-control` `reproducibility` `best-practices`
 
 [View course ->](../all-training/git-version-control.md)
 
@@ -570,103 +567,80 @@ Introduction to Git for version control and reproducible research workflows in a
 
 ## By Tag
 
-### Tag: advanced
-
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Advanced)
-- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Advanced)
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
-
----
-
 ### Tag: ai
 
-- [AI and HPC](../all-training/ai-hpc.md) (Intermediate)
+- [AI and HPC](../all-training/ai-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: apptainer
 
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
+- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Unspecified)
 
 ---
 
 ### Tag: automation
 
-- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Beginner)
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
+- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Unspecified)
+- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Unspecified)
 
 ---
 
 ### Tag: aws
 
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: azure
 
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
-
----
-
-### Tag: beginner
-
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
-- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Beginner)
-- [Intro to HPC](../all-training/intro.md) (Beginner)
-- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Beginner)
-- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Beginner)
-- [NAISS Introduction training days](../all-training/naiss-intro.md) (Beginner)
-- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Beginner)
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
-- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Beginner)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: benchmarking
 
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Advanced)
+- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Unspecified)
+- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Unspecified)
 
 ---
 
 ### Tag: best-practices
 
-- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Intermediate)
+- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Unspecified)
 - [Data Retention and Archival Policies for Sensitive Research](../all-training/data-retention.md) (Unspecified)
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
-- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Beginner)
+- [Programming Formalisms](../all-training/programming-formalisms.md) (Unspecified)
+- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Unspecified)
 
 ---
 
 ### Tag: bianca
 
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Intermediate)
+- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Unspecified)
 
 ---
 
 ### Tag: big-data
 
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
+- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Unspecified)
 
 ---
 
 ### Tag: ci-cd
 
-- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Intermediate)
+- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: cloud
 
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: code-review
 
-- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Intermediate)
+- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Unspecified)
 
 ---
 
@@ -678,297 +652,274 @@ Introduction to Git for version control and reproducible research workflows in a
 
 ### Tag: conda
 
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
+- [Software Environment Management on HPC](../all-training/environment-management.md) (Unspecified)
 
 ---
 
 ### Tag: containers
 
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
+- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Unspecified)
 
 ---
 
 ### Tag: cpp
 
-- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Intermediate)
+- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Unspecified)
 
 ---
 
 ### Tag: cuda
 
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Advanced)
+- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Unspecified)
 
 ---
 
 ### Tag: cupy
 
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
 
 ---
 
 ### Tag: data-analysis
 
-- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Intermediate)
+- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Unspecified)
 - [Scientific Visualization with ParaView](../all-training/paraview.md) (Unspecified)
 
 ---
 
 ### Tag: data-management
 
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Intermediate)
+- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Unspecified)
 - [Data Retention and Archival Policies for Sensitive Research](../all-training/data-retention.md) (Unspecified)
-- [File Transfer 201](../all-training/file-transfer-201.md) (Intermediate)
-- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Beginner)
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
+- [File Transfer 201](../all-training/file-transfer-201.md) (Unspecified)
+- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Unspecified)
+- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Unspecified)
 
 ---
 
 ### Tag: data-science
 
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
 
 ---
 
 ### Tag: debugging
 
-- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Intermediate)
-- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Intermediate)
+- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Unspecified)
+- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Unspecified)
 
 ---
 
 ### Tag: deep-learning
 
-- [AI and HPC](../all-training/ai-hpc.md) (Intermediate)
+- [AI and HPC](../all-training/ai-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: distributed-computing
 
-- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Intermediate)
+- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Unspecified)
 
 ---
 
 ### Tag: dvc
 
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
+- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Unspecified)
 
 ---
 
 ### Tag: eigen
 
-- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Intermediate)
+- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Unspecified)
 
 ---
 
 ### Tag: environments
 
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
+- [Software Environment Management on HPC](../all-training/environment-management.md) (Unspecified)
 
 ---
 
 ### Tag: external-resource
 
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
+- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Unspecified)
+- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Unspecified)
 
 ---
 
 ### Tag: file-transfer
 
-- [File Transfer 201](../all-training/file-transfer-201.md) (Intermediate)
+- [File Transfer 201](../all-training/file-transfer-201.md) (Unspecified)
 
 ---
 
 ### Tag: filesystems
 
-- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Beginner)
+- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Unspecified)
 
 ---
 
 ### Tag: git
 
-- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Intermediate)
-- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Beginner)
+- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Unspecified)
+- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Unspecified)
 
 ---
 
 ### Tag: gpu
 
-- [AI and HPC](../all-training/ai-hpc.md) (Intermediate)
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Advanced)
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
+- [AI and HPC](../all-training/ai-hpc.md) (Unspecified)
+- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Unspecified)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
 
 ---
 
 ### Tag: grace-hopper
 
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Advanced)
+- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Unspecified)
 
 ---
 
 ### Tag: hdf5
 
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
+- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Unspecified)
 
 ---
 
 ### Tag: hpc
 
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [AI and HPC](../all-training/ai-hpc.md) (Intermediate)
-- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Intermediate)
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Intermediate)
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
-- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Intermediate)
-- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Intermediate)
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Advanced)
-- [File Transfer 201](../all-training/file-transfer-201.md) (Intermediate)
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
-- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Beginner)
-- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Advanced)
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
-- [Intro to HPC](../all-training/intro.md) (Beginner)
-- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Beginner)
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
-- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Beginner)
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
-- [NAISS Introduction training days](../all-training/naiss-intro.md) (Beginner)
+- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Unspecified)
+- [AI and HPC](../all-training/ai-hpc.md) (Unspecified)
+- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Unspecified)
+- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Unspecified)
+- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Unspecified)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
+- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Unspecified)
+- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Unspecified)
+- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Unspecified)
+- [File Transfer 201](../all-training/file-transfer-201.md) (Unspecified)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
+- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Unspecified)
+- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Unspecified)
+- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Unspecified)
+- [Intro to HPC](../all-training/intro.md) (Unspecified)
+- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Unspecified)
+- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Unspecified)
+- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Unspecified)
+- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Unspecified)
+- [NAISS Introduction training days](../all-training/naiss-intro.md) (Unspecified)
 - [Parallel Python with MPI](../all-training/parallel-python-mpi.md) (Unspecified)
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
-- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Intermediate)
-- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Beginner)
+- [Programming Formalisms](../all-training/programming-formalisms.md) (Unspecified)
+- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Unspecified)
+- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Unspecified)
 - [Scientific Visualization with ParaView](../all-training/paraview.md) (Unspecified)
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
-- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Intermediate)
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
+- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Unspecified)
+- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Unspecified)
+- [Software Environment Management on HPC](../all-training/environment-management.md) (Unspecified)
 
 ---
 
 ### Tag: hybrid
 
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
+- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Unspecified)
 
 ---
 
 ### Tag: infrastructure
 
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
-
----
-
-### Tag: intermediate
-
-- [AI and HPC](../all-training/ai-hpc.md) (Intermediate)
-- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Intermediate)
-- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Intermediate)
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Intermediate)
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
-- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Intermediate)
-- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Intermediate)
-- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Intermediate)
-- [File Transfer 201](../all-training/file-transfer-201.md) (Intermediate)
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
-- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Intermediate)
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
-- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Intermediate)
-- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Beginner)
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
-- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Intermediate)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: introduction
 
-- [Intro to HPC](../all-training/intro.md) (Beginner)
-- [NAISS Introduction training days](../all-training/naiss-intro.md) (Beginner)
+- [Intro to HPC](../all-training/intro.md) (Unspecified)
+- [NAISS Introduction training days](../all-training/naiss-intro.md) (Unspecified)
 
 ---
 
 ### Tag: jax
 
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
 
 ---
 
 ### Tag: job-arrays
 
-- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Beginner)
+- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Unspecified)
 
 ---
 
 ### Tag: julia
 
-- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Intermediate)
+- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: linear-algebra
 
-- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Intermediate)
+- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Unspecified)
 
 ---
 
 ### Tag: linux
 
-- [Intro to HPC](../all-training/intro.md) (Beginner)
-- [NAISS Introduction training days](../all-training/naiss-intro.md) (Beginner)
+- [Intro to HPC](../all-training/intro.md) (Unspecified)
+- [NAISS Introduction training days](../all-training/naiss-intro.md) (Unspecified)
 
 ---
 
 ### Tag: machine-learning
 
-- [AI and HPC](../all-training/ai-hpc.md) (Intermediate)
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
+- [AI and HPC](../all-training/ai-hpc.md) (Unspecified)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
 
 ---
 
 ### Tag: modules
 
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
+- [Software Environment Management on HPC](../all-training/environment-management.md) (Unspecified)
 
 ---
 
 ### Tag: mpi
 
-- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Intermediate)
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
+- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Unspecified)
+- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Unspecified)
 - [Parallel Python with MPI](../all-training/parallel-python-mpi.md) (Unspecified)
 
 ---
 
 ### Tag: nextflow
 
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
+- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Unspecified)
 
 ---
 
 ### Tag: openmp
 
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
-- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Intermediate)
+- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Unspecified)
+- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Unspecified)
+- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Unspecified)
 
 ---
 
 ### Tag: optimization
 
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Advanced)
+- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Unspecified)
+- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Unspecified)
 
 ---
 
 ### Tag: parallel
 
-- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Intermediate)
-- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Intermediate)
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
-- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Intermediate)
-- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Intermediate)
+- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Unspecified)
+- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Unspecified)
+- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Unspecified)
+- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Unspecified)
+- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Unspecified)
+- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Unspecified)
 
 ---
 
@@ -992,152 +943,152 @@ Introduction to Git for version control and reproducible research workflows in a
 
 ### Tag: performance
 
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Intermediate)
-- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Intermediate)
-- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Intermediate)
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Advanced)
-- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Intermediate)
-- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Advanced)
-- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Advanced)
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
-- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Intermediate)
+- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Unspecified)
+- [Array computing in C++ using Eigen](../all-training/eigen-cpp.md) (Unspecified)
+- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Unspecified)
+- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Unspecified)
+- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../all-training/gpu-nodes.md) (Unspecified)
+- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Unspecified)
+- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Unspecified)
+- [Hybrid Parallel Programming with MPI and OpenMP](../all-training/hybrid-mpi-openmp.md) (Unspecified)
+- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Unspecified)
+- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Unspecified)
 
 ---
 
 ### Tag: profiling
 
-- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Advanced)
-- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Intermediate)
-- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Intermediate)
-- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Advanced)
+- [Advanced Performance Engineering for HPC](../all-training/performance-external.md) (Unspecified)
+- [Debugging and Profiling Clinic](../all-training/debugging-profiling-clinic.md) (Unspecified)
+- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Unspecified)
+- [HPC Performance Analysis and Tuning](../all-training/performance-tuning.md) (Unspecified)
 
 ---
 
 ### Tag: programming
 
-- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Intermediate)
-- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Beginner)
-- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Beginner)
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
+- [An introduction to parallel programming using Message Passing with MPI](../all-training/mpi-intro.md) (Unspecified)
+- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Unspecified)
+- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Unspecified)
+- [Programming Formalisms](../all-training/programming-formalisms.md) (Unspecified)
 
 ---
 
 ### Tag: python
 
-- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Intermediate)
-- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Intermediate)
-- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Beginner)
-- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Beginner)
+- [Debugging and Profiling Python on HPC](../all-training/python-debugging.md) (Unspecified)
+- [GPU Computing with Python: CuPy and JAX](../all-training/gpu-python.md) (Unspecified)
+- [Intro to Python for HPC](../all-training/python-hpc-intro.md) (Unspecified)
+- [Introduction to Python and Using Python in an HPC environment](../all-training/python-hpc.md) (Unspecified)
 - [Parallel Python with MPI](../all-training/parallel-python-mpi.md) (Unspecified)
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
+- [Software Environment Management on HPC](../all-training/environment-management.md) (Unspecified)
 
 ---
 
 ### Tag: r
 
-- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Intermediate)
+- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: reproducibility
 
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
-- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Intermediate)
-- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Intermediate)
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
-- [Software Environment Management on HPC](../all-training/environment-management.md) (Beginner)
-- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Beginner)
+- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Unspecified)
+- [Code Review and CI on HPC](../all-training/code-review-ci-hpc.md) (Unspecified)
+- [Large Dataset Management for HPC](../all-training/data-management-large.md) (Unspecified)
+- [Programming Formalisms](../all-training/programming-formalisms.md) (Unspecified)
+- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Unspecified)
+- [Software Environment Management on HPC](../all-training/environment-management.md) (Unspecified)
+- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Unspecified)
 
 ---
 
 ### Tag: scalability
 
-- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Intermediate)
+- [Cloud HPC: Integrating Cloud Resources with Traditional HPC](../all-training/cloud-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: scientific-computing
 
-- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Intermediate)
+- [High-Performance Computing with Julia](../all-training/julia-hpc.md) (Unspecified)
 - [Scientific Visualization with ParaView](../all-training/paraview.md) (Unspecified)
 
 ---
 
 ### Tag: security
 
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Intermediate)
+- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Unspecified)
 
 ---
 
 ### Tag: sensitive-data
 
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Intermediate)
+- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../all-training/bianca-sensitive-data.md) (Unspecified)
 - [Data Retention and Archival Policies for Sensitive Research](../all-training/data-retention.md) (Unspecified)
 
 ---
 
 ### Tag: singularity
 
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
+- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Unspecified)
 
 ---
 
 ### Tag: slurm
 
-- [NAISS Introduction training days](../all-training/naiss-intro.md) (Beginner)
+- [NAISS Introduction training days](../all-training/naiss-intro.md) (Unspecified)
 - [Parallel Python with MPI](../all-training/parallel-python-mpi.md) (Unspecified)
-- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Beginner)
+- [Scaling Experiments with SLURM Job Arrays](../all-training/job-arrays.md) (Unspecified)
 
 ---
 
 ### Tag: snakemake
 
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
+- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Unspecified)
 
 ---
 
 ### Tag: software
 
-- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Beginner)
+- [Basic Singularity/Apptainer workshop](../all-training/singularity-workshop.md) (Unspecified)
 
 ---
 
 ### Tag: software-engineering
 
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
+- [Programming Formalisms](../all-training/programming-formalisms.md) (Unspecified)
 
 ---
 
 ### Tag: statistics
 
-- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Intermediate)
+- [R Programming for HPC and Data Analysis](../all-training/r-hpc.md) (Unspecified)
 
 ---
 
 ### Tag: storage
 
-- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Beginner)
+- [HPC Filesystems and Storage Management](../all-training/filesystems-storage.md) (Unspecified)
 
 ---
 
 ### Tag: testing
 
-- [Programming Formalisms](../all-training/programming-formalisms.md) (Intermediate)
+- [Programming Formalisms](../all-training/programming-formalisms.md) (Unspecified)
 
 ---
 
 ### Tag: threading
 
-- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Intermediate)
-- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Intermediate)
+- [Introduction to Parallel Programming with OpenMP](../all-training/openmp-external.md) (Unspecified)
+- [Shared Memory Parallel Programming with OpenMP](../all-training/openmp-intro.md) (Unspecified)
 
 ---
 
 ### Tag: version-control
 
-- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Beginner)
+- [Version Control and Reproducible Research with Git](../all-training/git-version-control.md) (Unspecified)
 
 ---
 
@@ -1149,7 +1100,7 @@ Introduction to Git for version control and reproducible research workflows in a
 
 ### Tag: workflow
 
-- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Intermediate)
+- [Scientific Workflow Management on HPC](../all-training/workflow-management.md) (Unspecified)
 
 ---
 

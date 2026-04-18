@@ -4,10 +4,13 @@ slug: "file-transfer-201"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "intermediate"
+start_date: "2026-05-11"
+end_date: "2026-05-11"
 short_description: "Advanced file transfer techniques for HPC environments, including cluster-to-cluster transfers and large data management."
 registration_url: ""
 
-tags: ["file-transfer", "data-management", "hpc", "intermediate"]
+tags: ["file-transfer", "data-management", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "big-data"]
 related: ["bianca-sensitive-data", "workflow-management"]
@@ -75,6 +78,15 @@ Advanced file transfer techniques for HPC environments, including cluster-to-clu
 - Transfer scripts and examples
 - Performance benchmarking tools
 - Security best practices guide
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-data-ai">data-management</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">file-transfer</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

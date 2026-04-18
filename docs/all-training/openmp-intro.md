@@ -4,10 +4,13 @@ slug: "openmp-intro"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "3 days"
+level: "intermediate"
+start_date: ""
+end_date: ""
 short_description: "Introduction to shared memory parallel programming using OpenMP for multi-core systems."
 registration_url: ""
 
-tags: ["parallel", "openmp", "threading", "performance", "intermediate", "hpc"]
+tags: ["parallel", "openmp", "threading", "performance", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc", "computational-science"]
 related: ["mpi-intro", "performance-tuning"]
@@ -92,6 +95,17 @@ This course provides a comprehensive introduction to shared memory parallel prog
 - [MPI Introduction](mpi-intro.md) - Distributed memory parallelism
 <!-- - [Hybrid Programming with OpenMP and MPI](hybrid-programming.md) - Combined approaches -->
 - [Performance Tuning](performance-tuning.md) - Advanced optimization techniques
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-parallel-performance">openmp</span>
+<span class="bd-badge bd-badge-parallel-performance">parallel</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+<span class="bd-badge bd-badge-parallel-performance">threading</span>
+</div>
 
 <!-- GENERATED:bundle-links:start -->
 ## Part of bundles

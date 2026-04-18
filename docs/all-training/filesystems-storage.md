@@ -4,10 +4,13 @@ slug: "filesystems-storage"  # Must match the file name without .md
 status: "upcoming"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "half day"
+level: "beginner"
+start_date: ""
+end_date: ""
 short_description: "Understand HPC storage tiers — home, project, scratch, and archive — and learn best practices for managing data across them."
 registration_url: ""
 
-tags: ["filesystems", "storage", "data-management", "hpc", "beginner"]
+tags: ["filesystems", "storage", "data-management", "hpc"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["general-hpc"]
 related: ["file-transfer-201", "data-management-large", "workflow-management"]
@@ -53,3 +56,13 @@ Links to slides, exercises, recordings, etc.
 
 - [File Transfer 201](file-transfer-201.md)
 - [Scientific Workflow Management on HPC](workflow-management.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-beginner">beginner</span>
+<span class="bd-badge bd-badge-data-ai">data-management</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">filesystems</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">hpc</span>
+<span class="bd-badge bd-badge-hpc-infrastructure">storage</span>
+</div>

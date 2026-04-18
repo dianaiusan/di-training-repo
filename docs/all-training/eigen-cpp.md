@@ -4,10 +4,13 @@ slug: "eigen-cpp"  # Must match the file name without .md
 status: "past"  # Options: upcoming, ongoing, past, cancelled
 format: "online"  # Options: online, on-site, hybrid, self-study
 duration: "1 day"
+level: "intermediate"
+start_date: "2026-03-05"
+end_date: "2026-03-05"
 short_description: "Introduction to high-performance array computing in C++ using the Eigen library for linear algebra."
 registration_url: ""
 
-tags: ["cpp", "eigen", "linear-algebra", "performance", "intermediate"]
+tags: ["cpp", "eigen", "linear-algebra", "performance"]
 prerequisites: ["naiss-intro"]
 scientific_domains: ["computational-physics", "computational-chemistry", "engineering", "machine-learning"]
 related: ["mpi-intro", "openmp-intro", "performance-tuning"]
@@ -78,3 +81,13 @@ Self-study resources will be added when available.
 
 - [MPI Programming](mpi-intro.md)
 - [Performance Tuning](performance-tuning.md)
+
+## Tags
+
+<div class="tag-list">
+<span class="diff-badge diff-intermediate">intermediate</span>
+<span class="bd-badge bd-badge-software-development">cpp</span>
+<span class="bd-badge bd-badge-software-development">eigen</span>
+<span class="bd-badge bd-badge-domains-visualization">linear-algebra</span>
+<span class="bd-badge bd-badge-parallel-performance">performance</span>
+</div>
