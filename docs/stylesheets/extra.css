@@ -37,6 +37,11 @@ a:active {
   --clr-accent:         #2e5fa3;
   --clr-accent-bg:      rgba(46, 95, 163, 0.08);
 
+  /* Shared overview-card hover pattern */
+  --ov-card-hover-translate: -5px;
+  --ov-card-hover-bg: var(--clr-accent-bg);
+  --ov-card-hover-shadow: 0 14px 28px var(--clr-shadow-lg);
+
   /* Category badge palette */
   --clr-cat-hpc:         #2e5fa3;  /* steel blue        */
   --clr-cat-parallel:    #1e6b5e;  /* dark teal         */
@@ -221,13 +226,15 @@ a:active {
   border-radius: 10px;
   padding: 1rem;
   background: var(--clr-surface);
-  transition: transform 170ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  transition: transform 170ms ease, box-shadow 200ms ease, border-color 200ms ease,
+    background-color 200ms ease;
 }
 
 .bd-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(var(--ov-card-hover-translate));
   border-color: var(--clr-accent);
-  box-shadow: 0 10px 20px var(--clr-shadow);
+  background: var(--ov-card-hover-bg);
+  box-shadow: var(--ov-card-hover-shadow);
 }
 
 .bd-card h3 {
@@ -241,19 +248,33 @@ a:active {
   color: var(--clr-text-secondary);
 }
 
-.bd-card-cta {
-  margin-top: 0.75rem;
-  font-weight: 700;
+.bd-card-link,
+.bd-card-link:visited {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.bd-card-link:visited h3,
+.bd-card-link:visited p {
+  color: inherit;
+}
+
+.bd-card-link:hover,
+.bd-card-link:focus,
+.bd-card-link:active {
+  text-decoration: none;
+}
+
+.bd-card-link .bd-card {
+  height: 100%;
 }
 
 .bd-card a,
 .bd-card a:visited {
   color: var(--clr-accent);
   text-decoration: none;
-}
-
-.bd-card:hover a {
-  text-decoration: underline;
 }
 
 @media (max-width: 640px) {
@@ -291,16 +312,28 @@ a:active {
 }
 
 .lp-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(var(--ov-card-hover-translate));
   border-color: var(--clr-accent);
-  background: var(--clr-accent-bg);
-  box-shadow: 0 14px 28px var(--clr-shadow-lg);
+  background: var(--ov-card-hover-bg);
+  box-shadow: var(--ov-card-hover-shadow);
 }
 
 .lp-card-icon {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   color: var(--clr-text-primary);
+}
+
+.lp-card-icon-svg {
+  width: 1.4em;
+  height: 1.4em;
+  vertical-align: middle;
+}
+
+.lp-related-icon-svg {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
 }
 
 .lp-card-title {
@@ -316,11 +349,6 @@ a:active {
   color: var(--clr-text-muted);
 }
 
-.lp-card-cta {
-  margin: 1rem 0 0 0;
-  font-weight: 700;
-}
-
 .lp-card a,
 .lp-card a:visited {
   color: var(--clr-accent);
@@ -334,6 +362,11 @@ a:active {
   text-decoration: none;
 }
 
+.lp-card-link:visited h3,
+.lp-card-link:visited p {
+  color: inherit;
+}
+
 .lp-card-link:hover,
 .lp-card-link:focus,
 .lp-card-link:active {
@@ -342,14 +375,6 @@ a:active {
 
 .lp-card-link .lp-card {
   height: 100%;
-}
-
-.lp-card-cta a {
-  text-decoration: none;
-}
-
-.lp-card:hover .lp-card-cta a {
-  text-decoration: underline;
 }
 
 @media (max-width: 640px) {
@@ -480,16 +505,22 @@ a:active {
 }
 
 .tg-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(var(--ov-card-hover-translate));
   border-color: var(--clr-accent);
-  background: var(--clr-accent-bg);
-  box-shadow: 0 14px 28px var(--clr-shadow-lg);
+  background: var(--ov-card-hover-bg);
+  box-shadow: var(--ov-card-hover-shadow);
 }
 
 .tg-card-icon {
   font-size: 1.45rem;
   line-height: 1;
   margin-bottom: 0.55rem;
+}
+
+.tg-card-icon-svg {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
 }
 
 .home-card-icon-svg {
@@ -550,22 +581,9 @@ a:active {
   color: var(--clr-text-muted);
 }
 
-.tg-card-cta {
-  margin: 0.75rem 0 0 0;
-  font-weight: 700;
-}
-
 .tg-card a,
 .tg-card a:visited {
   color: var(--clr-accent);
-}
-
-.tg-card-cta a {
-  text-decoration: none;
-}
-
-.tg-card:hover .tg-card-cta a {
-  text-decoration: underline;
 }
 
 @media (max-width: 640px) {
@@ -587,7 +605,7 @@ a:active {
 }
 
 .tag-page-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .tag-grid {
@@ -638,7 +656,7 @@ a:active {
 }
 
 .tag-card:hover .tag-course-link {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--clr-accent);
 }
 
@@ -677,16 +695,22 @@ a:active {
 }
 
 .sd-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(var(--ov-card-hover-translate));
   border-color: var(--clr-accent);
-  background: var(--clr-accent-bg);
-  box-shadow: 0 14px 28px var(--clr-shadow-lg);
+  background: var(--ov-card-hover-bg);
+  box-shadow: var(--ov-card-hover-shadow);
 }
 
 .sd-card-icon {
   font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 0.5rem;
+}
+
+.sd-card-icon-svg {
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: middle;
 }
 
 .sd-card-title {
@@ -699,11 +723,6 @@ a:active {
   margin: 0.35rem 0;
   font-size: 0.82rem;
   color: var(--clr-text-muted);
-}
-
-.sd-card-cta {
-  margin: 0.75rem 0 0 0;
-  font-weight: 700;
 }
 
 .sd-card a,
@@ -719,6 +738,11 @@ a:active {
   text-decoration: none;
 }
 
+.sd-card-link:visited h3,
+.sd-card-link:visited p {
+  color: inherit;
+}
+
 .sd-card-link:hover,
 .sd-card-link:focus,
 .sd-card-link:active {
@@ -727,14 +751,6 @@ a:active {
 
 .sd-card-link .sd-card {
   height: 100%;
-}
-
-.sd-card-cta a {
-  text-decoration: none;
-}
-
-.sd-card:hover .sd-card-cta a {
-  text-decoration: underline;
 }
 
 @media (max-width: 640px) {
@@ -802,7 +818,7 @@ a:active {
 }
 
 .lp-related-card:hover a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (max-width: 640px) {
@@ -892,7 +908,7 @@ a:active {
 
 .ev-card:hover .ev-card-title a {
   color: var(--clr-accent);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .ev-card-meta {

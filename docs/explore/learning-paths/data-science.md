@@ -77,14 +77,14 @@ A path for researchers and analysts who need scalable data analysis, AI, and rep
 <div class="lp-related-grid">
 <div class="lp-related-card">
   <div class="lp-related-head">
-    <span class="lp-related-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sprout" viewBox="0 0 24 24" style="width: 1.4em; height: 1.4em; vertical-align: middle;"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4M5 21h14"/></svg></span>
+    <span class="lp-related-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sprout lp-related-icon-svg" viewBox="0 0 24 24"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4M5 21h14"/></svg></span>
     <p class="lp-related-title"><a href="../beginner/">Beginner HPC Path</a></p>
   </div>
   <p class="lp-related-desc">A structured introduction to practical HPC usage, from first login to reliable day-to-day workflows.</p>
 </div>
 <div class="lp-related-card">
   <div class="lp-related-head">
-    <span class="lp-related-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-dna" viewBox="0 0 24 24" style="width: 1.4em; height: 1.4em; vertical-align: middle;"><path d="m10 16 1.5 1.5M14 8l-1.5-1.5M15 2c-1.798 1.998-2.518 3.995-2.807 5.993M16.5 10.5l1 1M17 6l-2.891-2.891M2 15c6.667-6 13.333 0 20-6M20 9l.891.891M3.109 14.109 4 15M6.5 12.5l1 1M7 18l2.891 2.891M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/></svg></span>
+    <span class="lp-related-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-dna lp-related-icon-svg" viewBox="0 0 24 24"><path d="m10 16 1.5 1.5M14 8l-1.5-1.5M15 2c-1.798 1.998-2.518 3.995-2.807 5.993M16.5 10.5l1 1M17 6l-2.891-2.891M2 15c6.667-6 13.333 0 20-6M20 9l.891.891M3.109 14.109 4 15M6.5 12.5l1 1M7 18l2.891 2.891M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/></svg></span>
     <p class="lp-related-title"><a href="../bioinformatics/">Bioinformatics HPC Path</a></p>
   </div>
   <p class="lp-related-desc">A practical pathway for bioinformatics teams working with sensitive and large datasets, reproducible pipelines, and HPC resources.</p>
