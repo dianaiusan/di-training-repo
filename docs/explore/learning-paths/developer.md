@@ -33,38 +33,38 @@ A deep technical path for developers building scalable, high-performance, and re
   <div class="lp-phase">
     <div class="lp-phase-header">Foundation</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../all-training/programming-formalisms/">Programming Formalisms</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../all-training/git-version-control/">Version Control and Reproducible Research with Git</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../all-training/environment-management/">Software Environment Management on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../explore/all-training/programming-formalisms/">Programming Formalisms</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../explore/all-training/git-version-control/">Version Control and Reproducible Research with Git</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../explore/all-training/environment-management/">Software Environment Management on HPC</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Parallel Programming</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../all-training/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../explore/all-training/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../explore/all-training/openmp-intro/">Shared Memory Parallel Programming with OpenMP</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../explore/all-training/hybrid-mpi-openmp/">Hybrid Parallel Programming with MPI and OpenMP</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../explore/all-training/parallel-python-mpi/">Parallel Python with MPI</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Performance</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">9</span><a href="../../../all-training/performance-external/">Advanced Performance Engineering for HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">10</span><a href="../../../all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../explore/all-training/performance-tuning/">HPC Performance Analysis and Tuning</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">9</span><a href="../../../explore/all-training/performance-external/">Advanced Performance Engineering for HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">10</span><a href="../../../explore/all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Production Workflows</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">11</span><a href="../../../all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">12</span><a href="../../../all-training/workflow-management/">Scientific Workflow Management on HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">13</span><a href="../../../all-training/python-debugging/">Debugging and Profiling Python on HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">14</span><a href="../../../all-training/job-arrays/">Scaling Experiments with SLURM Job Arrays</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">11</span><a href="../../../explore/all-training/cloud-hpc/">Cloud HPC: Integrating Cloud Resources with Traditional HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">12</span><a href="../../../explore/all-training/workflow-management/">Scientific Workflow Management on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">13</span><a href="../../../explore/all-training/python-debugging/">Debugging and Profiling Python on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">14</span><a href="../../../explore/all-training/job-arrays/">Scaling Experiments with SLURM Job Arrays</a></div>
     </div>
   </div>
 </div>

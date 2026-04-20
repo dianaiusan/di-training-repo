@@ -30,7 +30,7 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">1</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/naiss-intro/">Orientation and onboarding</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/naiss-intro/">Orientation and onboarding</a></p>
       <p class="bd-meta">NAISS Introduction training days</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -51,7 +51,7 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">3</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/file-transfer-201/">Login and file transfer</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/file-transfer-201/">Login and file transfer</a></p>
       <p class="bd-meta">File Transfer 201</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -62,7 +62,7 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">4</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/environment-management/">Module system</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/environment-management/">Module system</a></p>
       <p class="bd-meta">Software Environment Management on HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -73,7 +73,7 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">5</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/job-arrays/">SLURM basics</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/job-arrays/">SLURM basics</a></p>
       <p class="bd-meta">Scaling Experiments with SLURM Job Arrays</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       

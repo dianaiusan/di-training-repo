@@ -12,20 +12,20 @@ Secure computing and sensitive data handling.
 <div class="tag-card">
   <h4 class="tag-card-name">Bianca</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
+    <li><a class="tag-course-link" href="../../../explore/all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
   </ul>
 </div>
 <div class="tag-card">
   <h4 class="tag-card-name">Security</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
+    <li><a class="tag-course-link" href="../../../explore/all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
   </ul>
 </div>
 <div class="tag-card">
   <h4 class="tag-card-name">Sensitive Data</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
-    <li><a class="tag-course-link" href="../../../all-training/data-retention/">Data Retention and Archival Policies for Sensitive Research</a></li>
+    <li><a class="tag-course-link" href="../../../explore/all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></li>
+    <li><a class="tag-course-link" href="../../../explore/all-training/data-retention/">Data Retention and Archival Policies for Sensitive Research</a></li>
   </ul>
 </div>
 </div>

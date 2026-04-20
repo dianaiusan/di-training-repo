@@ -29,34 +29,34 @@ A structured introduction to practical HPC usage, from first login to reliable d
   <div class="lp-phase">
     <div class="lp-phase-header">Foundation</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../all-training/naiss-intro/">NAISS Introduction training days</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../all-training/intro/">Intro to HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../explore/all-training/naiss-intro/">NAISS Introduction training days</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../explore/all-training/intro/">Intro to HPC</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Programming</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../all-training/python-hpc-intro/">Intro to Python for HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../all-training/python-hpc/">Introduction to Python and Using Python in an HPC environment</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../all-training/environment-management/">Software Environment Management on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../explore/all-training/python-hpc-intro/">Intro to Python for HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../explore/all-training/python-hpc/">Introduction to Python and Using Python in an HPC environment</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../explore/all-training/environment-management/">Software Environment Management on HPC</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Operations</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../all-training/file-transfer-201/">File Transfer 201</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../all-training/job-arrays/">Scaling Experiments with SLURM Job Arrays</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">9</span><a href="../../../all-training/git-version-control/">Version Control and Reproducible Research with Git</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../explore/all-training/file-transfer-201/">File Transfer 201</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../explore/all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../explore/all-training/job-arrays/">Scaling Experiments with SLURM Job Arrays</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">9</span><a href="../../../explore/all-training/git-version-control/">Version Control and Reproducible Research with Git</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Next Step</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">10</span><a href="../../../all-training/singularity-workshop/">Basic Singularity/Apptainer workshop</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">10</span><a href="../../../explore/all-training/singularity-workshop/">Basic Singularity/Apptainer workshop</a></div>
     </div>
   </div>
 </div>

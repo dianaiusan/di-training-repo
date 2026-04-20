@@ -13,7 +13,7 @@ Explore training tags grouped into broader categories:
   <h3 class="tg-card-title">HPC & Infrastructure</h3>
   <p class="tg-card-desc">Systems, platforms, environments, and operations.</p>
   <p class="tg-card-meta">17 tags</p>
-  <p class="tg-card-meta">48 course references</p>
+  <p class="tg-card-meta">50 course references</p>
   <p class="tg-card-cta"><a href="./hpc-infrastructure/">Explore category →</a></p>
 </div>
 <div class="tg-card">
@@ -21,7 +21,7 @@ Explore training tags grouped into broader categories:
   <h3 class="tg-card-title">Parallel & Performance</h3>
   <p class="tg-card-desc">Scaling, profiling, and high-performance programming.</p>
   <p class="tg-card-meta">12 tags</p>
-  <p class="tg-card-meta">37 course references</p>
+  <p class="tg-card-meta">39 course references</p>
   <p class="tg-card-cta"><a href="./parallel-performance/">Explore category →</a></p>
 </div>
 <div class="tg-card">
@@ -37,7 +37,7 @@ Explore training tags grouped into broader categories:
   <h3 class="tg-card-title">Data & AI</h3>
   <p class="tg-card-desc">Data workflows, machine learning, and analytics.</p>
   <p class="tg-card-meta">9 tags</p>
-  <p class="tg-card-meta">15 course references</p>
+  <p class="tg-card-meta">17 course references</p>
   <p class="tg-card-cta"><a href="./data-ai/">Explore category →</a></p>
 </div>
 <div class="tg-card">
@@ -45,7 +45,7 @@ Explore training tags grouped into broader categories:
   <h3 class="tg-card-title">Software Development</h3>
   <p class="tg-card-desc">Languages, tooling, testing, and engineering practice.</p>
   <p class="tg-card-meta">14 tags</p>
-  <p class="tg-card-meta">33 course references</p>
+  <p class="tg-card-meta">35 course references</p>
   <p class="tg-card-cta"><a href="./software-development/">Explore category →</a></p>
 </div>
 <div class="tg-card">
@@ -84,8 +84,8 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-tag tg-card-icon-svg" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></div>
   <h3 class="tg-card-title">Other</h3>
   <p class="tg-card-desc">Additional tags not yet categorized.</p>
-  <p class="tg-card-meta">4 tags</p>
-  <p class="tg-card-meta">4 course references</p>
+  <p class="tg-card-meta">7 tags</p>
+  <p class="tg-card-meta">7 course references</p>
   <p class="tg-card-cta"><a href="./other/">Explore category →</a></p>
 </div>
 </div>

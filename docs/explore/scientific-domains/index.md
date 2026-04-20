@@ -75,14 +75,14 @@ Explore training courses organized by scientific domain:
   <div class="sd-card">
     <div class="sd-card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-code-2 sd-card-icon-svg" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg></div>
     <h3 class="sd-card-title">Computational Science</h3>
-    <p class="sd-card-meta">13 courses</p>
+    <p class="sd-card-meta">15 courses</p>
   </div>
 </a>
 <a class="sd-card-link" href="./data-science/">
   <div class="sd-card">
     <div class="sd-card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-chart-line sd-card-icon-svg" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
     <h3 class="sd-card-title">Data Science</h3>
-    <p class="sd-card-meta">10 courses</p>
+    <p class="sd-card-meta">11 courses</p>
   </div>
 </a>
 <a class="sd-card-link" href="./engineering/">
@@ -96,7 +96,7 @@ Explore training courses organized by scientific domain:
   <div class="sd-card">
     <div class="sd-card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-computer sd-card-icon-svg" viewBox="0 0 24 24"><rect width="14" height="8" x="5" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 18h2"/><path d="M12 18h6"/></svg></div>
     <h3 class="sd-card-title">General HPC</h3>
-    <p class="sd-card-meta">23 courses</p>
+    <p class="sd-card-meta">25 courses</p>
   </div>
 </a>
 <a class="sd-card-link" href="./genomics/">

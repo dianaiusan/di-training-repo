@@ -26,26 +26,26 @@ A practical route for working safely with sensitive data and secure HPC workflow
   <div class="lp-phase">
     <div class="lp-phase-header">Foundation</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../all-training/intro/">Intro to HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../all-training/naiss-intro/">NAISS Introduction training days</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../explore/all-training/intro/">Intro to HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../explore/all-training/naiss-intro/">NAISS Introduction training days</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Secure Workflow</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../all-training/environment-management/">Software Environment Management on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../explore/all-training/bianca-sensitive-data/">Bianca In-Depth: Improve Your Handling of Sensitive Research Data</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../explore/all-training/environment-management/">Software Environment Management on HPC</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Operations</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../all-training/file-transfer-201/">File Transfer 201</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../all-training/git-version-control/">Version Control and Reproducible Research with Git</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../all-training/data-retention/">Data Retention and Archival Policies for Sensitive Research</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../explore/all-training/file-transfer-201/">File Transfer 201</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../explore/all-training/filesystems-storage/">HPC Filesystems and Storage Management</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../explore/all-training/git-version-control/">Version Control and Reproducible Research with Git</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../explore/all-training/data-retention/">Data Retention and Archival Policies for Sensitive Research</a></div>
     </div>
   </div>
 </div>

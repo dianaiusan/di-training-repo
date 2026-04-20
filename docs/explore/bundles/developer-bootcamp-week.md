@@ -37,7 +37,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">1</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/programming-formalisms/">Software engineering foundations</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/programming-formalisms/">Software engineering foundations</a></p>
       <p class="bd-meta">Programming Formalisms</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -48,7 +48,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">2</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/git-version-control/">Git and reproducible collaboration</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/git-version-control/">Git and reproducible collaboration</a></p>
       <p class="bd-meta">Version Control and Reproducible Research with Git</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -59,7 +59,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">3</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/code-review-ci-hpc/">Code review and CI on HPC</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/code-review-ci-hpc/">Code review and CI on HPC</a></p>
       <p class="bd-meta">Code Review and CI on HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -70,7 +70,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">4</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/mpi-intro/">Distributed-memory programming</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/mpi-intro/">Distributed-memory programming</a></p>
       <p class="bd-meta">An introduction to parallel programming using Message Passing with MPI</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -81,7 +81,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">5</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/openmp-intro/">Shared-memory programming</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/openmp-intro/">Shared-memory programming</a></p>
       <p class="bd-meta">Shared Memory Parallel Programming with OpenMP</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -92,7 +92,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">6</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/hybrid-mpi-openmp/">Hybrid MPI + OpenMP</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/hybrid-mpi-openmp/">Hybrid MPI + OpenMP</a></p>
       <p class="bd-meta">Hybrid Parallel Programming with MPI and OpenMP</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -103,7 +103,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">7</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/debugging-profiling-clinic/">Debugging and profiling clinic</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/debugging-profiling-clinic/">Debugging and profiling clinic</a></p>
       <p class="bd-meta">Debugging and Profiling Clinic</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -114,7 +114,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">8</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/performance-tuning/">Performance analysis and tuning</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/performance-tuning/">Performance analysis and tuning</a></p>
       <p class="bd-meta">HPC Performance Analysis and Tuning</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -125,7 +125,7 @@ An intensive developer-focused week covering reproducible software engineering, 
   <div class="bd-item-head">
     <span class="bd-num">9</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/workflow-management/">Production workflows</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/workflow-management/">Production workflows</a></p>
       <p class="bd-meta">Scientific Workflow Management on HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       

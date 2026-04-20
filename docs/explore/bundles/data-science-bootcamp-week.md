@@ -34,7 +34,7 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">1</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/python-hpc-intro/">Python for HPC essentials</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/python-hpc-intro/">Python for HPC essentials</a></p>
       <p class="bd-meta">Intro to Python for HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -45,7 +45,7 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">2</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/data-management-large/">Managing large datasets on HPC</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/data-management-large/">Managing large datasets on HPC</a></p>
       <p class="bd-meta">Large Dataset Management for HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -66,7 +66,7 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">4</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/parallel-python-mpi/">Parallel Python with MPI</a></p>
       
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -77,7 +77,7 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">5</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/gpu-python/">GPU-accelerated Python</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/gpu-python/">GPU-accelerated Python</a></p>
       <p class="bd-meta">GPU Computing with Python: CuPy and JAX</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -88,7 +88,7 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">6</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/ai-hpc/">Machine learning and deep learning on HPC</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/ai-hpc/">Machine learning and deep learning on HPC</a></p>
       <p class="bd-meta">AI and HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       
@@ -99,7 +99,7 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">7</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../all-training/workflow-management/">Production data pipelines</a></p>
+      <p class="bd-title"><a href="../../../explore/all-training/workflow-management/">Production data pipelines</a></p>
       <p class="bd-meta">Scientific Workflow Management on HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
       

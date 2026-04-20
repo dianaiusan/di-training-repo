@@ -7,8 +7,8 @@ __pycache__/
 site/
 .cache/
 
-# Scripts
-scripts/
+# DI's planning documents
+di-planning/
 
 # macOS
 .DS_Store

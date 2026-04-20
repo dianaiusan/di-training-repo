@@ -32,42 +32,42 @@ A path for researchers and analysts who need scalable data analysis, AI, and rep
   <div class="lp-phase">
     <div class="lp-phase-header">Foundation</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../all-training/python-hpc-intro/">Intro to Python for HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../all-training/python-hpc/">Introduction to Python and Using Python in an HPC environment</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../all-training/environment-management/">Software Environment Management on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="../../../explore/all-training/python-hpc-intro/">Intro to Python for HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="../../../explore/all-training/python-hpc/">Introduction to Python and Using Python in an HPC environment</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">3</span><a href="../../../explore/all-training/environment-management/">Software Environment Management on HPC</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Analysis Visualisation</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../all-training/r-hpc/">R Programming for HPC and Data Analysis</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../all-training/paraview/">Scientific Visualization with ParaView</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../all-training/data-management-large/">Large Dataset Management for HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">4</span><a href="../../../explore/all-training/r-hpc/">R Programming for HPC and Data Analysis</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">5</span><a href="../../../explore/all-training/paraview/">Scientific Visualization with ParaView</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">6</span><a href="../../../explore/all-training/data-management-large/">Large Dataset Management for HPC</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Ai Gpu</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../all-training/ai-hpc/">AI and HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../all-training/gpu-python/">GPU Computing with Python: CuPy and JAX</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">7</span><a href="../../../explore/all-training/ai-hpc/">AI and HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">8</span><a href="../../../explore/all-training/gpu-python/">GPU Computing with Python: CuPy and JAX</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Workflows</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">9</span><a href="../../../all-training/workflow-management/">Scientific Workflow Management on HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">10</span><a href="../../../all-training/python-debugging/">Debugging and Profiling Python on HPC</a></div>
-      <div class="lp-course-item"><span class="lp-course-num">11</span><a href="../../../all-training/parallel-python-mpi/">Parallel Python with MPI</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">9</span><a href="../../../explore/all-training/workflow-management/">Scientific Workflow Management on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">10</span><a href="../../../explore/all-training/python-debugging/">Debugging and Profiling Python on HPC</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">11</span><a href="../../../explore/all-training/parallel-python-mpi/">Parallel Python with MPI</a></div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
     <div class="lp-phase-header">Advanced</div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">12</span><a href="../../../all-training/julia-hpc/">High-Performance Computing with Julia</a></div>
+      <div class="lp-course-item"><span class="lp-course-num">12</span><a href="../../../explore/all-training/julia-hpc/">High-Performance Computing with Julia</a></div>
     </div>
   </div>
 </div>

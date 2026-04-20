@@ -12,8 +12,8 @@ Introductory tracks and skill progression tags.
 <div class="tag-card">
   <h4 class="tag-card-name">Introduction</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../all-training/intro/">Intro to HPC</a></li>
-    <li><a class="tag-course-link" href="../../../all-training/naiss-intro/">NAISS Introduction training days</a></li>
+    <li><a class="tag-course-link" href="../../../explore/all-training/intro/">Intro to HPC</a></li>
+    <li><a class="tag-course-link" href="../../../explore/all-training/naiss-intro/">NAISS Introduction training days</a></li>
   </ul>
 </div>
 </div>
