@@ -10,7 +10,7 @@ import yaml
 
 from lucide_icons import render_lucide_img
 
-ADVERTS_DIR = Path("docs/all-training/adverts")
+ADVERTS_DIR = Path("all-training-input/events")
 OUTPUT_DIR = Path("docs/explore/scientific-domains")
 INDEX_FILE = OUTPUT_DIR / "index.md"
 

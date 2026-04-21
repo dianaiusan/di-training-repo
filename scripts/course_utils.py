@@ -6,7 +6,7 @@ Shared helper utilities for course generation scripts.
 from pathlib import Path
 import yaml
 
-COURSE_DIRS = [Path("docs/all-training/adverts")]
+COURSE_DIRS = [Path("all-training-input/events")]
 
 
 TAG_DISPLAY_NAMES = {
@@ -80,8 +80,21 @@ def iter_course_files():
 
 
 def course_link(md_file: Path):
-    """Return a docs-relative link for a course markdown file."""
-    return md_file.relative_to('docs').as_posix()
+    """Return the canonical site route for a course.
+
+    Source files now live outside docs/ (all-training-input/), so we derive
+    the link from the slug via the training-catalogue rather than the file path.
+    """
+    frontmatter, _ = parse_frontmatter(md_file)
+    if frontmatter:
+        slug = frontmatter.get("slug", "").strip()
+        if slug:
+            return f"/explore/training-catalogue/{slug}/"
+    # Fallback: try docs-relative path (for any files still under docs/)
+    try:
+        return md_file.relative_to("docs").as_posix()
+    except ValueError:
+        return "/"
 
 
 def build_course_record(md_file: Path):

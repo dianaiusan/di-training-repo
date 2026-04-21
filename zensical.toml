@@ -100,7 +100,8 @@ nav = [
       { "Security & Sensitive Data" = "explore/tags/security-sensitive-data.md" },
       { "Other" = "explore/tags/other.md" }
     ] },
-    { "Training Catalogue" = "explore/training-catalogue/index.md" }
+    { "Training Catalogue" = "explore/training-catalogue/index.md" },
+    { "Self-Study" = "explore/self-study/index.md" }
   ] },
   { "External training resources" = "external-resources.md" },
   { "FAQ" = "faq.md" },

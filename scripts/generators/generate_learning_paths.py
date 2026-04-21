@@ -10,9 +10,10 @@ import yaml
 
 from lucide_icons import render_lucide_img
 
-ADVERTS_DIR = Path("docs/all-training/adverts")
-PATHS_DIR = Path("docs/explore/learning-paths")
-INDEX_FILE = PATHS_DIR / "index.md"
+ADVERTS_DIR = Path("all-training-input/events")
+PATHS_DIR = Path("all-training-input/learning-paths")  # source input
+OUTPUT_PATHS_DIR = Path("docs/explore/learning-paths")         # generated output
+INDEX_FILE = OUTPUT_PATHS_DIR / "index.md"
 
 PATH_ICONS = {
     "beginner": "sprout",
@@ -209,7 +210,8 @@ def main() -> None:
         description = str(frontmatter.get("description", "")).strip()
 
         body = render_detail_body(frontmatter, path_meta, course_titles)
-        file_path.write_text(f"{fm_block}\n{body}", encoding="utf-8")
+        out_file = OUTPUT_PATHS_DIR / file_path.name
+        out_file.write_text(f"{fm_block}\n{body}", encoding="utf-8")
 
         paths_for_index.append(
             {

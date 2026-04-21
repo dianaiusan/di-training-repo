@@ -8,9 +8,10 @@ from typing import Any
 
 import yaml
 
-ADVERTS_DIR = Path("docs/all-training/adverts")
-BUNDLES_DIR = Path("docs/explore/bundles")
-INDEX_FILE = BUNDLES_DIR / "index.md"
+ADVERTS_DIR = Path("all-training-input/events")
+BUNDLES_DIR = Path("all-training-input/bundles")  # source input
+OUTPUT_BUNDLES_DIR = Path("docs/explore/bundles")       # generated output
+INDEX_FILE = OUTPUT_BUNDLES_DIR / "index.md"
 
 
 def split_frontmatter(content: str) -> tuple[str, str] | tuple[None, None]:
@@ -196,7 +197,8 @@ def main() -> None:
         description = str(frontmatter.get("description", "")).strip()
 
         body, module_count, standalone_count = render_bundle_body(frontmatter, course_titles)
-        file_path.write_text(f"{fm_block}\n{body}", encoding="utf-8")
+        out_file = OUTPUT_BUNDLES_DIR / file_path.name
+        out_file.write_text(f"{fm_block}\n{body}", encoding="utf-8")
 
         cards.append(
             {

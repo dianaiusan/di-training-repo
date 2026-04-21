@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_utils import display_tag
 
-ADVERTS_DIR = Path("docs/all-training/adverts")
+ADVERTS_DIR = Path("all-training-input/events")
 UPCOMING_PAGE = Path("docs/events/upcoming.md")
 PAST_PAGE = Path("docs/events/past-events.md")
 

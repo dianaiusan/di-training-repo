@@ -14,6 +14,7 @@ SCRIPTS = [
     "generators/generate_learning_paths.py",
     "generators/generate_bundles.py",
     "generators/generate_tags.py",
+    "generators/generate_self_study.py",
 ]
 
 

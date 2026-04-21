@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-ADVERTS_DIR = Path("docs/all-training/adverts")
+ADVERTS_DIR = Path("all-training-input/events")
 DOCS_DIR = Path("docs")
 TRAINING_PREFIX = "/explore/training-catalogue/"
 
@@ -56,13 +56,14 @@ def detect_target_url(frontmatter: dict, source_file: Path, alias_url: str) -> s
         if external_url.startswith(("http://", "https://")):
             return external_url
 
-    source_route = docs_route_from_file(source_file)
-    if source_route != alias_url:
-        return source_route
-
-    slug = str(frontmatter.get("slug", "")).strip()
-    if slug:
-        return f"/all-training/{slug}/"
+    # Source file may live outside docs/ (e.g. all-training-input/).
+    # Only derive a docs route if the file is actually under DOCS_DIR.
+    try:
+        source_route = docs_route_from_file(source_file)
+        if source_route != alias_url:
+            return source_route
+    except ValueError:
+        pass  # Source is outside docs/ — no internal page to redirect to
 
     return "/explore/training-catalogue/"
 
