@@ -8,28 +8,50 @@ from pathlib import Path
 
 import yaml
 
+from lucide_icons import render_lucide_icon
+
 ADVERTS_DIR = Path("docs/all-training/adverts")
 OUTPUT_DIR = Path("docs/explore/scientific-domains")
 INDEX_FILE = OUTPUT_DIR / "index.md"
 
+DOMAIN_ICON_KEYS: dict[str, str] = {
+    "ai": "brain",
+    "big-data": "database",
+    "bioinformatics": "file-terminal",
+    "biomedical": "heart-pulse",
+    "climate-science": "earth",
+    "clinical-research": "stethoscope",
+    "computational-biology": "leaf",
+    "computational-chemistry": "flask-conical",
+    "computational-physics": "magnet",
+    "computational-science": "code-2",
+    "data-science": "chart-line",
+    "engineering": "circuit-board",
+    "general-hpc": "computer",
+    "genomics": "dna",
+    "machine-learning": "text-search",
+    "social-sciences": "message-circle-check",
+    "statistics": "chart-scatter",
+}
+
 DOMAIN_META: dict[str, dict[str, str]] = {
-    "ai": {"title": "AI", "icon": "AI"},
-    "big-data": {"title": "Big Data", "icon": "BD"},
-    "bioinformatics": {"title": "Bioinformatics", "icon": "Bio"},
-    "biomedical": {"title": "Biomedical", "icon": "Med"},
-    "climate-science": {"title": "Climate Science", "icon": "Cli"},
-    "clinical-research": {"title": "Clinical Research", "icon": "CR"},
-    "computational-biology": {"title": "Computational Biology", "icon": "CB"},
-    "computational-chemistry": {"title": "Computational Chemistry", "icon": "CC"},
-    "computational-physics": {"title": "Computational Physics", "icon": "CP"},
-    "computational-science": {"title": "Computational Science", "icon": "CS"},
-    "data-science": {"title": "Data Science", "icon": "DS"},
-    "engineering": {"title": "Engineering", "icon": "Eng"},
-    "general-hpc": {"title": "General HPC", "icon": "HPC"},
-    "genomics": {"title": "Genomics", "icon": "Gen"},
-    "machine-learning": {"title": "Machine Learning", "icon": "ML"},
-    "social-sciences": {"title": "Social Sciences", "icon": "Soc"},
-    "statistics": {"title": "Statistics", "icon": "Stat"},
+    "ai": {"title": "AI"},
+    "big-data": {"title": "Big Data"},
+    "bioinformatics": {"title": "Bioinformatics"},
+    "biomedical": {"title": "Biomedical"},
+    "climate-science": {"title": "Climate Science"},
+    "clinical-research": {"title": "Clinical Research"},
+    "computational-biology": {"title": "Computational Biology"},
+    "computational-chemistry": {"title": "Computational Chemistry"},
+    "computational-physics": {"title": "Computational Physics"},
+    "computational-science": {"title": "Computational Science"},
+    "data-science": {"title": "Data Science"},
+    "engineering": {"title": "Engineering"},
+    "general-hpc": {"title": "General HPC"},
+    "genomics": {"title": "Genomics"},
+    "machine-learning": {"title": "Machine Learning"},
+    "social-sciences": {"title": "Social Sciences"},
+    "statistics": {"title": "Statistics"},
 }
 
 DOMAIN_ORDER = list(DOMAIN_META.keys())
@@ -113,10 +135,7 @@ def humanize_slug(value: str) -> str:
 
 def ensure_domain_meta(domain_slug: str) -> None:
     if domain_slug not in DOMAIN_META:
-        DOMAIN_META[domain_slug] = {
-            "title": humanize_slug(domain_slug),
-            "icon": DOMAIN_META["computational-science"]["icon"],
-        }
+        DOMAIN_META[domain_slug] = {"title": humanize_slug(domain_slug)}
 
 
 def write_index(grouped: dict[str, list[dict]], domains: list[str]) -> None:
@@ -135,14 +154,15 @@ def write_index(grouped: dict[str, list[dict]], domains: list[str]) -> None:
 
     for domain_slug in domains:
         title = DOMAIN_META[domain_slug]["title"]
-        icon = DOMAIN_META[domain_slug]["icon"]
+        icon_key = DOMAIN_ICON_KEYS.get(domain_slug, "atom")
+        icon_svg = render_lucide_icon(icon_key, fallback_icon="atom", size_class="sd-card-icon-svg")
         count = len(grouped.get(domain_slug, []))
         course_label = "course" if count == 1 else "courses"
         lines.extend(
             [
                 f'<a class="sd-card-link" href="./{domain_slug}/">',
                 '  <div class="sd-card">',
-                f'    <div class="sd-card-icon">{icon}</div>',
+                f'    <div class="sd-card-icon">{icon_svg}</div>',
                 f'    <h3 class="sd-card-title">{title}</h3>',
                 f'    <p class="sd-card-meta">{count} {course_label}</p>',
                 "  </div>",

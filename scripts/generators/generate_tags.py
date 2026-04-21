@@ -7,6 +7,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_utils import display_tag, load_courses
+from lucide_icons import render_lucide_icon
 
 
 OUTPUT_DIR = Path("docs/explore/tags")
@@ -98,20 +99,6 @@ CATEGORY_ICON_KEYS = {
     "domains-visualization": "images",
     "security-sensitive-data": "shield-check",
     "other": "tag",
-}
-
-
-LUCIDE_PATHS = {
-    "server": '<rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/>',
-    "chart-no-axes-column-increasing": '<path d="M5 21v-6"/><path d="M12 21V9"/><path d="M19 21V3"/>',
-    "gpu": '<path d="M2 17h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H2"/><path d="M2 21V3"/><path d="M7 17v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3"/><circle cx="16" cy="11" r="2"/><circle cx="8" cy="11" r="2"/>',
-    "database": '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>',
-    "code-2": '<path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/>',
-    "workflow": '<rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/>',
-    "graduation-cap": '<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>',
-    "images": '<path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"/><path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"/><circle cx="13" cy="7" r="1" fill="currentColor"/><rect x="8" y="2" width="14" height="14" rx="2"/>',
-    "shield-check": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
-    "tag": '<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/>',
 }
 
 
@@ -264,17 +251,6 @@ def ensure_output_dir():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def render_lucide_icon(icon_name, size_class="tg-card-icon-svg"):
-    """Render an inline lucide SVG."""
-    icon_key = str(icon_name or "tag")
-    svg_paths = LUCIDE_PATHS.get(icon_key, LUCIDE_PATHS["tag"])
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" '
-        f'stroke-linecap="round" stroke-linejoin="round" stroke-width="2" '
-        f'class="lucide lucide-{icon_key} {size_class}" viewBox="0 0 24 24">{svg_paths}</svg>'
-    )
-
-
 def render_category_card_grid(grouped):
     """Render category cards for the tags overview page."""
     non_empty = [key for key in CATEGORY_ORDER if grouped.get(key)]
@@ -292,7 +268,7 @@ def render_category_card_grid(grouped):
         tag_label = "tag" if tag_count == 1 else "tags"
         course_label = "course reference" if course_count == 1 else "course references"
         icon_key = CATEGORY_ICON_KEYS.get(category, "tag")
-        icon_svg = render_lucide_icon(icon_key)
+        icon_svg = render_lucide_icon(icon_key, fallback_icon="tag", size_class="tg-card-icon-svg")
 
         cards.append(
             f'<a class="tg-card-link" href="{tags_overview_to_category_route(category)}">\n'

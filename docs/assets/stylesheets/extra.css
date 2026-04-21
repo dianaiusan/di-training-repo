@@ -26,6 +26,21 @@ a:active {
 
 
 /* --------------------------------------------------------------------------
+   Site chrome — apply NAISS gradient to the top navigation bars
+   -------------------------------------------------------------------------- */
+
+.md-header {
+  background: linear-gradient(to right, #4b0029, #010088);
+  color: white;
+}
+
+.md-tabs {
+  background: linear-gradient(to right, #4b0029, #010088);
+  color: white;
+}
+
+
+/* --------------------------------------------------------------------------
    Color tokens — define once, reference everywhere
    -------------------------------------------------------------------------- */
 
@@ -1116,7 +1131,12 @@ a:active {
 }
 
 .ev-landing-icon {
-  font-size: 1.6rem;
   line-height: 1;
   margin-bottom: 0.3rem;
+}
+
+.ev-landing-icon-svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: block;
 }

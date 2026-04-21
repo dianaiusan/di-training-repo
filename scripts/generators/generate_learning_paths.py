@@ -8,6 +8,8 @@ from typing import Any
 
 import yaml
 
+from lucide_icons import render_lucide_icon
+
 ADVERTS_DIR = Path("docs/all-training/adverts")
 PATHS_DIR = Path("docs/explore/learning-paths")
 INDEX_FILE = PATHS_DIR / "index.md"
@@ -157,11 +159,12 @@ def render_index(paths: list[dict[str, str]]) -> str:
 
     for item in sorted(paths, key=lambda p: p["title"].lower()):
         icon_name = PATH_ICONS.get(item["slug"], "route")
+        icon_svg = render_lucide_icon(icon_name, fallback_icon="route", size_class="lp-card-icon-svg")
         lines.extend(
             [
                 f'<a class="lp-card-link" href="./{item["slug"]}/">',
                 '  <div class="lp-card">',
-                f'    <div class="lp-card-icon">{icon_name}</div>',
+                f'    <div class="lp-card-icon">{icon_svg}</div>',
                 f'    <h3 class="lp-card-title">{item["title"]}</h3>',
                 f'    <p class="lp-card-desc">{item["description"]}</p>',
                 "  </div>",
