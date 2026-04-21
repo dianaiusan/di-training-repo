@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 
 LUCIDE_PATHS: dict[str, str] = {
     "atom": '<circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5"/>',
@@ -36,6 +38,27 @@ LUCIDE_PATHS: dict[str, str] = {
     "workflow": '<rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/>',
 }
 
+ICONS_DIR = Path("docs/assets/images/icons")
+
+
+def _svg_document(paths: str) -> str:
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" '
+        'stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">'
+        f"{paths}</svg>"
+    )
+
+
+def ensure_lucide_icon_asset(icon_name: str, fallback_icon: str = "tag") -> str:
+    icon_key = str(icon_name or fallback_icon)
+    if icon_key not in LUCIDE_PATHS:
+        icon_key = fallback_icon
+
+    ICONS_DIR.mkdir(parents=True, exist_ok=True)
+    icon_file = ICONS_DIR / f"{icon_key}.svg"
+    icon_file.write_text(_svg_document(LUCIDE_PATHS[icon_key]), encoding="utf-8")
+    return icon_key
+
 
 def render_lucide_icon(icon_name: str, fallback_icon: str = "tag", size_class: str = "") -> str:
     icon_key = str(icon_name or fallback_icon)
@@ -48,3 +71,15 @@ def render_lucide_icon(icon_name: str, fallback_icon: str = "tag", size_class: s
         f'stroke-linecap="round" stroke-linejoin="round" stroke-width="2" '
         f'class="{classes}" viewBox="0 0 24 24">{svg_paths}</svg>'
     )
+
+
+def render_lucide_img(
+    icon_name: str,
+    fallback_icon: str = "tag",
+    size_class: str = "",
+    src_prefix: str = "../../assets/images/icons",
+) -> str:
+    icon_key = ensure_lucide_icon_asset(icon_name, fallback_icon=fallback_icon)
+    classes = size_class.strip()
+    class_attr = f' class="{classes}"' if classes else ""
+    return f'<img{class_attr} src="{src_prefix}/{icon_key}.svg" alt=""/>'

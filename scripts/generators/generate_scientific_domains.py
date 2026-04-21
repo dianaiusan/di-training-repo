@@ -8,7 +8,7 @@ from pathlib import Path
 
 import yaml
 
-from lucide_icons import render_lucide_icon
+from lucide_icons import render_lucide_img
 
 ADVERTS_DIR = Path("docs/all-training/adverts")
 OUTPUT_DIR = Path("docs/explore/scientific-domains")
@@ -155,14 +155,19 @@ def write_index(grouped: dict[str, list[dict]], domains: list[str]) -> None:
     for domain_slug in domains:
         title = DOMAIN_META[domain_slug]["title"]
         icon_key = DOMAIN_ICON_KEYS.get(domain_slug, "atom")
-        icon_svg = render_lucide_icon(icon_key, fallback_icon="atom", size_class="sd-card-icon-svg")
+        icon_img = render_lucide_img(
+            icon_key,
+            fallback_icon="atom",
+            size_class="sd-card-icon-img",
+            src_prefix="../../assets/images/icons",
+        )
         count = len(grouped.get(domain_slug, []))
         course_label = "course" if count == 1 else "courses"
         lines.extend(
             [
                 f'<a class="sd-card-link" href="./{domain_slug}/">',
                 '  <div class="sd-card">',
-                f'    <div class="sd-card-icon">{icon_svg}</div>',
+                f'    <div class="sd-card-icon">{icon_img}</div>',
                 f'    <h3 class="sd-card-title">{title}</h3>',
                 f'    <p class="sd-card-meta">{count} {course_label}</p>',
                 "  </div>",

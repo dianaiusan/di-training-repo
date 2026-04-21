@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en-GB",
+  "root": "../..",
+  "useGitignore": true,
+  "allowCompoundWords": true,
+  "ignorePaths": [
+    "site/**",
+    ".venv/**",
+    ".cache/**",
+    "node_modules/**",
+    "**/__pycache__/**",
+    "docs/objects.inv",
+    "docs/search.json",
+    "docs/sitemap.xml",
+    "**/*.svg",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.webp",
+    "**/*.gif",
+    "**/*.ico",
+    "**/*.woff",
+    "**/*.woff2",
+    "**/*.ttf",
+    "**/*.map"
+  ],
+  "files": [
+    "docs/**/*.md",
+    "scripts/**/*.py",
+    "files/**/*.md"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./cspell-words.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "project-words"
+  ],
+  "ignoreRegExpList": [
+    "/https?:\\/\\/\\S+/g",
+    "/`[^`]*`/g"
+  ]
+}

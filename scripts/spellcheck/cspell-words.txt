@@ -1,0 +1,25 @@
+# Project dictionary additions for cspell (British English baseline)
+NAISS
+UPPMAX
+LUNARC
+NSC
+C3SE
+PDC
+SNIC
+Slurm
+Apptainer
+Singularity
+OpenMP
+MPI
+ParaView
+Bianca
+Jupyter
+HPC
+codebase
+workflow
+workflows
+profiling
+visualisation
+organise
+organisation
+catalogue

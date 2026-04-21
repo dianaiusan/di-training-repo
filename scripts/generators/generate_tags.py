@@ -7,7 +7,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_utils import display_tag, load_courses
-from lucide_icons import render_lucide_icon
+from lucide_icons import render_lucide_img
 
 
 OUTPUT_DIR = Path("docs/explore/tags")
@@ -268,12 +268,17 @@ def render_category_card_grid(grouped):
         tag_label = "tag" if tag_count == 1 else "tags"
         course_label = "course reference" if course_count == 1 else "course references"
         icon_key = CATEGORY_ICON_KEYS.get(category, "tag")
-        icon_svg = render_lucide_icon(icon_key, fallback_icon="tag", size_class="tg-card-icon-svg")
+        icon_img = render_lucide_img(
+            icon_key,
+            fallback_icon="tag",
+            size_class="tg-card-icon-img",
+            src_prefix="../../assets/images/icons",
+        )
 
         cards.append(
             f'<a class="tg-card-link" href="{tags_overview_to_category_route(category)}">\n'
             f'<div class="tg-card">\n'
-            f'  <div class="tg-card-icon">{icon_svg}</div>\n'
+            f'  <div class="tg-card-icon">{icon_img}</div>\n'
             f'  <h3 class="tg-card-title">{title}</h3>\n'
             f'  <p class="tg-card-desc">{description}</p>\n'
             f'  <p class="tg-card-meta">{tag_count} {tag_label} · {course_count} {course_label}</p>\n'

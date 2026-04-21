@@ -1,0 +1,15 @@
+# Paths or patterns to ignore during spellchecking
+site/**
+.venv/**
+**/__pycache__/**
+**/*.svg
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.webp
+**/*.gif
+**/*.ico
+**/*.woff
+**/*.woff2
+**/*.ttf
+**/*.map
