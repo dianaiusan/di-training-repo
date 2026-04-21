@@ -19,6 +19,7 @@ modules:
   - course: job-arrays
     label: "SLURM basics"
 ---
+
 ## Intro to HPC Week
 
 A delivery-focused week plan for first-time NAISS users, combining onboarding, Linux basics, file handling, software environments, and SLURM essentials.
@@ -30,10 +31,9 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">1</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/naiss-intro/">Orientation and onboarding</a></p>
-      <p class="bd-meta">NAISS Introduction training days</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/naiss-intro/">Orientation and onboarding</a></p>
+      <p class="bd-meta">Naiss Intro</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -42,7 +42,8 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
     <span class="bd-num">2</span>
     <div class="bd-main">
       <p class="bd-title">Linux 101</p>
-      <span class="bd-badge">Bundle-only module</span><span class="bd-badge">0.5 day</span>
+      <span class="bd-badge">Bundle-only module</span>
+      <span class="bd-badge">0.5 day</span>
       <p class="bd-desc">Essential Linux shell commands, navigation, and file operations for HPC workflows.</p>
     </div>
   </div>
@@ -51,10 +52,9 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">3</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/file-transfer-201/">Login and file transfer</a></p>
+      <p class="bd-title"><a href="/explore/training-catalogue/file-transfer-201/">Login and file transfer</a></p>
       <p class="bd-meta">File Transfer 201</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -62,10 +62,9 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">4</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/environment-management/">Module system</a></p>
-      <p class="bd-meta">Software Environment Management on HPC</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/environment-management/">Module system</a></p>
+      <p class="bd-meta">Environment Management</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -73,10 +72,9 @@ A delivery-focused week plan for first-time NAISS users, combining onboarding, L
   <div class="bd-item-head">
     <span class="bd-num">5</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/job-arrays/">SLURM basics</a></p>
-      <p class="bd-meta">Scaling Experiments with SLURM Job Arrays</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/job-arrays/">SLURM basics</a></p>
+      <p class="bd-meta">Job Arrays</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -86,4 +84,4 @@ Includes 5 modules, with 4 reusable standalone course(s).
 
 ### Related learning paths
 
-- [Beginner](../learning-paths/beginner/)
+- [Beginner](/explore/learning-paths/beginner/)

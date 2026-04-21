@@ -6,6 +6,6 @@ title: "Big Data"
 
 Courses tagged under Big Data:
 
-- [File Transfer 201](../../explore/all-training/file-transfer-201.md)
+No courses currently mapped to this domain.
 
 [Back to Scientific Domains Overview](./index.md)

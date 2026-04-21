@@ -6,17 +6,27 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from course_utils import load_courses
-from link_utils import (
-    tags_overview_to_category_route,
-    tag_category_to_course_route,
-    tag_category_to_overview_route,
-)
+from course_utils import display_tag, load_courses
 
 
 OUTPUT_DIR = Path("docs/explore/tags")
 OVERVIEW_FILE = OUTPUT_DIR / "index.md"
 LEGACY_FILE = Path("docs/explore/tags.md")
+
+
+def tags_overview_to_category_route(category_slug: str) -> str:
+    """Link from /explore/tags/ to /explore/tags/<category>/."""
+    return f"./{category_slug}/"
+
+
+def tag_category_to_course_route(course_slug: str) -> str:
+    """Link from /explore/tags/<category>/ to /explore/training-catalogue/<course>/."""
+    return f"../../../explore/training-catalogue/{course_slug}/"
+
+
+def tag_category_to_overview_route() -> str:
+    """Link from /explore/tags/<category>/ to /explore/tags/."""
+    return "../"
 
 
 CATEGORY_META = {
@@ -182,15 +192,6 @@ TAG_TO_CATEGORY = {
     "visualization": "domains-visualization",
     "workflow": "workflow-automation",
 }
-
-
-def display_tag(tag: str) -> str:
-    """Convert a slug-like tag value to a display label."""
-    return tag.replace("-", " ").title()
-
-
-
-
 def render_tag_courses(tag_name: str, courses: list) -> str:
     """Render a single tag card with its courses."""
     courses_html = "\n".join(
@@ -294,14 +295,14 @@ def render_category_card_grid(grouped):
         icon_svg = render_lucide_icon(icon_key)
 
         cards.append(
+            f'<a class="tg-card-link" href="{tags_overview_to_category_route(category)}">\n'
             f'<div class="tg-card">\n'
             f'  <div class="tg-card-icon">{icon_svg}</div>\n'
             f'  <h3 class="tg-card-title">{title}</h3>\n'
             f'  <p class="tg-card-desc">{description}</p>\n'
-            f'  <p class="tg-card-meta">{tag_count} {tag_label}</p>\n'
-            f'  <p class="tg-card-meta">{course_count} {course_label}</p>\n'
-            f'  <p class="tg-card-cta"><a href="{tags_overview_to_category_route(category)}">Explore category →</a></p>\n'
-            "</div>"
+            f'  <p class="tg-card-meta">{tag_count} {tag_label} · {course_count} {course_label}</p>\n'
+            f'</div>\n'
+            f'</a>'
         )
 
     cards.append("</div>")

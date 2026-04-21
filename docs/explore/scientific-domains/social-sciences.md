@@ -6,6 +6,6 @@ title: "Social Sciences"
 
 Courses tagged under Social Sciences:
 
-- [Bianca In-Depth: Improve Your Handling of Sensitive Research Data](../../explore/all-training/bianca-sensitive-data.md)
+No courses currently mapped to this domain.
 
 [Back to Scientific Domains Overview](./index.md)

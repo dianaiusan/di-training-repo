@@ -6,6 +6,6 @@ title: "Climate Science"
 
 Courses tagged under Climate Science:
 
-- [Scientific Visualization with ParaView](../../explore/all-training/paraview.md)
+No courses currently mapped to this domain.
 
 [Back to Scientific Domains Overview](./index.md)

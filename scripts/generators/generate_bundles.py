@@ -1,192 +1,152 @@
 #!/usr/bin/env python3
-"""Generate bundle overview/detail pages and course backlinks."""
+"""Generate bundle overview and detail page bodies from bundle frontmatter."""
+
+from __future__ import annotations
 
 from pathlib import Path
-import re
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from typing import Any
 
-from bundles_utils import load_bundle_definitions, slug_to_title
-from course_utils import load_courses
-from link_utils import (
-    bundle_page_to_course_route,
-    bundle_page_to_learning_path_route,
-    course_page_to_bundle_route,
-)
+import yaml
 
-OUTPUT_DIR = Path("docs/explore/bundles")
-OVERVIEW_FILE = OUTPUT_DIR / "index.md"
-
-GENERATED_START = "<!-- GENERATED:bundle-links:start -->"
-GENERATED_END = "<!-- GENERATED:bundle-links:end -->"
+ADVERTS_DIR = Path("docs/all-training/adverts")
+BUNDLES_DIR = Path("docs/explore/bundles")
+INDEX_FILE = BUNDLES_DIR / "index.md"
 
 
-
-def normalize_module(raw_module):
-    """Normalize a bundle module into a uniform shape."""
-    if not isinstance(raw_module, dict):
-        return None
-
-    if raw_module.get("course"):
-        return {
-            "type": "course",
-            "course_slug": str(raw_module.get("course")),
-            "label": raw_module.get("label", "").strip(),
-            "duration": raw_module.get("duration", "").strip(),
-            "description": raw_module.get("description", "").strip(),
-            "optional": bool(raw_module.get("optional", False)),
-        }
-
-    module_title = raw_module.get("module") or raw_module.get("title")
-    if module_title:
-        return {
-            "type": "module",
-            "title": str(module_title),
-            "duration": raw_module.get("duration", "").strip(),
-            "description": raw_module.get("description", "").strip(),
-            "optional": bool(raw_module.get("optional", False)),
-        }
-
-    return None
+def split_frontmatter(content: str) -> tuple[str, str] | tuple[None, None]:
+    if not content.startswith("---"):
+        return None, None
+    parts = content.split("---", 2)
+    if len(parts) < 3:
+        return None, None
+    return f"---{parts[1]}---\n", parts[2].lstrip("\n")
 
 
-def render_bundle_modules(bundle_def, course_map):
-    """Render ordered module list for a bundle detail page."""
-    parts = ['<div class="bd-track">']
-    normalized = []
+def parse_frontmatter(md_file: Path) -> tuple[dict | None, str | None]:
+    content = md_file.read_text(encoding="utf-8")
+    fm_block, _ = split_frontmatter(content)
+    if fm_block is None:
+        return None, None
+    try:
+        frontmatter = yaml.safe_load(fm_block.strip("-\n"))
+    except yaml.YAMLError:
+        return None, None
+    return frontmatter if isinstance(frontmatter, dict) else None, fm_block
 
-    for idx, raw_module in enumerate(bundle_def["modules"], start=1):
-        module = normalize_module(raw_module)
-        if not module:
+
+def iter_adverts() -> list[Path]:
+    files: list[Path] = []
+    for md_file in sorted(ADVERTS_DIR.rglob("*.md")):
+        if md_file.name == "_template.md":
             continue
-
-        normalized.append(module)
-
-        badges = []
-        if module.get("optional"):
-            badges.append('<span class="bd-badge">Optional</span>')
-
-        if module["type"] == "course":
-            course = course_map.get(module["course_slug"])
-            title = course["title"] if course else f"Missing course: {module['course_slug']}"
-            href = bundle_page_to_course_route(module["course_slug"]) if course else "#"
-            badges.insert(0, '<span class="bd-badge bd-badge-core">Standalone course</span>')
-            display = module["label"] or title
-            subtitle = title if module["label"] and module["label"] != title else ""
-            if module.get("duration"):
-                badges.append(f'<span class="bd-badge">{module["duration"]}</span>')
-
-            subtitle_html = f'<p class="bd-meta">{subtitle}</p>' if subtitle else ""
-            desc_html = (
-                f'<p class="bd-desc">{module["description"]}</p>'
-                if module["description"]
-                else ""
-            )
-            badges_html = "".join(badges)
-
-            parts.append(
-                f'<div class="bd-item">\n'
-                f'  <div class="bd-item-head">\n'
-                f'    <span class="bd-num">{idx}</span>\n'
-                f'    <div class="bd-main">\n'
-                f'      <p class="bd-title"><a href="{href}">{display}</a></p>\n'
-                f'      {subtitle_html}\n'
-                f'      {badges_html}\n'
-                f'      {desc_html}\n'
-                f'    </div>\n'
-                f'  </div>\n'
-                f'</div>'
-            )
-        else:
-            if module.get("duration"):
-                badges.append(f'<span class="bd-badge">{module["duration"]}</span>')
-            badges.insert(0, '<span class="bd-badge">Bundle-only module</span>')
-
-            desc_html = (
-                f'<p class="bd-desc">{module["description"]}</p>'
-                if module["description"]
-                else ""
-            )
-            badges_html = "".join(badges)
-
-            parts.append(
-                f'<div class="bd-item">\n'
-                f'  <div class="bd-item-head">\n'
-                f'    <span class="bd-num">{idx}</span>\n'
-                f'    <div class="bd-main">\n'
-                f'      <p class="bd-title">{module["title"]}</p>\n'
-                f'      {badges_html}\n'
-                f'      {desc_html}\n'
-                f'    </div>\n'
-                f'  </div>\n'
-                f'</div>'
-            )
-
-    parts.append("</div>")
-    return "\n".join(parts), normalized
+        files.append(md_file)
+    return files
 
 
-def render_related_paths(related_paths):
-    if not related_paths:
-        return ""
-    links = [
-        f"- [{slug_to_title(slug)}]({bundle_page_to_learning_path_route(slug)})"
-        for slug in related_paths
-    ]
-    return "\n".join(["### Related learning paths", ""] + links + [""])
+def load_course_titles() -> dict[str, str]:
+    titles: dict[str, str] = {}
+    for md_file in iter_adverts():
+        frontmatter, _ = parse_frontmatter(md_file)
+        if not frontmatter:
+            continue
+        slug = str(frontmatter.get("slug", "")).strip()
+        title = str(frontmatter.get("title", "")).strip()
+        if slug and title:
+            titles[slug] = title
+    return titles
 
 
-def render_bundle_section(bundle_def, course_map):
-    modules_html, modules = render_bundle_modules(bundle_def, course_map)
-    standalone_count = sum(1 for m in modules if m["type"] == "course")
+def humanize_slug(value: str) -> str:
+    return value.replace("-", " ").title()
 
-    lines = [
-        f"## {bundle_def['title']}",
-        "",
-        bundle_def["description"],
-        "",
-    ]
 
-    topline_bits = []
-    if bundle_def.get("audience"):
-        topline_bits.append(f"Audience: {bundle_def['audience']}")
-    if bundle_def.get("total_duration"):
-        topline_bits.append(f"Duration: {bundle_def['total_duration']}")
-    if topline_bits:
-        lines.append(f'<p class="bd-topline">{" | ".join(topline_bits)}</p>')
+def course_route(slug: str) -> str:
+    return f"/explore/training-catalogue/{slug}/"
+
+
+def render_bundle_body(bundle_fm: dict[str, Any], course_titles: dict[str, str]) -> tuple[str, int, int]:
+    title = str(bundle_fm.get("title", "")).strip()
+    description = str(bundle_fm.get("description", "")).strip()
+    audience = str(bundle_fm.get("audience", "")).strip()
+    total_duration = str(bundle_fm.get("total_duration", "")).strip()
+    modules = bundle_fm.get("modules", [])
+    related_paths = bundle_fm.get("related_paths", [])
+
+    lines: list[str] = [f"## {title}", "", description, ""]
+    if audience or total_duration:
+        lines.append(
+            f'<p class="bd-topline">Audience: {audience or "TBD"} | Duration: {total_duration or "TBD"}</p>'
+        )
         lines.append("")
 
-    lines.append(modules_html)
+    lines.append('<div class="bd-track">')
+    module_count = 0
+    standalone_count = 0
+
+    if isinstance(modules, list):
+        for idx, module in enumerate(modules, start=1):
+            if not isinstance(module, dict):
+                continue
+            module_count += 1
+            course_slug = str(module.get("course", "")).strip()
+            module_label = str(module.get("label", "")).strip()
+            module_name = str(module.get("module", "")).strip()
+            duration = str(module.get("duration", "")).strip()
+            module_desc = str(module.get("description", "")).strip()
+
+            title_text = module_label or module_name or humanize_slug(course_slug)
+            lines.extend(
+                [
+                    '<div class="bd-item">',
+                    '  <div class="bd-item-head">',
+                    f'    <span class="bd-num">{idx}</span>',
+                    '    <div class="bd-main">',
+                ]
+            )
+
+            if course_slug:
+                standalone_count += 1
+                course_title = course_titles.get(course_slug, humanize_slug(course_slug))
+                lines.append(
+                    f'      <p class="bd-title"><a href="{course_route(course_slug)}">{title_text}</a></p>'
+                )
+                lines.append(f'      <p class="bd-meta">{course_title}</p>')
+                lines.append('      <span class="bd-badge bd-badge-core">Standalone course</span>')
+            else:
+                lines.append(f'      <p class="bd-title">{title_text}</p>')
+                lines.append('      <span class="bd-badge">Bundle-only module</span>')
+                if duration:
+                    lines.append(f'      <span class="bd-badge">{duration}</span>')
+
+            if module_desc:
+                lines.append(f'      <p class="bd-desc">{module_desc}</p>')
+
+            lines.extend(['    </div>', '  </div>', '</div>'])
+
+    lines.append('</div>')
     lines.append("")
-    lines.append(f"Includes {len(modules)} modules, with {standalone_count} reusable standalone course(s).")
+    lines.append(
+        f"Includes {module_count} modules, with {standalone_count} reusable standalone course(s)."
+    )
+    lines.append("")
+    lines.append("### Related learning paths")
     lines.append("")
 
-    related = render_related_paths(bundle_def.get("related_paths", []))
-    if related:
-        lines.append(related)
-
-    return "\n".join(lines), modules
-
-
-def update_bundle_file(bundle_def, section):
-    """Update individual bundle file while preserving frontmatter."""
-    bundle_file = OUTPUT_DIR / f"{bundle_def['slug']}.md"
-    if not bundle_file.exists():
-        return
-
-    content = bundle_file.read_text(encoding="utf-8")
-    if content.startswith("---"):
-        parts = content.split("---", 2)
-        frontmatter = parts[0] + "---" + parts[1] + "---" if len(parts) >= 3 else ""
+    if isinstance(related_paths, list) and related_paths:
+        for item in related_paths:
+            path_slug = str(item).strip()
+            if not path_slug:
+                continue
+            lines.append(f"- [{humanize_slug(path_slug)}](/explore/learning-paths/{path_slug}/)")
     else:
-        frontmatter = ""
+        lines.append("- None")
 
-    bundle_file.write_text(frontmatter + "\n" + section, encoding="utf-8")
+    lines.append("")
+    return "\n".join(lines), module_count, standalone_count
 
 
-def update_overview(bundle_defs, bundle_stats):
-    """Write bundles overview page."""
-    lines = [
+def render_index(cards: list[dict[str, str]]) -> str:
+    lines: list[str] = [
         "---",
         'title: "Bundles Overview"',
         "icon: lucide/layers-3",
@@ -197,113 +157,60 @@ def update_overview(bundle_defs, bundle_stats):
         "Delivery-focused collections of modules and courses that can be run as coherent workshop packages.",
         "",
         '<div class="bd-card-grid">',
-
     ]
 
-    for bundle_def in bundle_defs:
-        stats = bundle_stats.get(bundle_def["slug"], {"modules": 0, "standalone": 0})
-        href = f"./{bundle_def['slug']}/"
-        lines.extend([
-            f'<a class="bd-card-link" href="{href}">',
-            '  <div class="bd-card">',
-            f"    <h3>{bundle_def['title']}</h3>",
-            f"    <p>{bundle_def['description']}</p>",
-            f"    <p>{stats['modules']} modules</p>",
-            f"    <p>{stats['standalone']} standalone course reference(s)</p>",
-            "  </div>",
-            "</a>",
-        ])
+    for card in sorted(cards, key=lambda c: c["title"].lower()):
+        lines.extend(
+            [
+                f'<a class="bd-card-link" href="./{card["slug"]}/">',
+                '  <div class="bd-card">',
+                f'    <h3>{card["title"]}</h3>',
+                f'    <p>{card["description"]}</p>',
+                f'    <p>{card["module_count"]} modules</p>',
+                f'    <p>{card["standalone_count"]} standalone course reference(s)</p>',
+                "  </div>",
+                "</a>",
+            ]
+        )
 
     lines.extend(["</div>", ""])
-    OVERVIEW_FILE.write_text("\n".join(lines), encoding="utf-8")
+    return "\n".join(lines)
 
 
-def remove_generated_bundle_section(text):
-    pattern = re.compile(
-        rf"\n?{re.escape(GENERATED_START)}.*?{re.escape(GENERATED_END)}\n?",
-        re.DOTALL,
+def main() -> None:
+    course_titles = load_course_titles()
+    bundle_files = sorted(
+        [p for p in BUNDLES_DIR.glob("*.md") if p.name != "index.md"],
+        key=lambda p: p.name,
     )
-    return re.sub(pattern, "\n", text).rstrip() + "\n"
 
+    cards: list[dict[str, str]] = []
 
-def update_course_backlinks(course_to_bundles, course_map):
-    """Append generated 'Part of bundles' section to referenced courses."""
-    updated = 0
+    for file_path in bundle_files:
+        frontmatter, fm_block = parse_frontmatter(file_path)
+        if not frontmatter or not fm_block:
+            continue
 
-    for course_slug, course in course_map.items():
-        source_path = course["source_path"]
-        content = source_path.read_text(encoding="utf-8")
-        has_generated_block = GENERATED_START in content and GENERATED_END in content
-        clean = remove_generated_bundle_section(content) if has_generated_block else content
+        title = str(frontmatter.get("title", file_path.stem)).strip()
+        slug = str(frontmatter.get("slug", file_path.stem)).strip()
+        description = str(frontmatter.get("description", "")).strip()
 
-        bundle_refs = sorted(course_to_bundles.get(course_slug, []), key=lambda x: x["title"])
-        if bundle_refs:
-            lines = [
-                GENERATED_START,
-                "## Part of bundles",
-                "",
-            ]
-            for ref in bundle_refs:
-                lines.append(f"- [{ref['title']}]({course_page_to_bundle_route(ref['slug'])})")
-            lines.extend(["", GENERATED_END])
-            new_content = clean.rstrip() + "\n\n" + "\n".join(lines) + "\n"
-        else:
-            if not has_generated_block:
-                continue
-            new_content = clean
+        body, module_count, standalone_count = render_bundle_body(frontmatter, course_titles)
+        file_path.write_text(f"{fm_block}\n{body}", encoding="utf-8")
 
-        if new_content != content:
-            source_path.write_text(new_content, encoding="utf-8")
-            updated += 1
+        cards.append(
+            {
+                "slug": slug,
+                "title": title,
+                "description": description,
+                "module_count": str(module_count),
+                "standalone_count": str(standalone_count),
+            }
+        )
 
-    return updated
-
-
-def generate_bundles(bundle_definitions):
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    courses = load_courses()
-    course_map = {course["slug"]: course for course in courses}
-
-    course_to_bundles = {}
-    bundle_stats = {}
-
-    for bundle_def in bundle_definitions:
-        section, modules = render_bundle_section(bundle_def, course_map)
-        update_bundle_file(bundle_def, section)
-
-        standalone = 0
-        for module in modules:
-            if module["type"] != "course":
-                continue
-            standalone += 1
-            slug = module["course_slug"]
-            course_to_bundles.setdefault(slug, []).append({
-                "slug": bundle_def["slug"],
-                "title": bundle_def["title"],
-            })
-
-        bundle_stats[bundle_def["slug"]] = {
-            "modules": len(modules),
-            "standalone": standalone,
-        }
-
-    update_overview(bundle_definitions, bundle_stats)
-    updated_courses = update_course_backlinks(course_to_bundles, course_map)
-
-    total_modules = sum(stats["modules"] for stats in bundle_stats.values())
-    print(
-        f"Updated {OVERVIEW_FILE}, {len(bundle_definitions)} bundle page(s), "
-        f"{total_modules} module entries, and {updated_courses} course backlink page(s)."
-    )
+    INDEX_FILE.write_text(render_index(cards), encoding="utf-8")
+    print(f"Generated bundles overview + {len(cards)} detail page(s).")
 
 
 if __name__ == "__main__":
-    definitions, load_errors = load_bundle_definitions()
-    if load_errors:
-        print("Bundle load errors:")
-        for err in load_errors:
-            print(f"- {err}")
-        raise SystemExit(1)
-
-    generate_bundles(definitions)
+    main()

@@ -6,6 +6,6 @@ title: "AI"
 
 Courses tagged under AI:
 
-- [Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius](../../explore/all-training/gpu-nodes.md)
+No courses currently mapped to this domain.
 
 [Back to Scientific Domains Overview](./index.md)

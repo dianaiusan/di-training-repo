@@ -10,35 +10,16 @@ GPU hardware, acceleration stacks, and related workflows.
 
 <div class="tag-grid">
 <div class="tag-card">
-  <h4 class="tag-card-name">Cuda</h4>
+  <h4 class="tag-card-name">CUDA</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../explore/all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></li>
+    <li><a class="tag-course-link" href="../../../explore/training-catalogue/grace-hopper-gpu/">Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius</a></li>
   </ul>
 </div>
 <div class="tag-card">
-  <h4 class="tag-card-name">Cupy</h4>
+  <h4 class="tag-card-name">GPU</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../explore/all-training/gpu-python/">GPU Computing with Python: CuPy and JAX</a></li>
-  </ul>
-</div>
-<div class="tag-card">
-  <h4 class="tag-card-name">Gpu</h4>
-  <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../explore/all-training/ai-hpc/">AI and HPC</a></li>
-    <li><a class="tag-course-link" href="../../../explore/all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></li>
-    <li><a class="tag-course-link" href="../../../explore/all-training/gpu-python/">GPU Computing with Python: CuPy and JAX</a></li>
-  </ul>
-</div>
-<div class="tag-card">
-  <h4 class="tag-card-name">Grace Hopper</h4>
-  <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../explore/all-training/gpu-nodes/">Efficient use of the Grace Hopper GPU nodes on Dardel and Arrhenius</a></li>
-  </ul>
-</div>
-<div class="tag-card">
-  <h4 class="tag-card-name">Jax</h4>
-  <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="../../../explore/all-training/gpu-python/">GPU Computing with Python: CuPy and JAX</a></li>
+    <li><a class="tag-course-link" href="../../../explore/training-catalogue/ai-hpc/">AI and HPC</a></li>
+    <li><a class="tag-course-link" href="../../../explore/training-catalogue/grace-hopper-gpu/">Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius</a></li>
   </ul>
 </div>
 </div>

@@ -23,6 +23,7 @@ modules:
   - course: workflow-management
     label: "Production data pipelines"
 ---
+
 ## Data Science Bootcamp Week
 
 A practical end-to-end week for researchers who want to go from Python essentials to GPU-accelerated machine learning on NAISS HPC systems.
@@ -34,10 +35,9 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">1</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/python-hpc-intro/">Python for HPC essentials</a></p>
-      <p class="bd-meta">Intro to Python for HPC</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/python-hpc-intro/">Python for HPC essentials</a></p>
+      <p class="bd-meta">Python Hpc Intro</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -45,10 +45,9 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">2</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/data-management-large/">Managing large datasets on HPC</a></p>
-      <p class="bd-meta">Large Dataset Management for HPC</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/data-management-large/">Managing large datasets on HPC</a></p>
+      <p class="bd-meta">Data Management Large</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -57,7 +56,8 @@ A practical end-to-end week for researchers who want to go from Python essential
     <span class="bd-num">3</span>
     <div class="bd-main">
       <p class="bd-title">Exploratory analysis on HPC</p>
-      <span class="bd-badge">Bundle-only module</span><span class="bd-badge">0.5 day</span>
+      <span class="bd-badge">Bundle-only module</span>
+      <span class="bd-badge">0.5 day</span>
       <p class="bd-desc">Efficient use of pandas, NumPy, and Matplotlib on cluster login nodes and interactive Jupyter sessions; avoiding common memory pitfalls.</p>
     </div>
   </div>
@@ -66,10 +66,9 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">4</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/parallel-python-mpi/">Parallel Python with MPI</a></p>
-      
+      <p class="bd-title"><a href="/explore/training-catalogue/parallel-python-mpi/">Parallel Python with MPI</a></p>
+      <p class="bd-meta">Parallel Python Mpi</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -77,10 +76,9 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">5</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/gpu-python/">GPU-accelerated Python</a></p>
-      <p class="bd-meta">GPU Computing with Python: CuPy and JAX</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/gpu-python/">GPU-accelerated Python</a></p>
+      <p class="bd-meta">Gpu Python</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -88,10 +86,9 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">6</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/ai-hpc/">Machine learning and deep learning on HPC</a></p>
+      <p class="bd-title"><a href="/explore/training-catalogue/ai-hpc/">Machine learning and deep learning on HPC</a></p>
       <p class="bd-meta">AI and HPC</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -99,10 +96,9 @@ A practical end-to-end week for researchers who want to go from Python essential
   <div class="bd-item-head">
     <span class="bd-num">7</span>
     <div class="bd-main">
-      <p class="bd-title"><a href="../../../explore/all-training/workflow-management/">Production data pipelines</a></p>
-      <p class="bd-meta">Scientific Workflow Management on HPC</p>
+      <p class="bd-title"><a href="/explore/training-catalogue/workflow-management/">Production data pipelines</a></p>
+      <p class="bd-meta">Workflow Management</p>
       <span class="bd-badge bd-badge-core">Standalone course</span>
-      
     </div>
   </div>
 </div>
@@ -112,4 +108,4 @@ Includes 7 modules, with 6 reusable standalone course(s).
 
 ### Related learning paths
 
-- [Data Science](../learning-paths/data-science/)
+- [Data Science](/explore/learning-paths/data-science/)

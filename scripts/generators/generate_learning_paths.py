@@ -1,252 +1,221 @@
 #!/usr/bin/env python3
-"""Generate overview and detail pages from docs/explore/learning-paths/*.md definitions."""
+"""Generate learning-path overview and detail page bodies from frontmatter."""
+
+from __future__ import annotations
 
 from pathlib import Path
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from course_utils import load_courses
-from learning_paths_utils import load_path_definitions, slug_to_title
-from link_utils import (
-    learning_path_page_to_course_route,
-    learning_paths_overview_to_path_route,
-    learning_path_detail_to_related_path_route,
-)
+from typing import Any
 
-OUTPUT_DIR = Path("docs/explore/learning-paths")
-OVERVIEW_FILE = OUTPUT_DIR / "index.md"
+import yaml
 
-LUCIDE_PATHS = {
-    "route": '<circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/>',
-    "sprout": '<path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4M5 21h14"/>',
-    "code-2": '<path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/>',
-    "chart-line": '<path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/>',
-    "dna": '<path d="m10 16 1.5 1.5M14 8l-1.5-1.5M15 2c-1.798 1.998-2.518 3.995-2.807 5.993M16.5 10.5l1 1M17 6l-2.891-2.891M2 15c6.667-6 13.333 0 20-6M20 9l.891.891M3.109 14.109 4 15M6.5 12.5l1 1M7 18l2.891 2.891M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/>',
-    "shield-plus": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M9 12h6"/><path d="M12 9v6"/>',
-}
+ADVERTS_DIR = Path("docs/all-training/adverts")
+PATHS_DIR = Path("docs/explore/learning-paths")
+INDEX_FILE = PATHS_DIR / "index.md"
 
-# Card grid icons per path slug — decoupled from frontmatter so nav stays icon-free
-PATH_CARD_ICONS = {
+PATH_ICONS = {
     "beginner": "sprout",
-    "developer": "code-2",
-    "data-science": "chart-line",
     "bioinformatics": "dna",
+    "data-science": "chart-line",
+    "developer": "code-2",
     "sensitive-data": "shield-plus",
 }
 
 
+def split_frontmatter(content: str) -> tuple[str, str] | tuple[None, None]:
+    if not content.startswith("---"):
+        return None, None
+    parts = content.split("---", 2)
+    if len(parts) < 3:
+        return None, None
+    return f"---{parts[1]}---\n", parts[2].lstrip("\n")
 
 
-
-def render_lucide_icon(icon_name, size_class="lp-card-icon-svg"):
-    """Render an inline lucide SVG matching icons used in navigation."""
-    icon_key = str(icon_name).split("/", 1)[-1] if icon_name else "route"
-    svg_paths = LUCIDE_PATHS.get(icon_key, LUCIDE_PATHS["route"])
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" '
-        f'stroke-linecap="round" stroke-linejoin="round" stroke-width="2" '
-        f'class="lucide lucide-{icon_key} {size_class}" viewBox="0 0 24 24">{svg_paths}</svg>'
-    )
-
-
-def course_href(record):
-    return learning_path_page_to_course_route(record["slug"])
+def parse_frontmatter(md_file: Path) -> tuple[dict | None, str | None]:
+    content = md_file.read_text(encoding="utf-8")
+    fm_block, _ = split_frontmatter(content)
+    if fm_block is None:
+        return None, None
+    try:
+        frontmatter = yaml.safe_load(fm_block.strip("-\n"))
+    except yaml.YAMLError:
+        return None, None
+    return frontmatter if isinstance(frontmatter, dict) else None, fm_block
 
 
-def build_swimlane(path_def, course_map):
-    """Build an HTML phase swimlane for one learning path."""
-    ordered_slugs = []
-    for slugs in path_def["phases"].values():
-        if isinstance(slugs, list):
-            ordered_slugs.extend(slugs)
-
-    step_numbers = {slug: i + 1 for i, slug in enumerate(ordered_slugs)}
-    phases = list(path_def["phases"].items())
-
-    html_parts = ['<div class="lp-swimlane">']
-
-    for phase_idx, (phase_name, slugs) in enumerate(phases):
-        phase_label = slug_to_title(phase_name)
-        items_html = []
-        if isinstance(slugs, list):
-            for slug in slugs:
-                record = course_map.get(slug)
-                title = record["title"] if record else f"Missing: {slug}"
-                href = course_href(record) if record else "#"
-                num = step_numbers[slug]
-                items_html.append(
-                    f'      <div class="lp-course-item">'
-                    f'<span class="lp-course-num">{num}</span>'
-                    f'<a href="{href}">{title}</a>'
-                    f'</div>'
-                )
-
-        phase_html = (
-            f'  <div class="lp-phase">\n'
-            f'    <div class="lp-phase-header">{phase_label}</div>\n'
-            f'    <div class="lp-phase-body">\n'
-            + "\n".join(items_html) + "\n"
-            + f'    </div>\n'
-            + f'  </div>'
-        )
-        html_parts.append(phase_html)
-
-        if phase_idx < len(phases) - 1:
-            html_parts.append('  <div class="lp-phase-arrow">&darr;</div>')
-
-    html_parts.append("</div>")
-    return "\n".join(html_parts), ordered_slugs
+def iter_adverts() -> list[Path]:
+    files: list[Path] = []
+    for md_file in sorted(ADVERTS_DIR.rglob("*.md")):
+        if md_file.name == "_template.md":
+            continue
+        files.append(md_file)
+    return files
 
 
-def render_card_grid(path_definitions):
-    """Render a grid of path cards as HTML for quick overview."""
-    if not path_definitions:
-        return ""
-
-    cards = []
-    cards.append(
-        '<div class="lp-card-grid">'
-    )
-
-    for path_def in path_definitions:
-        icon_svg = render_lucide_icon(PATH_CARD_ICONS.get(path_def["slug"], "route"))
-        href = learning_paths_overview_to_path_route(path_def["slug"])
-        cards.append(
-            f'<a class="lp-card-link" href="{href}">\n'
-            f'  <div class="lp-card">\n'
-            f'    <div class="lp-card-icon">{icon_svg}</div>\n'
-            f'    <h3 class="lp-card-title">{path_def["title"]}</h3>\n'
-            f'    <p class="lp-card-desc">{path_def["description"]}</p>\n'
-            f"  </div>\n"
-            f"</a>"
-        )
-
-    cards.append("</div>")
-    return "\n".join(cards)
+def load_course_titles() -> dict[str, str]:
+    titles: dict[str, str] = {}
+    for md_file in iter_adverts():
+        frontmatter, _ = parse_frontmatter(md_file)
+        if not frontmatter:
+            continue
+        slug = str(frontmatter.get("slug", "")).strip()
+        title = str(frontmatter.get("title", "")).strip()
+        if slug and title:
+            titles[slug] = title
+    return titles
 
 
-def render_related_paths_grid(path_def, path_by_slug):
-    """Render related learning paths as a compact card grid."""
-    if not path_def["related_paths"]:
-        return ""
-
-    cards = []
-    cards.append('<div class="lp-related-grid">')
-
-    for related_slug in path_def["related_paths"]:
-        related = path_by_slug.get(related_slug)
-        title = related["title"] if related else slug_to_title(related_slug)
-        desc = related["description"] if related else ""
-        icon_svg = render_lucide_icon(
-            PATH_CARD_ICONS.get(related_slug, "route"),
-            size_class="lp-related-icon-svg",
-        )
-        cards.append(
-            f'<div class="lp-related-card">\n'
-            f'  <div class="lp-related-head">\n'
-            f'    <span class="lp-related-icon">{icon_svg}</span>\n'
-            f'    <p class="lp-related-title"><a href="{learning_path_detail_to_related_path_route(related_slug)}">{title}</a></p>\n'
-            f'  </div>\n'
-            f'  <p class="lp-related-desc">{desc}</p>\n'
-            f'</div>'
-        )
-
-    cards.append("</div>")
-    return "\n".join(cards)
+def course_route(slug: str) -> str:
+    return f"/explore/training-catalogue/{slug}/"
 
 
-def render_path_section(path_def, course_map, path_by_slug):
-    swimlane, ordered_slugs = build_swimlane(path_def, course_map)
-    missing = [slug for slug in ordered_slugs if slug not in course_map]
-
-    section = []
-    section.append(f"## {path_def['title']}")
-    section.append("")
-    if path_def["description"]:
-        section.append(path_def["description"])
-        section.append("")
-
-    section.append(swimlane)
-    section.append("")
-
-    if path_def["related_paths"]:
-        section.append("### Related paths")
-        section.append("")
-        section.append(render_related_paths_grid(path_def, path_by_slug))
-        section.append("")
-
-    return "\n".join(section), len(ordered_slugs), len(missing)
+def humanize_slug(value: str) -> str:
+    return value.replace("-", " ").title()
 
 
-def update_learning_paths_overview(path_definitions):
-    """Update docs/explore/learning-paths/index.md with card grid overview."""
-    body_lines = [
+def phase_title(phase_slug: str) -> str:
+    return phase_slug.replace("-", " ").title()
+
+
+def render_detail_body(path_fm: dict[str, Any], path_lookup: dict[str, dict], course_titles: dict[str, str]) -> str:
+    title = str(path_fm.get("title", "")).strip()
+    description = str(path_fm.get("description", "")).strip()
+    phases = path_fm.get("phases", {})
+    related_paths = path_fm.get("related_paths", [])
+
+    lines: list[str] = [f"## {title}", "", description, "", '<div class="lp-swimlane">']
+
+    sequence = 1
+    if isinstance(phases, dict):
+        phase_items = list(phases.items())
+        for idx, (phase_slug, course_slugs) in enumerate(phase_items):
+            lines.extend(
+                [
+                    '  <div class="lp-phase">',
+                    f'    <div class="lp-phase-header">{phase_title(str(phase_slug))}</div>',
+                    '    <div class="lp-phase-body">',
+                ]
+            )
+
+            if isinstance(course_slugs, list):
+                for raw_slug in course_slugs:
+                    course_slug = str(raw_slug).strip()
+                    if not course_slug:
+                        continue
+                    course_title = course_titles.get(course_slug, humanize_slug(course_slug))
+                    lines.append(
+                        f'      <div class="lp-course-item"><span class="lp-course-num">{sequence}</span><a href="{course_route(course_slug)}">{course_title}</a></div>'
+                    )
+                    sequence += 1
+
+            lines.extend(["    </div>", "  </div>"])
+            if idx < len(phase_items) - 1:
+                lines.append('  <div class="lp-phase-arrow">&darr;</div>')
+
+    lines.append("</div>")
+
+    lines.extend(["", "### Related paths", ""])
+    lines.append('<div class="lp-related-grid">')
+    if isinstance(related_paths, list) and related_paths:
+        for raw_slug in related_paths:
+            rel_slug = str(raw_slug).strip()
+            if not rel_slug:
+                continue
+            rel_meta = path_lookup.get(rel_slug, {})
+            rel_title = str(rel_meta.get("title") or humanize_slug(rel_slug))
+            rel_desc = str(rel_meta.get("description") or "")
+            lines.extend(
+                [
+                    '<div class="lp-related-card">',
+                    '  <div class="lp-related-head">',
+                    f'    <p class="lp-related-title"><a href="../{rel_slug}/">{rel_title}</a></p>',
+                    "  </div>",
+                    f'  <p class="lp-related-desc">{rel_desc}</p>' if rel_desc else '  <p class="lp-related-desc"></p>',
+                    "</div>",
+                ]
+            )
+    else:
+        lines.append('<div class="lp-related-card"><p class="lp-related-desc">No related paths configured.</p></div>')
+    lines.append("</div>")
+    lines.append("")
+
+    return "\n".join(lines)
+
+
+def render_index(paths: list[dict[str, str]]) -> str:
+    lines: list[str] = [
         "---",
         'title: "Learning Paths Overview"',
-        'icon: lucide/route',
+        "icon: lucide/route",
         "---",
         "",
         "# Learning Paths Overview",
         "",
         "Choose a learning path tailored to your role and goals:",
         "",
+        '<div class="lp-card-grid">',
     ]
 
-    card_grid = render_card_grid(path_definitions)
-    if card_grid:
-        body_lines.append(card_grid)
-        body_lines.append("")
+    for item in sorted(paths, key=lambda p: p["title"].lower()):
+        icon_name = PATH_ICONS.get(item["slug"], "route")
+        lines.extend(
+            [
+                f'<a class="lp-card-link" href="./{item["slug"]}/">',
+                '  <div class="lp-card">',
+                f'    <div class="lp-card-icon">{icon_name}</div>',
+                f'    <h3 class="lp-card-title">{item["title"]}</h3>',
+                f'    <p class="lp-card-desc">{item["description"]}</p>',
+                "  </div>",
+                "</a>",
+            ]
+        )
 
-    with open(OVERVIEW_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(body_lines))
-
-
-def update_path_file(path_def, section):
-    """Update individual path file with full content for sidebar navigation."""
-    path_file = OUTPUT_DIR / f"{path_def['slug']}.md"
-    if not path_file.exists():
-        return
-
-    with open(path_file, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    if content.startswith("---"):
-        parts = content.split("---", 2)
-        frontmatter = parts[0] + "---" + parts[1] + "---" if len(parts) >= 3 else ""
-    else:
-        frontmatter = ""
-
-    with open(path_file, "w", encoding="utf-8") as f:
-        f.write(frontmatter + "\n" + section)
+    lines.extend(["</div>", ""])
+    return "\n".join(lines)
 
 
-def generate_learning_paths(path_definitions):
-    course_map = {course["slug"]: course for course in load_courses()}
-    path_by_slug = {path_def["slug"]: path_def for path_def in path_definitions}
+def main() -> None:
+    course_titles = load_course_titles()
 
-    total_positions = 0
-    total_missing = 0
+    path_files = sorted(
+        [p for p in PATHS_DIR.glob("*.md") if p.name != "index.md"],
+        key=lambda p: p.name,
+    )
 
-    if path_definitions:
-        for path_def in path_definitions:
-            section, positions, missing = render_path_section(path_def, course_map, path_by_slug)
-            total_positions += positions
-            total_missing += missing
-            update_path_file(path_def, section)
+    path_meta: dict[str, dict] = {}
+    fm_by_file: dict[Path, tuple[dict, str]] = {}
+    for file_path in path_files:
+        frontmatter, frontmatter_block = parse_frontmatter(file_path)
+        if not frontmatter or not frontmatter_block:
+            continue
+        slug = str(frontmatter.get("slug", "")).strip()
+        if not slug:
+            continue
+        path_meta[slug] = frontmatter
+        fm_by_file[file_path] = (frontmatter, frontmatter_block)
 
-    update_learning_paths_overview(path_definitions)
+    paths_for_index: list[dict[str, str]] = []
 
+    for file_path, (frontmatter, fm_block) in fm_by_file.items():
+        slug = str(frontmatter.get("slug", "")).strip()
+        title = str(frontmatter.get("title", humanize_slug(slug))).strip()
+        description = str(frontmatter.get("description", "")).strip()
+
+        body = render_detail_body(frontmatter, path_meta, course_titles)
+        file_path.write_text(f"{fm_block}\n{body}", encoding="utf-8")
+
+        paths_for_index.append(
+            {
+                "slug": slug,
+                "title": title,
+                "description": description,
+            }
+        )
+
+    INDEX_FILE.write_text(render_index(paths_for_index), encoding="utf-8")
     print(
-        f"Updated {OVERVIEW_FILE} with {len(path_definitions)} paths, "
-        f"{total_positions} ordered positions, {total_missing} missing course slugs."
+        f"Generated learning paths overview + {len(paths_for_index)} detail page(s)."
     )
 
 
 if __name__ == "__main__":
-    definitions, load_errors = load_path_definitions()
-    if load_errors:
-        print("Learning path load errors:")
-        for err in load_errors:
-            print(f"- {err}")
-        raise SystemExit(1)
-
-    generate_learning_paths(definitions)
+    main()

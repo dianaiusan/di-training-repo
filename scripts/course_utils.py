@@ -6,7 +6,40 @@ Shared helper utilities for course generation scripts.
 from pathlib import Path
 import yaml
 
-COURSE_DIRS = [Path("docs/explore/all-training")]
+COURSE_DIRS = [Path("docs/all-training/adverts")]
+
+
+TAG_DISPLAY_NAMES = {
+    "ai": "AI",
+    "apptainer": "Apptainer",
+    "arm": "Arm",
+    "cpu": "CPU",
+    "command-line": "Command Line",
+    "cpp": "C++",
+    "cuda": "CUDA",
+    "file-io": "File I/O",
+    "gpu": "GPU",
+    "grace-hopper": "Grace Hopper",
+    "hpc": "HPC",
+    "jupyter": "Jupyter",
+    "machine-learning": "Machine Learning",
+    "matplotlib": "Matplotlib",
+    "nccl": "NCCL",
+    "openmp": "OpenMP",
+    "mpi": "MPI",
+    "nsight": "Nsight",
+    "parallel-programming": "Parallel Programming",
+    "paraview": "ParaView",
+    "performance-optimization": "Performance Optimization",
+    "pytorch": "PyTorch",
+    "pyvista": "PyVista",
+    "scientific-visualization": "Scientific Visualization",
+    "singularity": "Singularity",
+    "slurm": "Slurm",
+    "software-development": "Software Development",
+    "vtk": "VTK",
+    "vedo": "Vedo",
+}
 
 
 def parse_frontmatter(file_path: Path):
@@ -37,7 +70,7 @@ def iter_course_files():
         if not course_dir.exists() or not course_dir.is_dir():
             continue
 
-        for md_file in course_dir.glob('*.md'):
+        for md_file in course_dir.rglob('*.md'):
             normalized_stem = md_file.stem.lstrip('_').lower()
             if normalized_stem.startswith('template'):
                 continue
@@ -90,3 +123,20 @@ def load_courses():
         courses.append(course)
 
     return courses
+
+
+def display_tag(tag: str) -> str:
+    """Convert a canonical lowercase tag to a readable display label."""
+    normalized = tag.strip().lower()
+    if not normalized:
+        return ""
+
+    if normalized in TAG_DISPLAY_NAMES:
+        return TAG_DISPLAY_NAMES[normalized]
+
+    parts = normalized.split("-")
+    rendered_parts = []
+    for part in parts:
+        rendered_parts.append(TAG_DISPLAY_NAMES.get(part, part.title()))
+
+    return " ".join(rendered_parts)
