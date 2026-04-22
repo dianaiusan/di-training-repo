@@ -75,7 +75,7 @@ Explore training courses organized by scientific domain:
   <div class="sd-card">
     <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/code-2.svg" alt=""/></div>
     <h3 class="sd-card-title">Computational Science</h3>
-    <p class="sd-card-meta">6 courses</p>
+    <p class="sd-card-meta">7 courses</p>
   </div>
 </a>
 <a class="sd-card-link" href="./data-science/">
@@ -96,7 +96,7 @@ Explore training courses organized by scientific domain:
   <div class="sd-card">
     <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/computer.svg" alt=""/></div>
     <h3 class="sd-card-title">General HPC</h3>
-    <p class="sd-card-meta">5 courses</p>
+    <p class="sd-card-meta">6 courses</p>
   </div>
 </a>
 <a class="sd-card-link" href="./genomics/">
@@ -110,7 +110,7 @@ Explore training courses organized by scientific domain:
   <div class="sd-card">
     <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/text-search.svg" alt=""/></div>
     <h3 class="sd-card-title">Machine Learning</h3>
-    <p class="sd-card-meta">0 courses</p>
+    <p class="sd-card-meta">1 course</p>
   </div>
 </a>
 <a class="sd-card-link" href="./social-sciences/">

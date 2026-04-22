@@ -38,4 +38,10 @@ Explore our training resources and materials.
 	<p>Open the complete catalogue of all published training materials.</p>
 </a>
 
+<a class="ev-landing-card" href="./self-study/">
+	<div class="ev-landing-icon"><img class="ev-landing-icon-img" src="../assets/images/icons/notebook-pen.svg" alt=""/></div>
+	<h2>Self Study</h2>
+	<p>Browse independently-paced resources for self-directed learning.</p>
+</a>
+
 </div>

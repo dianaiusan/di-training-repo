@@ -10,45 +10,17 @@ from typing import Any
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from course_utils import display_tag
+
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
 
-SELF_STUDY_DIR = Path("all-training-input/self-study")
-ADVERTS_DIR = Path("all-training-input/events")
+SELF_STUDY_DIR = Path("docs/all-training/self-study")
+EVENTS_DIR = Path("docs/all-training/events")
 OUTPUT_FILE = Path("docs/explore/self-study/index.md")
-
-# ---------------------------------------------------------------------------
-# Icon map — lucide icon name per kind
-# ---------------------------------------------------------------------------
-
-KIND_ICONS: dict[str, str] = {
-    "tutorial": "graduation-cap",
-    "external-docs": "external-link",
-    "recording": "video",
-    "exercise-set": "flask-conical",
-    "reading": "book-open",
-}
-DEFAULT_ICON = "book-open"
-
-KIND_LABELS: dict[str, str] = {
-    "tutorial": "Tutorial",
-    "external-docs": "External Docs",
-    "recording": "Recording",
-    "exercise-set": "Exercises",
-    "reading": "Reading",
-}
-
-MATERIAL_TYPE_LABELS: dict[str, str] = {
-    "slides": "Slides",
-    "video": "Video",
-    "recording": "Recording",
-    "notebook": "Notebook",
-    "exercises": "Exercises",
-    "external-docs": "Docs",
-    "code": "Code",
-    "other": "Link",
-}
 
 # ---------------------------------------------------------------------------
 # Frontmatter parsing (mirrors the pattern used by generate_learning_paths.py)
@@ -84,7 +56,7 @@ def parse_frontmatter(md_file: Path) -> dict | None:
 
 def load_advert_slugs() -> set[str]:
     slugs: set[str] = set()
-    for md_file in ADVERTS_DIR.rglob("*.md"):
+    for md_file in EVENTS_DIR.rglob("*.md"):
         if md_file.name == "_template.md":
             continue
         fm = parse_frontmatter(md_file)
@@ -137,121 +109,89 @@ def load_items() -> list[dict[str, Any]]:
 # ---------------------------------------------------------------------------
 
 
-def _badge(css_class: str, text: str) -> str:
-    return f'<span class="ss-badge ss-badge--{css_class}">{text}</span>'
+def resolve_card_href(item: dict[str, Any]) -> str:
+    """Prefer external_url, then url, then the first material link."""
+    external_url = str(item.get("external_url", "")).strip()
+    if external_url:
+        return external_url
 
+    url = str(item.get("url", "")).strip()
+    if url:
+        return url
 
-def _level_badge(level: str) -> str:
-    level = level.strip().lower() if level else ""
-    labels = {
-        "introductory": ("intro", "Introductory"),
-        "beginner": ("beginner", "Beginner"),
-        "intermediate": ("intermediate", "Intermediate"),
-        "advanced": ("advanced", "Advanced"),
-    }
-    css, label = labels.get(level, ("beginner", level.title() or "Beginner"))
-    return _badge(f"level-{css}", label)
-
-
-def _kind_badge(kind: str) -> str:
-    kind = kind.strip().lower() if kind else "tutorial"
-    label = KIND_LABELS.get(kind, kind.title())
-    return _badge(f"kind-{kind}", label)
-
-
-def _time_badge(estimated_time: str) -> str:
-    return _badge("time", f"&#128336; {estimated_time}")
-
-
-def _material_links(materials: list) -> str:
-    if not materials:
-        return ""
-    parts: list[str] = []
+    materials = item.get("materials") or []
     for mat in materials:
-        if not isinstance(mat, dict):
-            continue
-        mat_type = str(mat.get("type", "other")).strip()
-        mat_title = str(mat.get("title", MATERIAL_TYPE_LABELS.get(mat_type, "Link"))).strip()
-        mat_url = str(mat.get("url", "")).strip()
-        if not mat_url:
-            continue
-        label = MATERIAL_TYPE_LABELS.get(mat_type, mat_title)
-        parts.append(
-            f'<a class="ss-material-link ss-material-link--{mat_type}" href="{mat_url}">{label}</a>'
-        )
-    if not parts:
+        if isinstance(mat, dict) and mat.get("url"):
+            material_url = str(mat["url"]).strip()
+            if material_url:
+                return material_url
+
+    return "#"
+
+
+def render_level_badge(level: str) -> str:
+    normalized = level.strip().lower()
+    if not normalized:
         return ""
-    return '<div class="ss-material-links">' + "".join(parts) + "</div>"
+
+    if normalized == "introductory":
+        badge_class = "diff-beginner"
+    elif normalized in {"beginner", "intermediate", "advanced"}:
+        badge_class = f"diff-{normalized}"
+    else:
+        badge_class = "diff-beginner"
+
+    return f'<span class="diff-badge {badge_class}">{normalized}</span>'
+
+
+def render_tags(tags: object) -> list[str]:
+    if not isinstance(tags, list):
+        return []
+
+    rendered_tags: list[str] = []
+    for tag in tags:
+        normalized = str(tag).strip()
+        if not normalized or normalized == "...":
+            continue
+        rendered_tags.append(f'<span class="ev-tag">{display_tag(normalized)}</span>')
+
+    return rendered_tags
 
 
 def render_card(item: dict[str, Any], advert_slugs: set[str]) -> list[str]:
     title = str(item.get("title", "Untitled")).strip()
     slug = str(item.get("slug", "")).strip()
     short_desc = str(item.get("short_description", "")).strip()
-    kind = str(item.get("kind", "tutorial")).strip()
+    format_type = str(item.get("format", "")).strip()
     level = str(item.get("level", "")).strip()
-    estimated_time = str(item.get("estimated_time", "")).strip()
-    has_recording = bool(item.get("has_recording", False))
-    url = str(item.get("url", "")).strip()
-    materials = item.get("materials") or []
     related_event_slugs = item.get("related_event_slugs") or []
-    external_only = bool(item.get("external_only", False))
+    tags = render_tags(item.get("tags", []))
 
     # Validate related_event_slugs
     for rel_slug in related_event_slugs:
         if str(rel_slug).strip() not in advert_slugs:
             warnings.warn(
-                f"Self-study '{slug}': related_event_slug '{rel_slug}' not found in adverts"
+                f"Self-study '{slug}': related_event_slug '{rel_slug}' not found in EVENTS"
             )
 
-    # Determine card href
-    if url:
-        card_href = url
-    elif materials:
-        first_url = ""
-        for mat in materials:
-            if isinstance(mat, dict) and mat.get("url"):
-                first_url = str(mat["url"]).strip()
-                break
-        card_href = first_url or "#"
-    else:
-        card_href = "#"
+    meta_parts: list[str] = []
+    if format_type:
+        meta_parts.append(f'<span class="ev-format">{format_type}</span>')
+    if level:
+        meta_parts.append(render_level_badge(level))
+    meta_parts.extend(tags)
 
-    icon_name = str(item.get("icon", KIND_ICONS.get(kind, DEFAULT_ICON))).strip()
-    # Strip lucide/ prefix if present (template stores bare name already, but be defensive)
-    if icon_name.startswith("lucide/"):
-        icon_name = icon_name[7:]
+    card_href = resolve_card_href(item)
 
     lines: list[str] = [
-        f'<div class="ss-card">',
-        f'  <div class="ss-card-header">',
-        f'    <div class="ss-card-badges">',
-        f"      {_kind_badge(kind)}",
-        f"      {_level_badge(level)}" if level else "",
-        f"      {_time_badge(estimated_time)}" if estimated_time else "",
-        f'      {_badge("recording", "&#127909; Recording")}' if has_recording else "",
-        f"    </div>",
-        f'    <h3 class="ss-card-title"><a href="{card_href}">{title}</a></h3>',
-        f'    <p class="ss-card-desc">{short_desc}</p>' if short_desc else "",
-        f"  </div>",
+        '<div class="ss-card">',
+        f'  <h3 class="ss-card-title"><a href="{card_href}">{title}</a></h3>',
+        f'  <p class="ss-card-desc">{short_desc}</p>' if short_desc else "",
+        '  <div class="ss-card-meta">' if meta_parts else "",
+        f'    {" ".join(meta_parts)}' if meta_parts else "",
+        "  </div>" if meta_parts else "",
+        "</div>",
     ]
-
-    mat_html = _material_links(materials if isinstance(materials, list) else [])
-    if mat_html:
-        lines.append(f'  <div class="ss-card-footer">{mat_html}</div>')
-
-    if related_event_slugs:
-        rel_links = ", ".join(
-            f'<a href="/explore/training-catalogue/{str(rs).strip()}/">{str(rs).strip()}</a>'
-            for rs in related_event_slugs
-            if str(rs).strip()
-        )
-        lines.append(
-            f'  <div class="ss-card-related">Related event: {rel_links}</div>'
-        )
-
-    lines.append("</div>")
-    # Remove empty strings (from conditional empty lines)
     return [ln for ln in lines if ln != ""]
 
 
@@ -274,6 +214,7 @@ def render_index(items: list[dict[str, Any]], advert_slugs: set[str]) -> str:
     header = [
         "---",
         'title: "Self-Study Materials"',
+        "icon: lucide/notebook-pen",
         "---",
         "",
         "# Self-Study Materials",

@@ -5,12 +5,16 @@ from __future__ import annotations
 
 from collections import defaultdict
 from pathlib import Path
+import sys
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from course_utils import course_link
 from lucide_icons import render_lucide_img
 
-ADVERTS_DIR = Path("all-training-input/events")
+EVENTS_DIR = Path("docs/all-training/events")
 OUTPUT_DIR = Path("docs/explore/scientific-domains")
 INDEX_FILE = OUTPUT_DIR / "index.md"
 
@@ -76,22 +80,15 @@ def parse_frontmatter(md_file: Path) -> dict | None:
 
 def iter_advert_files() -> list[Path]:
     files: list[Path] = []
-    for md_file in sorted(ADVERTS_DIR.rglob("*.md")):
+    for md_file in sorted(EVENTS_DIR.rglob("*.md")):
         if md_file.name == "_template.md":
             continue
         files.append(md_file)
     return files
 
 
-def resolve_course_url(frontmatter: dict, slug: str) -> str:
-    url_value = frontmatter.get("url")
-    if isinstance(url_value, str):
-        value = url_value.strip()
-        if value:
-            if value.startswith(("http://", "https://", "/")):
-                return value
-            return f"/{value}"
-    return f"/explore/training-catalogue/{slug}/"
+def resolve_course_url(md_file: Path) -> str:
+    return course_link(md_file)
 
 
 def load_domain_courses() -> tuple[dict[str, list[dict]], set[str]]:
@@ -113,7 +110,7 @@ def load_domain_courses() -> tuple[dict[str, list[dict]], set[str]]:
         course = {
             "title": title,
             "slug": slug,
-            "url": resolve_course_url(frontmatter, slug),
+            "url": resolve_course_url(md_file),
         }
 
         for item in domains:

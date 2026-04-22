@@ -20,9 +20,11 @@ def tags_overview_to_category_route(category_slug: str) -> str:
     return f"./{category_slug}/"
 
 
-def tag_category_to_course_route(course_slug: str) -> str:
-    """Link from /explore/tags/<category>/ to /explore/training-catalogue/<course>/."""
-    return f"../../../explore/training-catalogue/{course_slug}/"
+def tag_category_to_course_route(course_link: str) -> str:
+    """Link from /explore/tags/<category>/ to a course page route."""
+    if course_link.startswith("/"):
+        return course_link
+    return f"../../../{course_link.lstrip('/')}"
 
 
 def tag_category_to_overview_route() -> str:
@@ -182,7 +184,7 @@ TAG_TO_CATEGORY = {
 def render_tag_courses(tag_name: str, courses: list) -> str:
     """Render a single tag card with its courses."""
     courses_html = "\n".join(
-        f'    <li><a class="tag-course-link" href="{tag_category_to_course_route(course["slug"])}">{course["title"]}</a></li>'
+        f'    <li><a class="tag-course-link" href="{tag_category_to_course_route(course["link"])}">{course["title"]}</a></li>'
         for course in courses
     )
     

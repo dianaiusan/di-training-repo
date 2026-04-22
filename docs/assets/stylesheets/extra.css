@@ -961,7 +961,8 @@ a:active {
    Used by: events/upcoming.md, events/past-events.md
    -------------------------------------------------------------------------- */
 
-.ev-card-grid {
+.ev-card-grid,
+.ss-card-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -969,7 +970,8 @@ a:active {
   max-width: 74rem;
 }
 
-.ev-card {
+.ev-card,
+.ss-card {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--clr-border);
@@ -979,7 +981,8 @@ a:active {
   transition: transform 140ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
-.ev-card:hover {
+.ev-card:hover,
+.ss-card:hover {
   transform: translateY(-3px);
   border-color: var(--clr-accent);
   box-shadow: 0 8px 20px var(--clr-shadow);
@@ -999,7 +1002,8 @@ a:active {
   margin-bottom: 0.75rem;
 }
 
-.ev-card-title {
+.ev-card-title,
+.ss-card-title {
   margin: 0 0 0.5rem 0;
   font: inherit;
   font-size: var(--card-title-size);
@@ -1008,24 +1012,28 @@ a:active {
   color: var(--clr-text-primary);
 }
 
-.ev-card-title a {
+.ev-card-title a,
+.ss-card-title a {
   color: inherit;
   text-decoration: none;
 }
 
-.ev-card-desc {
+.ev-card-desc,
+.ss-card-desc {
   margin: 0 0 0.7rem 0;
   font-size: var(--card-desc-size);
   line-height: 1.45;
   color: var(--clr-text-secondary);
 }
 
-.ev-card:hover .ev-card-title a {
+.ev-card:hover .ev-card-title a,
+.ss-card:hover .ss-card-title a {
   color: var(--clr-accent);
   text-decoration: none;
 }
 
-.ev-card-meta {
+.ev-card-meta,
+.ss-card-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -1082,6 +1090,18 @@ a:active {
   border: 1px solid rgba(74, 85, 104, 0.20);
 }
 
+/* Merged all-training badge variants */
+.ev-tag-event {
+  background: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #26a69a;
+}
+.ev-tag-self-study {
+  background: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ff9800;
+}
+
 .ev-tag {
   display: inline-block;
   padding: 0.2rem 0.6rem;
@@ -1095,17 +1115,22 @@ a:active {
 
 .ev-card-meta .ev-format,
 .ev-card-meta .diff-badge,
-.ev-card-meta .ev-tag {
+.ev-card-meta .ev-tag,
+.ss-card-meta .ev-format,
+.ss-card-meta .diff-badge,
+.ss-card-meta .ev-tag {
   font-size: 0.7rem;
 }
 
 @media (max-width: 640px) {
-  .ev-card-grid {
+  .ev-card-grid,
+  .ss-card-grid {
     grid-template-columns: 1fr;
     gap: 0.85rem;
   }
 
-  .ev-card {
+  .ev-card,
+  .ss-card {
     padding: 1rem;
   }
 }
@@ -1196,137 +1221,5 @@ a:active {
 
 /* --------------------------------------------------------------------------
    Self-study landing page — ss-card
-   Uses the same shared card tokens as bd-card, lp-card, etc.
+   Kept as a separate class family so self-study cards can diverge later.
    -------------------------------------------------------------------------- */
-
-.ss-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--card-gap);
-  margin: 1.5rem 0 2rem 0;
-}
-
-.ss-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--card-border);
-  border-radius: var(--card-radius);
-  background: var(--card-bg);
-  padding: var(--card-padding);
-  gap: 0.6rem;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.ss-card:hover {
-  border-color: var(--card-hover-border);
-  box-shadow: 0 0 0 3px var(--card-hover-shadow);
-}
-
-.ss-card-header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.ss-card-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-bottom: 0.15rem;
-}
-
-.ss-card-title {
-  margin: 0;
-  font-size: var(--card-title-size);
-  line-height: 1.3;
-}
-
-.ss-card-title a,
-.ss-card-title a:visited {
-  color: var(--clr-text-primary);
-  text-decoration: none;
-}
-
-.ss-card-title a:hover,
-.ss-card-title a:focus {
-  color: var(--card-hover-border);
-  text-decoration: none;
-}
-
-.ss-card-desc {
-  margin: 0;
-  font-size: var(--card-desc-size);
-  line-height: 1.4;
-  color: var(--clr-text-secondary);
-}
-
-.ss-card-footer {
-  margin-top: auto;
-  padding-top: 0.5rem;
-  border-top: 1px solid var(--card-border);
-}
-
-.ss-card-related {
-  font-size: 0.75rem;
-  color: var(--clr-text-secondary);
-  border-top: 1px solid var(--card-border);
-  padding-top: 0.4rem;
-  margin-top: 0.2rem;
-}
-
-/* Material link pills */
-.ss-material-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-.ss-material-link {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
-  border: 1px solid var(--card-border);
-  background: #f4f6fa;
-  color: var(--clr-text-primary);
-  text-decoration: none;
-  transition: background 0.12s ease, border-color 0.12s ease;
-}
-
-.ss-material-link:hover,
-.ss-material-link:focus {
-  background: rgba(1, 0, 136, 0.07);
-  border-color: var(--card-hover-border);
-  color: var(--card-hover-border);
-  text-decoration: none;
-}
-
-/* Badges */
-.ss-badge {
-  display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.12rem 0.45rem;
-  border-radius: 999px;
-  line-height: 1.4;
-}
-
-/* Kind badges */
-.ss-badge--kind-tutorial      { background: #dbeafe; color: #1e40af; }
-.ss-badge--kind-recording     { background: #fce7f3; color: #9d174d; }
-.ss-badge--kind-external-docs { background: #ecfdf5; color: #065f46; }
-.ss-badge--kind-exercise-set  { background: #fff7ed; color: #9a3412; }
-.ss-badge--kind-reading       { background: #f5f3ff; color: #5b21b6; }
-
-/* Level badges */
-.ss-badge--level-intro        { background: #f0fdf4; color: #166534; }
-.ss-badge--level-beginner     { background: #f0fdf4; color: #166534; }
-.ss-badge--level-intermediate { background: #fffbeb; color: #92400e; }
-.ss-badge--level-advanced     { background: #fef2f2; color: #991b1b; }
-
-/* Misc badges */
-.ss-badge--time               { background: #f8fafc; color: #475569; font-weight: 600; text-transform: none; letter-spacing: 0; }
-.ss-badge--recording          { background: #fce7f3; color: #9d174d; }

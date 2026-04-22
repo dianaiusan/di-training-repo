@@ -4,12 +4,17 @@
 from __future__ import annotations
 
 from pathlib import Path
+import sys
 from typing import Any
 
 import yaml
 
-ADVERTS_DIR = Path("all-training-input/events")
-BUNDLES_DIR = Path("all-training-input/bundles")  # source input
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from course_utils import load_course_lookup
+
+EVENTS_DIR = Path("docs/all-training/events")
+BUNDLES_DIR = Path("docs/all-training/bundles")  # source input
 OUTPUT_BUNDLES_DIR = Path("docs/explore/bundles")       # generated output
 INDEX_FILE = OUTPUT_BUNDLES_DIR / "index.md"
 
@@ -35,37 +40,20 @@ def parse_frontmatter(md_file: Path) -> tuple[dict | None, str | None]:
     return frontmatter if isinstance(frontmatter, dict) else None, fm_block
 
 
-def iter_adverts() -> list[Path]:
+def iter_EVENTS() -> list[Path]:
     files: list[Path] = []
-    for md_file in sorted(ADVERTS_DIR.rglob("*.md")):
+    for md_file in sorted(EVENTS_DIR.rglob("*.md")):
         if md_file.name == "_template.md":
             continue
         files.append(md_file)
     return files
 
 
-def load_course_titles() -> dict[str, str]:
-    titles: dict[str, str] = {}
-    for md_file in iter_adverts():
-        frontmatter, _ = parse_frontmatter(md_file)
-        if not frontmatter:
-            continue
-        slug = str(frontmatter.get("slug", "")).strip()
-        title = str(frontmatter.get("title", "")).strip()
-        if slug and title:
-            titles[slug] = title
-    return titles
-
-
 def humanize_slug(value: str) -> str:
     return value.replace("-", " ").title()
 
 
-def course_route(slug: str) -> str:
-    return f"/explore/training-catalogue/{slug}/"
-
-
-def render_bundle_body(bundle_fm: dict[str, Any], course_titles: dict[str, str]) -> tuple[str, int, int]:
+def render_bundle_body(bundle_fm: dict[str, Any], courses_by_slug: dict[str, dict[str, Any]]) -> tuple[str, int, int]:
     title = str(bundle_fm.get("title", "")).strip()
     description = str(bundle_fm.get("description", "")).strip()
     audience = str(bundle_fm.get("audience", "")).strip()
@@ -107,9 +95,11 @@ def render_bundle_body(bundle_fm: dict[str, Any], course_titles: dict[str, str])
 
             if course_slug:
                 standalone_count += 1
-                course_title = course_titles.get(course_slug, humanize_slug(course_slug))
+                course = courses_by_slug.get(course_slug, {})
+                course_title = str(course.get("title") or humanize_slug(course_slug))
+                course_link = str(course.get("link") or "#")
                 lines.append(
-                    f'      <p class="bd-title"><a href="{course_route(course_slug)}">{title_text}</a></p>'
+                    f'      <p class="bd-title"><a href="{course_link}">{title_text}</a></p>'
                 )
                 lines.append(f'      <p class="bd-meta">{course_title}</p>')
                 lines.append('      <span class="bd-badge bd-badge-core">Standalone course</span>')
@@ -179,7 +169,7 @@ def render_index(cards: list[dict[str, str]]) -> str:
 
 
 def main() -> None:
-    course_titles = load_course_titles()
+    courses_by_slug = load_course_lookup()
     bundle_files = sorted(
         [p for p in BUNDLES_DIR.glob("*.md") if p.name != "index.md"],
         key=lambda p: p.name,
@@ -196,7 +186,7 @@ def main() -> None:
         slug = str(frontmatter.get("slug", file_path.stem)).strip()
         description = str(frontmatter.get("description", "")).strip()
 
-        body, module_count, standalone_count = render_bundle_body(frontmatter, course_titles)
+        body, module_count, standalone_count = render_bundle_body(frontmatter, courses_by_slug)
         out_file = OUTPUT_BUNDLES_DIR / file_path.name
         out_file.write_text(f"{fm_block}\n{body}", encoding="utf-8")
 

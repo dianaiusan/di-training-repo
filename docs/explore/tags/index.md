@@ -13,7 +13,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/server.svg" alt=""/></div>
   <h3 class="tg-card-title">HPC & Infrastructure</h3>
   <p class="tg-card-desc">Systems, platforms, environments, and operations.</p>
-  <p class="tg-card-meta">8 tags · 12 course references</p>
+  <p class="tg-card-meta">8 tags · 13 course references</p>
 </div>
 </a>
 <a class="tg-card-link" href="./parallel-performance/">
@@ -37,7 +37,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/database.svg" alt=""/></div>
   <h3 class="tg-card-title">Data & AI</h3>
   <p class="tg-card-desc">Data workflows, machine learning, and analytics.</p>
-  <p class="tg-card-meta">2 tags · 2 course references</p>
+  <p class="tg-card-meta">3 tags · 3 course references</p>
 </div>
 </a>
 <a class="tg-card-link" href="./software-development/">
@@ -69,7 +69,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/tag.svg" alt=""/></div>
   <h3 class="tg-card-title">Other</h3>
   <p class="tg-card-desc">Additional tags not yet categorized.</p>
-  <p class="tg-card-meta">17 tags · 21 course references</p>
+  <p class="tg-card-meta">19 tags · 24 course references</p>
 </div>
 </a>
 </div>

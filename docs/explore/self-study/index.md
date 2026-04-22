@@ -1,11 +1,20 @@
 ---
 title: "Self-Study Materials"
+icon: lucide/notebook-pen
 ---
 
 # Self-Study Materials
 
 Browse tutorials, recordings, and documentation you can work through at your own pace.
 
-!!! note
-    No self-study materials have been published yet.
-    Check back soon or browse the [Events](../events/index.md) page for upcoming training.
+## Standalone Materials
+
+<div class="ss-card-grid">
+<div class="ss-card">
+  <h3 class="ss-card-title"><a href="/all-training/self-study/singularity-apptainer/">Basic Singularity/Apptainer</a></h3>
+  <p class="ss-card-desc">An introduction to the basic concepts of containerised software environment solution within the Singularity/Apptainer framework (run, build, etc.)</p>
+  <div class="ss-card-meta">
+    <span class="ev-format">self-study</span> <span class="diff-badge diff-beginner">beginner</span> <span class="ev-tag">Containers</span> <span class="ev-tag">Singularity</span> <span class="ev-tag">Apptainer</span> <span class="ev-tag">Reproducibility</span> <span class="ev-tag">Software Environments</span>
+  </div>
+</div>
+</div>

@@ -6,7 +6,7 @@ Shared helper utilities for course generation scripts.
 from pathlib import Path
 import yaml
 
-COURSE_DIRS = [Path("all-training-input/events")]
+COURSE_DIRS = [Path("docs/all-training/events")]
 
 
 TAG_DISPLAY_NAMES = {
@@ -80,19 +80,13 @@ def iter_course_files():
 
 
 def course_link(md_file: Path):
-    """Return the canonical site route for a course.
+    """Return the canonical site route for a course page.
 
-    Source files now live outside docs/ (all-training-input/), so we derive
-    the link from the slug via the training-catalogue rather than the file path.
+    Prefer the docs-relative rendered route (e.g. /all-training/events/2026/ai-hpc/).
     """
-    frontmatter, _ = parse_frontmatter(md_file)
-    if frontmatter:
-        slug = frontmatter.get("slug", "").strip()
-        if slug:
-            return f"/explore/training-catalogue/{slug}/"
-    # Fallback: try docs-relative path (for any files still under docs/)
     try:
-        return md_file.relative_to("docs").as_posix()
+        rel = md_file.relative_to(Path("docs"))
+        return f"/{rel.with_suffix('').as_posix().strip('/')}/"
     except ValueError:
         return "/"
 
@@ -136,6 +130,11 @@ def load_courses():
         courses.append(course)
 
     return courses
+
+
+def load_course_lookup():
+    """Return courses keyed by slug for fast link/title lookups."""
+    return {course["slug"]: course for course in load_courses()}
 
 
 def display_tag(tag: str) -> str:

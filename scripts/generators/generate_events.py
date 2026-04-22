@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate docs/events/upcoming.md and docs/events/past-events.md from advert frontmatter."""
+"""Generate docs/events/upcoming.md and docs/events/past-events.md from docs/all-training/events frontmatter."""
 
 from __future__ import annotations
 
@@ -13,9 +13,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from course_utils import display_tag
 
-ADVERTS_DIR = Path("all-training-input/events")
+EVENTS_DIR = Path("docs/all-training/events")
 UPCOMING_PAGE = Path("docs/events/upcoming.md")
 PAST_PAGE = Path("docs/events/past-events.md")
+
+
+def event_anchor(slug: str) -> str:
+    """Return a stable fragment id for an event card."""
+    return f"event-{slug}"
 
 
 def parse_iso_date(value: str | None) -> date | None:
@@ -135,16 +140,41 @@ def format_event_dates(start_date: date, end_date: date, explicit_dates: list[da
     return format_date_range(start_date, end_date)
 
 
-def resolve_event_url(url_value: object, slug: str) -> str:
-    """Resolve preferred URL for card links with sane fallbacks."""
-    if isinstance(url_value, str):
-        url = url_value.strip()
-        if url:
-            if url.startswith(("http://", "https://", "/")):
-                return url
-            return f"/{url}"
+def event_page_url(md_file: Path) -> str:
+    """Build the rendered docs URL for an event markdown source file."""
+    try:
+        rel = md_file.relative_to(Path("docs"))
+    except ValueError:
+        rel = md_file
+    page_path = rel.with_suffix("").as_posix().strip("/")
+    return f"/{page_path}/"
 
-    return f"/explore/training-catalogue/{slug}/"
+
+def normalize_event_url(url_value: object) -> str | None:
+    """Return a stripped URL string when the frontmatter value is usable."""
+    if not isinstance(url_value, str):
+        return None
+
+    url = url_value.strip()
+    if not url:
+        return None
+
+    return url
+
+
+def resolve_event_url(
+    external_url_value: object, url_value: object, md_file: Path
+) -> str:
+    """Prefer external_url, then url, otherwise point to the rendered local page."""
+    external_url = normalize_event_url(external_url_value)
+    if external_url:
+        return external_url
+
+    url = normalize_event_url(url_value)
+    if url:
+        return url
+
+    return event_page_url(md_file)
 
 
 def parse_frontmatter(md_file: Path) -> dict | None:
@@ -171,14 +201,14 @@ def parse_frontmatter(md_file: Path) -> dict | None:
 def iter_advert_files() -> list[Path]:
     """Collect all advert markdown files except templates."""
     files: list[Path] = []
-    for md_file in sorted(ADVERTS_DIR.rglob("*.md")):
+    for md_file in sorted(EVENTS_DIR.rglob("*.md")):
         if md_file.name == "_template.md":
             continue
         files.append(md_file)
     return files
 
 
-def load_adverts() -> tuple[list[dict], list[str]]:
+def load_EVENTS() -> tuple[list[dict], list[str]]:
     """Load advert metadata needed for event page generation."""
     events: list[dict] = []
     warnings: list[str] = []
@@ -192,6 +222,7 @@ def load_adverts() -> tuple[list[dict], list[str]]:
         title = frontmatter.get("title")
         slug = frontmatter.get("slug")
         url_value = frontmatter.get("url")
+        external_url_value = frontmatter.get("external_url")
         start = parse_iso_date(frontmatter.get("start_date"))
         end = parse_iso_date(frontmatter.get("end_date"))
         if end is None and start is not None:
@@ -220,7 +251,7 @@ def load_adverts() -> tuple[list[dict], list[str]]:
             {
                 "title": str(title),
                 "slug": str(slug),
-                "url": resolve_event_url(url_value, str(slug)),
+                "url": resolve_event_url(external_url_value, url_value, md_file),
                 "start": start,
                 "end": end,
                 "display_dates": format_event_dates(start, end, explicit_dates),
@@ -282,7 +313,7 @@ def render_event_card(event: dict) -> str:
 
     badges_html = " ".join(badges)
 
-    return f"""<div class=\"ev-card\">\n  <div class=\"ev-card-date\">{event['display_dates']}</div>\n  <h3 class=\"ev-card-title\"><a href=\"{event['url']}\">{event['title']}</a></h3>{description_html}\n  <div class=\"ev-card-meta\">\n    {badges_html}\n  </div>\n</div>"""
+    return f"""<div class=\"ev-card\" id=\"{event_anchor(event['slug'])}\">\n  <div class=\"ev-card-date\">{event['display_dates']}</div>\n  <h3 class=\"ev-card-title\"><a href=\"{event['url']}\">{event['title']}</a></h3>{description_html}\n  <div class=\"ev-card-meta\">\n    {badges_html}\n  </div>\n</div>"""
 
 
 def split_frontmatter(content: str) -> tuple[str, str]:
@@ -351,7 +382,7 @@ def write_past_page(past: list[dict]) -> None:
 
 
 def main() -> int:
-    events, warnings = load_adverts()
+    events, warnings = load_EVENTS()
     for warning in warnings:
         print(f"Warning: {warning}")
 
@@ -360,7 +391,7 @@ def main() -> int:
     write_past_page(past)
 
     print(
-        "Updated event pages from adverts: "
+        "Updated event pages from EVENTS: "
         f"{len(ongoing)} ongoing, {len(upcoming)} upcoming, {len(past)} past."
     )
     return 0

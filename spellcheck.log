@@ -1,0 +1,86 @@
+ 1/85 docs/all-training/bundles/data-science-bootcamp-week.md 879.06ms
+ 2/85 docs/all-training/bundles/developer-bootcamp-week.md 5.31ms
+ 3/85 docs/all-training/bundles/intro-hpc-week.md 5.28ms
+ 4/85 docs/all-training/events/2026/_template.md 7.00ms
+ 5/85 docs/all-training/events/2026/ai-hpc.md 14.90ms
+ 6/85 docs/all-training/events/2026/bianca-intermediate.md 7.16ms
+ 7/85 docs/all-training/events/2026/combined-python-intro-and-python-hpc.md 13.99ms
+ 8/85 docs/all-training/events/2026/eigen-cpp.md 2.70ms
+ 9/85 docs/all-training/events/2026/file-transfer-201.md 4.49ms
+10/85 docs/all-training/events/2026/grace-hopper-gpu.md 3.62ms
+11/85 docs/all-training/events/2026/mpi-intro.md 6.13ms
+12/85 docs/all-training/events/2026/naiss-intro-days.md 9.75ms
+13/85 docs/all-training/events/2026/paraview.md 6.08ms
+14/85 docs/all-training/events/2026/programming-formalisms.md 7.85ms
+15/85 docs/all-training/events/2026/python-intro.md 6.81ms
+16/85 docs/all-training/events/2026/singularity-apptainer.md 7.99ms
+17/85 docs/all-training/external/_template.md 1.92ms
+18/85 docs/all-training/external/example-domain-resources.md 2.02ms
+19/85 docs/all-training/external/example-provider.md 1.50ms
+20/85 docs/all-training/external/example-recordings.md 1.52ms
+21/85 docs/all-training/external/example-tutorials.md 1.70ms
+22/85 docs/all-training/learning-paths/beginner.md 2.68ms
+23/85 docs/all-training/learning-paths/bioinformatics.md 2.34ms
+24/85 docs/all-training/learning-paths/data-science.md 2.48ms
+25/85 docs/all-training/learning-paths/developer.md 2.33ms
+26/85 docs/all-training/learning-paths/sensitive-data.md 2.02ms
+27/85 docs/all-training/self-study/_template.md 4.54ms
+28/85 docs/contact-us.md 2.23ms
+29/85 docs/events/index.md 2.94ms
+30/85 docs/events/past-events.md 4.32ms
+31/85 docs/events/upcoming.md 5.87ms
+32/85 docs/explore/bundles/data-science-bootcamp-week.md 2.86ms
+33/85 docs/explore/bundles/developer-bootcamp-week.md 2.30ms
+34/85 docs/explore/bundles/index.md 2.49ms
+35/85 docs/explore/bundles/intro-hpc-week.md 2.53ms
+36/85 docs/explore/index.md 2.25ms
+37/85 docs/explore/learning-paths/beginner.md 2.58ms
+38/85 docs/explore/learning-paths/bioinformatics.md 1.84ms
+39/85 docs/explore/learning-paths/data-science.md 2.62ms
+40/85 docs/explore/learning-paths/developer.md 2.91ms
+41/85 docs/explore/learning-paths/index.md 2.58ms
+42/85 docs/explore/learning-paths/sensitive-data.md 2.14ms
+43/85 docs/explore/scientific-domains/ai.md 1.28ms
+44/85 docs/explore/scientific-domains/big-data.md 1.30ms
+45/85 docs/explore/scientific-domains/bioinformatics.md 1.75ms
+46/85 docs/explore/scientific-domains/biomedical.md 1.65ms
+47/85 docs/explore/scientific-domains/climate-science.md 1.24ms
+48/85 docs/explore/scientific-domains/clinical-research.md 1.18ms
+49/85 docs/explore/scientific-domains/computational-biology.md 1.34ms
+50/85 docs/explore/scientific-domains/computational-chemistry.md 1.70ms
+51/85 docs/explore/scientific-domains/computational-physics.md 1.52ms
+52/85 docs/explore/scientific-domains/computational-science.md 1.70ms
+53/85 docs/explore/scientific-domains/data-science.md 1.41ms
+54/85 docs/explore/scientific-domains/engineering.md 1.34ms
+55/85 docs/explore/scientific-domains/general-hpc.md 1.75ms
+56/85 docs/explore/scientific-domains/genomics.md 1.41ms
+57/85 docs/explore/scientific-domains/index.md 3.57ms
+58/85 docs/explore/scientific-domains/machine-learning.md 1.20ms
+59/85 docs/explore/scientific-domains/social-sciences.md 1.67ms
+60/85 docs/explore/scientific-domains/statistics.md 1.80ms
+61/85 docs/explore/self-study/index.md 1.44ms
+62/85 docs/explore/tags/data-ai.md 1.56ms
+63/85 docs/explore/tags/domains-visualization.md 1.83ms
+64/85 docs/explore/tags/gpu.md 2.04ms
+65/85 docs/explore/tags/hpc-infrastructure.md 3.01ms
+66/85 docs/explore/tags/index.md 2.66ms
+67/85 docs/explore/tags/other.md 3.93ms
+68/85 docs/explore/tags/parallel-performance.md 1.80ms
+69/85 docs/explore/tags/security-sensitive-data.md 1.59ms
+70/85 docs/explore/tags/software-development.md 2.35ms
+71/85 docs/explore/training-catalogue/index.md 5.58ms
+72/85 docs/external-resources.md 2.87ms
+73/85 docs/faq.md 1.95ms
+74/85 docs/home.md 4.42ms
+75/85 files/repo-architecture.md 4.73ms
+76/85 scripts/course_utils.py 171.12ms
+77/85 scripts/generate_all.py 2.39ms
+78/85 scripts/generators/generate_bundles.py 4.03ms
+79/85 scripts/generators/generate_events.py 7.40ms
+80/85 scripts/generators/generate_external_resources.py 4.75ms
+81/85 scripts/generators/generate_learning_paths.py 6.96ms
+82/85 scripts/generators/generate_scientific_domains.py 7.02ms
+83/85 scripts/generators/generate_self_study.py 9.03ms
+84/85 scripts/generators/generate_tags.py 11.98ms
+85/85 scripts/generators/lucide_icons.py 5.78ms
+CSpell: Files checked: 85, Issues found: 0 in 0 files.

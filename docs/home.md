@@ -45,7 +45,7 @@ NAISS training is an integral part of the [National Academic Infrastructure for 
 <a class="home-card-link" href="../explore/all-training/">
 <div class="tg-card">
     <div class="tg-card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-copy home-card-icon-svg" viewBox="0 0 24 24"><path d="M5 7a2 2 0 0 0-2 2v11"/><path d="M5.803 18H5a2 2 0 0 0 0 4h9.5a.5.5 0 0 0 .5-.5V21M9 15V4a2 2 0 0 1 2-2h9.5a.5.5 0 0 1 .5.5v14a.5.5 0 0 1-.5.5H11a2 2 0 0 1 0-4h10"/></svg></div>
-    <h3 class="tg-card-title">Complete Training Catalog</h3>
+    <h3 class="tg-card-title">Complete Training Catalogue</h3>
     <p class="tg-card-desc">See all courses grouped by status in one place.</p>
 </div>
 </a>

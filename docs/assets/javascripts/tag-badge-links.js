@@ -1,5 +1,36 @@
 (() => {
   const TAG_OVERVIEW_SEGMENT = "/explore/tags/";
+  const TAG_DISPLAY_NAMES = {
+    ai: "AI",
+    apptainer: "Apptainer",
+    arm: "Arm",
+    cpu: "CPU",
+    "command-line": "Command Line",
+    cpp: "C++",
+    cuda: "CUDA",
+    "file-io": "File I/O",
+    gpu: "GPU",
+    "grace-hopper": "Grace Hopper",
+    hpc: "HPC",
+    jupyter: "Jupyter",
+    "machine-learning": "Machine Learning",
+    matplotlib: "Matplotlib",
+    nccl: "NCCL",
+    openmp: "OpenMP",
+    mpi: "MPI",
+    nsight: "Nsight",
+    "parallel-programming": "Parallel Programming",
+    paraview: "ParaView",
+    "performance-optimization": "Performance Optimization",
+    pytorch: "PyTorch",
+    pyvista: "PyVista",
+    "scientific-visualization": "Scientific Visualization",
+    singularity: "Singularity",
+    slurm: "Slurm",
+    "software-development": "Software Development",
+    vtk: "VTK",
+    vedo: "Vedo",
+  };
 
   function normalizeWhitespace(value) {
     return (value || "").replace(/\s+/g, " ").trim();
@@ -81,8 +112,36 @@
     return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
+  function titleCase(value) {
+    return value
+      .split("-")
+      .map((part) => {
+        if (!part) {
+          return "";
+        }
+        return part.charAt(0).toUpperCase() + part.slice(1);
+      })
+      .join(" ");
+  }
+
+  function displayTag(tag) {
+    const normalized = normalizeWhitespace(tag).toLowerCase();
+    if (!normalized) {
+      return "";
+    }
+
+    if (Object.prototype.hasOwnProperty.call(TAG_DISPLAY_NAMES, normalized)) {
+      return TAG_DISPLAY_NAMES[normalized];
+    }
+
+    return normalized
+      .split("-")
+      .map((part) => TAG_DISPLAY_NAMES[part] || titleCase(part))
+      .join(" ");
+  }
+
   function tagToDisplay(tag) {
-    return normalizeWhitespace(tag.replace(/-/g, " "));
+    return normalizeWhitespace(displayTag(tag));
   }
 
   function findCategoryForTag(tag, categoryPages) {
@@ -116,11 +175,12 @@
       }
 
       const href = mapping.get(tag.toLowerCase()) || fallbackUrl;
+      const label = displayTag(tag);
       const link = document.createElement("a");
       link.className = span.className;
       link.href = href;
-      link.textContent = tag;
-      link.title = `Open tag page for ${tag}`;
+      link.textContent = label;
+      link.title = `Open tag page for ${label}`;
       span.replaceWith(link);
     });
   }

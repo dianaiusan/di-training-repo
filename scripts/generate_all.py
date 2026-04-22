@@ -9,12 +9,13 @@ import sys
 
 SCRIPTS = [
     "generators/generate_events.py",
-    "generators/generate_training_catalogue_aliases.py",
     "generators/generate_scientific_domains.py",
     "generators/generate_learning_paths.py",
     "generators/generate_bundles.py",
     "generators/generate_tags.py",
     "generators/generate_self_study.py",
+    "generators/generate_external_resources.py",
+    "generators/generate_training_catalogue.py",
 ]
 
 

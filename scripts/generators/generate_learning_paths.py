@@ -4,14 +4,18 @@
 from __future__ import annotations
 
 from pathlib import Path
+import sys
 from typing import Any
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from course_utils import load_course_lookup
 from lucide_icons import render_lucide_img
 
-ADVERTS_DIR = Path("all-training-input/events")
-PATHS_DIR = Path("all-training-input/learning-paths")  # source input
+EVENTS_DIR = Path("docs/all-training/events")
+PATHS_DIR = Path("docs/all-training/learning-paths")  # source input
 OUTPUT_PATHS_DIR = Path("docs/explore/learning-paths")         # generated output
 INDEX_FILE = OUTPUT_PATHS_DIR / "index.md"
 
@@ -45,30 +49,13 @@ def parse_frontmatter(md_file: Path) -> tuple[dict | None, str | None]:
     return frontmatter if isinstance(frontmatter, dict) else None, fm_block
 
 
-def iter_adverts() -> list[Path]:
+def iter_EVENTS() -> list[Path]:
     files: list[Path] = []
-    for md_file in sorted(ADVERTS_DIR.rglob("*.md")):
+    for md_file in sorted(EVENTS_DIR.rglob("*.md")):
         if md_file.name == "_template.md":
             continue
         files.append(md_file)
     return files
-
-
-def load_course_titles() -> dict[str, str]:
-    titles: dict[str, str] = {}
-    for md_file in iter_adverts():
-        frontmatter, _ = parse_frontmatter(md_file)
-        if not frontmatter:
-            continue
-        slug = str(frontmatter.get("slug", "")).strip()
-        title = str(frontmatter.get("title", "")).strip()
-        if slug and title:
-            titles[slug] = title
-    return titles
-
-
-def course_route(slug: str) -> str:
-    return f"/explore/training-catalogue/{slug}/"
 
 
 def humanize_slug(value: str) -> str:
@@ -79,7 +66,7 @@ def phase_title(phase_slug: str) -> str:
     return phase_slug.replace("-", " ").title()
 
 
-def render_detail_body(path_fm: dict[str, Any], path_lookup: dict[str, dict], course_titles: dict[str, str]) -> str:
+def render_detail_body(path_fm: dict[str, Any], path_lookup: dict[str, dict], courses_by_slug: dict[str, dict[str, Any]]) -> str:
     title = str(path_fm.get("title", "")).strip()
     description = str(path_fm.get("description", "")).strip()
     phases = path_fm.get("phases", {})
@@ -104,9 +91,11 @@ def render_detail_body(path_fm: dict[str, Any], path_lookup: dict[str, dict], co
                     course_slug = str(raw_slug).strip()
                     if not course_slug:
                         continue
-                    course_title = course_titles.get(course_slug, humanize_slug(course_slug))
+                    course = courses_by_slug.get(course_slug, {})
+                    course_title = str(course.get("title") or humanize_slug(course_slug))
+                    course_link = str(course.get("link") or "#")
                     lines.append(
-                        f'      <div class="lp-course-item"><span class="lp-course-num">{sequence}</span><a href="{course_route(course_slug)}">{course_title}</a></div>'
+                        f'      <div class="lp-course-item"><span class="lp-course-num">{sequence}</span><a href="{course_link}">{course_title}</a></div>'
                     )
                     sequence += 1
 
@@ -183,7 +172,7 @@ def render_index(paths: list[dict[str, str]]) -> str:
 
 
 def main() -> None:
-    course_titles = load_course_titles()
+    courses_by_slug = load_course_lookup()
 
     path_files = sorted(
         [p for p in PATHS_DIR.glob("*.md") if p.name != "index.md"],
@@ -209,7 +198,7 @@ def main() -> None:
         title = str(frontmatter.get("title", humanize_slug(slug))).strip()
         description = str(frontmatter.get("description", "")).strip()
 
-        body = render_detail_body(frontmatter, path_meta, course_titles)
+        body = render_detail_body(frontmatter, path_meta, courses_by_slug)
         out_file = OUTPUT_PATHS_DIR / file_path.name
         out_file.write_text(f"{fm_block}\n{body}", encoding="utf-8")
 
