@@ -18,7 +18,7 @@ registration_url: "https://nextcloud.naiss.se/apps/forms/s/pr3eSLQkYC224ogZ2oFNn
 prerequisites: []
 related: []
 
-scientific_domains: ["ai-data", "physics", "chemistry", "life-sciences", "social-sciences"]
+scientific_domains: ["ai-data", "chemistry", "life-sciences", "physics", "social-sciences"]
 tags: ["python", "hpc-intro", "slurm", "environment-management", "jupyter", "data-analysis", "machine-learning", "gpu"]
 
 icon: lucide/code
@@ -90,4 +90,3 @@ If you are affiliated with UmU, SLU, LTU, MIUN, or IRF you can use HPC2N's syste
 **Deadline for registration:** If you register later than 13 April, you will not get an account at NSC through the course project, but you are welcome to listen to the lectures and use your own access to a HPC system. 
 
 **Registration:** https://nextcloud.naiss.se/apps/forms/s/pr3eSLQkYC224ogZ2oFNnYX4
-

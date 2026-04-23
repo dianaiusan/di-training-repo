@@ -15,6 +15,7 @@ from lucide_icons import render_lucide_img
 OUTPUT_DIR = Path("docs/explore/tags")
 OVERVIEW_FILE = OUTPUT_DIR / "index.md"
 LEGACY_FILE = Path("docs/explore/tags.md")
+TAXONOMY_JSON_FILE = OUTPUT_DIR / "tags-taxonomy.json"
 
 
 def tags_overview_to_category_route(category_slug: str) -> str:
@@ -35,41 +36,37 @@ def tag_category_to_overview_route() -> str:
 
 
 CATEGORY_META = {
-    "hpc-infrastructure": {
-        "title": "HPC & Infrastructure",
-        "description": "Systems, platforms, environments, and operations.",
+    "programming-languages": {
+        "title": "Programming Languages",
+        "description": "Programming languages used across the training catalogue.",
+    },
+    "hpc-core": {
+        "title": "HPC Core",
+        "description": "Core HPC usage topics including systems, schedulers, modules, and environments.",
     },
     "parallel-performance": {
         "title": "Parallel & Performance",
-        "description": "Scaling, profiling, and high-performance programming.",
-    },
-    "gpu": {
-        "title": "GPU",
-        "description": "GPU hardware, acceleration stacks, and related workflows.",
+        "description": "Parallel programming models, accelerators, profiling, and performance work.",
     },
     "data-ai": {
         "title": "Data & AI",
-        "description": "Data workflows, machine learning, and analytics.",
+        "description": "Data analysis, machine learning, deep learning, and notebook-based workflows.",
     },
-    "software-development": {
-        "title": "Software Development",
-        "description": "Languages, tooling, testing, and engineering practice.",
+    "software-engineering": {
+        "title": "Software Engineering",
+        "description": "Programming, software structure, testing, and code quality.",
     },
-    "workflow-automation": {
-        "title": "Workflow & Automation",
-        "description": "Pipelines, scheduling, and reproducible orchestration.",
+    "data-management-security": {
+        "title": "Data Management & Security",
+        "description": "File movement, storage, sensitive data, and secure data handling environments.",
     },
-    "foundations-levels": {
-        "title": "Foundations & Levels",
-        "description": "Introductory tracks and skill progression tags.",
+    "numerical-visualization": {
+        "title": "Numerical Methods & Visualization",
+        "description": "Linear algebra, numerical computing, and scientific visualization methods.",
     },
-    "domains-visualization": {
-        "title": "Domains & Visualization",
-        "description": "Domain methods, math, and scientific visualization.",
-    },
-    "security-sensitive-data": {
-        "title": "Security & Sensitive Data",
-        "description": "Secure computing and sensitive data handling.",
+    "tools-platforms": {
+        "title": "Tools & Platforms",
+        "description": "Named tools, libraries, and software platforms used in the courses.",
     },
     "other": {
         "title": "Other",
@@ -79,109 +76,76 @@ CATEGORY_META = {
 
 
 CATEGORY_ORDER = [
-    "hpc-infrastructure",
+    "programming-languages",
+    "hpc-core",
     "parallel-performance",
-    "gpu",
     "data-ai",
-    "software-development",
-    "workflow-automation",
-    "foundations-levels",
-    "domains-visualization",
-    "security-sensitive-data",
+    "software-engineering",
+    "data-management-security",
+    "numerical-visualization",
+    "tools-platforms",
     "other",
 ]
 
 
 CATEGORY_ICON_KEYS = {
-    "hpc-infrastructure": "server",
+    "programming-languages": "code-2",
+    "hpc-core": "server",
     "parallel-performance": "chart-no-axes-column-increasing",
-    "gpu": "gpu",
     "data-ai": "database",
-    "software-development": "code-2",
-    "workflow-automation": "workflow",
-    "foundations-levels": "graduation-cap",
-    "domains-visualization": "images",
-    "security-sensitive-data": "shield-check",
+    "software-engineering": "notebook-pen",
+    "data-management-security": "shield-check",
+    "numerical-visualization": "chart-scatter",
+    "tools-platforms": "wrench",
     "other": "tag",
 }
 
 
 TAG_TO_CATEGORY = {
-    "advanced": "foundations-levels",
-    "ai": "data-ai",
-    "apptainer": "hpc-infrastructure",
-    "automation": "workflow-automation",
-    "aws": "hpc-infrastructure",
-    "azure": "hpc-infrastructure",
-    "beginner": "foundations-levels",
-    "benchmarking": "parallel-performance",
-    "best-practices": "software-development",
-    "bianca": "security-sensitive-data",
-    "big-data": "data-ai",
-    "cloud": "hpc-infrastructure",
-    "conda": "hpc-infrastructure",
-    "containers": "hpc-infrastructure",
-    "cpp": "software-development",
-    "cuda": "gpu",
-    "cupy": "gpu",
+    "algorithms": "software-engineering",
+    "apptainer": "tools-platforms",
+    "arm": "parallel-performance",
+    "bianca": "data-management-security",
+    "code-quality": "software-engineering",
+    "containers": "tools-platforms",
+    "cpp": "programming-languages",
+    "cuda": "parallel-performance",
     "data-analysis": "data-ai",
-    "data-management": "data-ai",
-    "data-science": "data-ai",
-    "debugging": "software-development",
+    "data-management": "data-management-security",
+    "data-structures": "software-engineering",
     "deep-learning": "data-ai",
-    "distributed-computing": "parallel-performance",
-    "dvc": "data-ai",
-    "eigen": "software-development",
-    "environments": "hpc-infrastructure",
-    "external-resource": "hpc-infrastructure",
-    "file-transfer": "hpc-infrastructure",
-    "filesystems": "hpc-infrastructure",
-    "git": "software-development",
-    "gpu": "gpu",
-    "grace-hopper": "gpu",
-    "hdf5": "data-ai",
-    "hpc": "hpc-infrastructure",
-    "hybrid": "parallel-performance",
-    "infrastructure": "hpc-infrastructure",
-    "intermediate": "foundations-levels",
-    "introduction": "foundations-levels",
-    "jax": "gpu",
-    "job-arrays": "workflow-automation",
-    "julia": "software-development",
-    "linear-algebra": "domains-visualization",
-    "linux": "hpc-infrastructure",
+    "distributed-memory": "parallel-performance",
+    "eigen": "tools-platforms",
+    "environment-management": "hpc-core",
+    "file-transfer": "data-management-security",
+    "gpu": "parallel-performance",
+    "hpc-advanced": "hpc-core",
+    "hpc-intro": "hpc-core",
+    "jupyter": "data-ai",
+    "linear-algebra": "numerical-visualization",
+    "linux": "hpc-core",
     "machine-learning": "data-ai",
-    "modules": "hpc-infrastructure",
+    "modular-programming": "software-engineering",
+    "modules": "hpc-core",
     "mpi": "parallel-performance",
-    "nextflow": "workflow-automation",
-    "openmp": "parallel-performance",
-    "optimization": "parallel-performance",
-    "parallel": "parallel-performance",
-    "parallel-computing": "parallel-performance",
-    "paraview": "domains-visualization",
-    "past": "other",
+    "numerical-computing": "numerical-visualization",
+    "paraview": "tools-platforms",
+    "parallel-programming": "parallel-performance",
     "performance": "parallel-performance",
     "profiling": "parallel-performance",
-    "programming": "software-development",
-    "python": "software-development",
-    "r": "software-development",
-    "reproducibility": "software-development",
-    "scalability": "parallel-performance",
-    "scientific-computing": "domains-visualization",
-    "security": "security-sensitive-data",
-    "sensitive-data": "security-sensitive-data",
-    "singularity": "hpc-infrastructure",
-    "slurm": "hpc-infrastructure",
-    "snakemake": "workflow-automation",
-    "software": "software-development",
-    "software-engineering": "software-development",
-    "statistics": "domains-visualization",
-    "storage": "hpc-infrastructure",
-    "testing": "software-development",
-    "threading": "parallel-performance",
-    "version-control": "software-development",
-    "visualization": "domains-visualization",
-    "workflow": "workflow-automation",
+    "programming": "software-engineering",
+    "python": "programming-languages",
+    "pytorch": "data-ai",
+    "reproducibility": "software-engineering",
+    "sensitive-data": "data-management-security",
+    "singularity": "tools-platforms",
+    "slurm": "hpc-core",
+    "software-design": "software-engineering",
+    "storage": "data-management-security",
+    "testing": "software-engineering",
+    "visualization": "numerical-visualization",
+    "vtk": "tools-platforms",
+    "ai-safety": "data-ai",
 }
 def render_tag_courses(tag_name: str, courses: list) -> str:
     """Render a single tag card with its courses."""
@@ -380,6 +344,14 @@ def main():
     with open(json_path, "w", encoding="utf-8") as jf:
         json.dump(tags_json, jf, indent=2, ensure_ascii=False)
 
+    taxonomy_json = {
+        "category_order": CATEGORY_ORDER,
+        "category_meta": CATEGORY_META,
+        "tag_to_category": TAG_TO_CATEGORY,
+    }
+    with open(TAXONOMY_JSON_FILE, "w", encoding="utf-8") as jf:
+        json.dump(taxonomy_json, jf, indent=2, ensure_ascii=False)
+
     total_tags = sum(len(v) for v in grouped.values())
     total_courses = sum(len(courses) for courses in tags.values())
     written_categories = sum(1 for key in CATEGORY_ORDER if grouped.get(key))
@@ -389,6 +361,7 @@ def main():
     )
 
     print(f"Wrote tags JSON to {json_path}")
+    print(f"Wrote taxonomy JSON to {TAXONOMY_JSON_FILE}")
 
 
 if __name__ == "__main__":

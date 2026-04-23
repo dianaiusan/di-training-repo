@@ -1,0 +1,97 @@
+{
+  "category_order": [
+    "programming-languages",
+    "hpc-core",
+    "parallel-performance",
+    "data-ai",
+    "software-engineering",
+    "data-management-security",
+    "numerical-visualization",
+    "tools-platforms",
+    "other"
+  ],
+  "category_meta": {
+    "programming-languages": {
+      "title": "Programming Languages",
+      "description": "Programming languages used across the training catalogue."
+    },
+    "hpc-core": {
+      "title": "HPC Core",
+      "description": "Core HPC usage topics including systems, schedulers, modules, and environments."
+    },
+    "parallel-performance": {
+      "title": "Parallel & Performance",
+      "description": "Parallel programming models, accelerators, profiling, and performance work."
+    },
+    "data-ai": {
+      "title": "Data & AI",
+      "description": "Data analysis, machine learning, deep learning, and notebook-based workflows."
+    },
+    "software-engineering": {
+      "title": "Software Engineering",
+      "description": "Programming, software structure, testing, and code quality."
+    },
+    "data-management-security": {
+      "title": "Data Management & Security",
+      "description": "File movement, storage, sensitive data, and secure data handling environments."
+    },
+    "numerical-visualization": {
+      "title": "Numerical Methods & Visualization",
+      "description": "Linear algebra, numerical computing, and scientific visualization methods."
+    },
+    "tools-platforms": {
+      "title": "Tools & Platforms",
+      "description": "Named tools, libraries, and software platforms used in the courses."
+    },
+    "other": {
+      "title": "Other",
+      "description": "Additional tags not yet categorized."
+    }
+  },
+  "tag_to_category": {
+    "algorithms": "software-engineering",
+    "apptainer": "tools-platforms",
+    "arm": "parallel-performance",
+    "bianca": "data-management-security",
+    "code-quality": "software-engineering",
+    "containers": "tools-platforms",
+    "cpp": "programming-languages",
+    "cuda": "parallel-performance",
+    "data-analysis": "data-ai",
+    "data-management": "data-management-security",
+    "data-structures": "software-engineering",
+    "deep-learning": "data-ai",
+    "distributed-memory": "parallel-performance",
+    "eigen": "tools-platforms",
+    "environment-management": "hpc-core",
+    "file-transfer": "data-management-security",
+    "gpu": "parallel-performance",
+    "hpc-advanced": "hpc-core",
+    "hpc-intro": "hpc-core",
+    "jupyter": "data-ai",
+    "linear-algebra": "numerical-visualization",
+    "linux": "hpc-core",
+    "machine-learning": "data-ai",
+    "modular-programming": "software-engineering",
+    "modules": "hpc-core",
+    "mpi": "parallel-performance",
+    "numerical-computing": "numerical-visualization",
+    "paraview": "tools-platforms",
+    "parallel-programming": "parallel-performance",
+    "performance": "parallel-performance",
+    "profiling": "parallel-performance",
+    "programming": "software-engineering",
+    "python": "programming-languages",
+    "pytorch": "data-ai",
+    "reproducibility": "software-engineering",
+    "sensitive-data": "data-management-security",
+    "singularity": "tools-platforms",
+    "slurm": "hpc-core",
+    "software-design": "software-engineering",
+    "storage": "data-management-security",
+    "testing": "software-engineering",
+    "visualization": "numerical-visualization",
+    "vtk": "tools-platforms",
+    "ai-safety": "data-ai"
+  }
+}

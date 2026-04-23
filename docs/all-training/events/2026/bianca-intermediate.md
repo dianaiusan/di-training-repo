@@ -20,10 +20,9 @@ prerequisites: ["bianca-intro"]
 related: ["bianca-intro"]
 
 #learning_paths: ["sensitive-data"]
-#tags: ["sensitive-data", "bianca", "slurm"]
 
 scientific_domains: ["life-sciences", "social-sciences"]
-tags: ["sensitive-data", "data-management", "slurm", "environment-management", "file-transfer", "hpc-advanced"]
+tags: ["bianca", "data-management", "environment-management", "file-transfer", "hpc-advanced", "sensitive-data", "slurm"]
 
 icon: lucide/book-open  # Lucide icon for the page
 ---

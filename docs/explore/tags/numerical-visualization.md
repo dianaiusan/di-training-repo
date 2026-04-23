@@ -1,10 +1,10 @@
 ---
-title: "Domains & Visualization"
+title: "Numerical Methods & Visualization"
 ---
 
-# Domains & Visualization
+# Numerical Methods & Visualization
 
-Domain methods, math, and scientific visualization.
+Linear algebra, numerical computing, and scientific visualization methods.
 
 <a class="tag-page-link" href="../">← Back to Tags overview</a>
 
@@ -16,9 +16,9 @@ Domain methods, math, and scientific visualization.
   </ul>
 </div>
 <div class="tag-card">
-  <h4 class="tag-card-name">ParaView</h4>
+  <h4 class="tag-card-name">Numerical Computing</h4>
   <ul class="tag-card-courses">
-    <li><a class="tag-course-link" href="/all-training/events/2026/paraview/">Scientific Visualization with ParaView</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/eigen-cpp/">Array computing in C++ using Eigen</a></li>
   </ul>
 </div>
 <div class="tag-card">

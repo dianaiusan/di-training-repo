@@ -18,10 +18,9 @@ related: []
 
 #scientific_domains: []
 #learning_paths: [parallel-programming]
-#tags: ["mpi", "parallel-programming", "distributed-memory"]
 
-scientific_domains: ["physics", "chemistry", "engineering", "computer-science"]
-tags: ["mpi", "parallel-programming", "distributed-memory", "hpc-intro"]
+scientific_domains: ["chemistry", "computer-science", "engineering", "physics"]
+tags: ["distributed-memory", "hpc-intro", "mpi", "parallel-programming"]
 
 icon: lucide/book-open
 ---

@@ -20,10 +20,9 @@ related: [] # Arrhenius CPU event
 
 #scientific_domains: ["general-hpc", "computational-physics", "computational-science"]
 #learning_paths: ["developer"]
-#tags: ["gpu", "cuda", "hpc", "mpi", "parallel-programming", "arm", "performance-optimization"]
 
-scientific_domains: ["ai-data", "computer-science", "physics", "chemistry", "engineering"]
-tags: ["gpu", "cuda", "performance", "profiling", "parallel-programming", "hpc-advanced"]
+scientific_domains: ["ai-data", "chemistry", "computer-science", "engineering", "physics"]
+tags: ["arm", "cuda", "gpu", "hpc-advanced", "mpi", "parallel-programming", "performance", "profiling"]
 
 materials: []  # List of self-study materials, e.g.:
 # materials:

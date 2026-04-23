@@ -19,10 +19,9 @@ prerequisites: ["hpc-basics"]
 related: ["gpu-python", "parallel-python-mpi"]
 
 #learning_paths: ["data-science", "developer"]
-#tags: ["ai", "deep-learning", "machine-learning", "pytorch", "gpu", "parallel-programming", "hpc", "ai-safety"]
 
 scientific_domains: ["ai-data", "computer-science"]
-tags: ["machine-learning", "deep-learning", "pytorch", "gpu", "parallel-programming", "hpc-advanced"]
+tags: ["ai-safety", "deep-learning", "gpu", "hpc-advanced", "machine-learning", "parallel-programming", "pytorch"]
 
 icon: lucide/book-open
 ---
@@ -132,4 +131,3 @@ Deadline for registration is May 20:th.
 Comments and questions on these training events should be sent to NAISS using the support form in SUPR. Please select “Question about a training event” as “Problem or Questions Type”.
 
  <a href="https://supr.naiss.se/support/?problem_type=training_event" target="_blank">The NAISS support form in SUPR (on supr.naiss.se)</a>.
-

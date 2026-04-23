@@ -1,12 +1,12 @@
 ---
-title: "Physics"
+title: "Chemistry"
 ---
 
-# Physics
+# Chemistry
 
-Electronic structure, materials physics, particle physics, and large-scale physical simulations.
+Molecular modeling, computational chemistry, materials science, and chemical simulations.
 
-Courses tagged under Physics:
+Courses tagged under Chemistry:
 
 - [An introduction to parallel programming using Message Passing with MPI](/all-training/events/2026/mpi-intro/)
 - [Basic Singularity/Apptainer](/all-training/events/2026/singularity-apptainer/)

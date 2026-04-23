@@ -16,6 +16,19 @@ OVERVIEW_FILE = OUTPUT_DIR / "index.md"
 def ensure_output_dir():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+
+def render_category_summary(grouped):
+    lines = ["## Tag Categories", ""]
+    for category in CATEGORY_ORDER:
+        tags_in_category = grouped.get(category, {})
+        if not tags_in_category:
+            continue
+        title = CATEGORY_META[category]["title"]
+        description = CATEGORY_META[category]["description"]
+        lines.append(f"- **{title}**: {description}")
+    lines.append("")
+    return lines
+
 def main():
     ensure_output_dir()
     tags = {}
@@ -44,6 +57,7 @@ def main():
         "Explore training tags grouped into broader categories:",
         "",
     ]
+    lines.extend(render_category_summary(grouped))
     for category in CATEGORY_ORDER:
         tags_in_category = grouped.get(category, {})
         if not tags_in_category:

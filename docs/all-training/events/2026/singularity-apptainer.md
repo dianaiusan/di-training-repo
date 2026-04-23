@@ -20,10 +20,9 @@ prerequisites: ["linux-command-line", "hpc-basics"]
 related: ["naiss-intro-days", "bianca-intermediate"]
 
 #learning_paths: ["beginner", "developer"]
-#tags: ["containers", "singularity", "apptainer", "reproducibility", "software-environments"]
 
-scientific_domains: ["physics", "chemistry", "engineering"]
-tags: ["singularity", "containers", "reproducibility", "environment-management", "hpc-intro"]
+scientific_domains: ["chemistry", "engineering", "physics"]
+tags: ["apptainer", "containers", "environment-management", "hpc-intro", "reproducibility", "singularity"]
 
 icon: lucide/book-open  # Lucide icon for the page
 ---
@@ -63,5 +62,3 @@ This workshop material aims to demonstrate and exercise some commonly used featu
 The "[Singularity user documentation](https://sylabs.io/guides/latest/user-guide/)"  and "[Apptainer user documentation](https://apptainer.org/documentation/)" are excellent reference sources with basic examples in well-ordered fashion and always up to date.
 
 [^1]: Kurtzer, Gregory M; Sochat, Vanessa; Bauer, Michael W (2017). "Singularity: Scientific containers for mobility of compute". PLOS ONE. 12 (5): e0177459. Bibcode:2017PLoSO..1277459K. [doi:10.1371/journal.pone.0177459](https://doi.org/10.1371%2Fjournal.pone.0177459). PMC [5426675](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5426675). PMID [28494014](https://pubmed.ncbi.nlm.nih.gov/28494014)
-
-

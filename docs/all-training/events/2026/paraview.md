@@ -20,10 +20,8 @@ registration_url: ""
 prerequisites: []  # Array of prerequisite course IDs or skills
 related: []  # Array of related course IDs
 
-#tags: ["paraview", "vtk", "pyvista", "vedo", "python", "visualization"]
-
-scientific_domains: ["physics", "engineering", "earth-climate", "chemistry"]
-tags: ["visualization", "paraview", "python", "data-analysis"]
+scientific_domains: ["chemistry", "earth-climate", "engineering", "physics"]
+tags: ["data-analysis", "paraview", "python", "visualization", "vtk"]
 
 materials: []  # List of self-study materials, e.g.:
 # materials:

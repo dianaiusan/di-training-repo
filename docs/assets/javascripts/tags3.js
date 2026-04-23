@@ -1,20 +1,77 @@
 // tags3.js: Multi-select dynamic tags page logic
 
 async function fetchTagsData() {
-  const resp = await fetch('../tags/tags-courses.json');
-  if (!resp.ok) throw new Error('Failed to load tags data');
-  return resp.json();
+  const [tagsResp, taxonomyResp] = await Promise.all([
+    fetch('../tags/tags-courses.json'),
+    fetch('../tags/tags-taxonomy.json').catch(() => null),
+  ]);
+
+  if (!tagsResp.ok) throw new Error('Failed to load tags data');
+
+  let taxonomy = null;
+  if (taxonomyResp && taxonomyResp.ok) {
+    taxonomy = await taxonomyResp.json();
+  }
+
+  return {
+    tags: await tagsResp.json(),
+    taxonomy,
+  };
 }
 
-function renderTags(tags, selectedTags) {
+function buildCategoryEntries(tags, taxonomy) {
+  if (!taxonomy) {
+    return [{ key: 'all', title: 'All Tags', description: '', tags: Object.keys(tags).sort() }];
+  }
+
+  const grouped = {};
+  Object.keys(tags).forEach(tag => {
+    const category = taxonomy.tag_to_category[tag] || 'other';
+    if (!grouped[category]) grouped[category] = [];
+    grouped[category].push(tag);
+  });
+
+  return taxonomy.category_order
+    .filter(category => grouped[category] && grouped[category].length)
+    .map(category => ({
+      key: category,
+      title: taxonomy.category_meta[category]?.title || category,
+      description: taxonomy.category_meta[category]?.description || '',
+      tags: grouped[category].sort(),
+    }));
+}
+
+function renderTags(tags, taxonomy, selectedTags) {
   const tagList = document.getElementById('tagList');
   tagList.innerHTML = '';
-  Object.keys(tags).sort().forEach(tag => {
-    const btn = document.createElement('button');
-    btn.className = 'tag-btn' + (selectedTags.includes(tag) ? ' selected' : '');
-    btn.textContent = tag;
-    btn.onclick = () => toggleTag(tag, tags, selectedTags);
-    tagList.appendChild(btn);
+
+  buildCategoryEntries(tags, taxonomy).forEach(category => {
+    const section = document.createElement('div');
+    section.className = 'tag-category';
+
+    const heading = document.createElement('h3');
+    heading.textContent = category.title;
+    section.appendChild(heading);
+
+    if (category.description) {
+      const description = document.createElement('p');
+      description.textContent = category.description;
+      section.appendChild(description);
+    }
+
+    const buttons = document.createElement('div');
+    buttons.className = 'tag-list';
+
+    category.tags.forEach(tag => {
+      const btn = document.createElement('button');
+      btn.className = 'tag-btn' + (selectedTags.includes(tag) ? ' selected' : '');
+      btn.textContent = tag;
+      btn.onclick = () => toggleTag(tag, tags, taxonomy, selectedTags);
+      buttons.appendChild(btn);
+    });
+
+    section.appendChild(buttons);
+    tagList.appendChild(section);
   });
 }
 
@@ -57,22 +114,22 @@ function renderSelectedTagInfo(selectedTags) {
   }
 }
 
-function toggleTag(tag, tags, selectedTags) {
+function toggleTag(tag, tags, taxonomy, selectedTags) {
   const idx = selectedTags.indexOf(tag);
   if (idx === -1) {
     selectedTags.push(tag);
   } else {
     selectedTags.splice(idx, 1);
   }
-  renderTags(tags, selectedTags);
+  renderTags(tags, taxonomy, selectedTags);
   renderSelectedTagInfo(selectedTags);
   renderCourses(tags, selectedTags);
 }
 
 // Initial load
-fetchTagsData().then(tags => {
+fetchTagsData().then(({ tags, taxonomy }) => {
   const selectedTags = [];
-  renderTags(tags, selectedTags);
+  renderTags(tags, taxonomy, selectedTags);
   renderSelectedTagInfo(selectedTags);
   renderCourses(tags, selectedTags);
 });

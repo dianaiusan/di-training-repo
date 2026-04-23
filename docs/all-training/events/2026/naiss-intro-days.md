@@ -19,10 +19,10 @@ related: ["naiss-intro-week", "file-transfer-201"]
 
 #scientific_domains: ["general-hpc", "computational-science"]
 #learning_paths: ["beginner"]
-#tags: ["linux", "file-transfer", "slurm", "modules", "hpc-basics"]
+#tags: []
 
-scientific_domains: ["life-science", "social-science", "engineering"]
-tags: ["hpc-intro", "linux", "file-transfer", "slurm", "modules", "environment-management"]
+scientific_domains: ["engineering", "life-sciences", "social-sciences"]
+tags: ["environment-management", "file-transfer", "hpc-intro", "linux", "modules", "slurm"]
 
 icon: lucide/book-open  # Lucide icon for the page
 ---
