@@ -18,9 +18,12 @@ short_description: "This course introduces students to high-performance array co
 prerequisites: ["basic-cpp", "linear-algebra-basics"]
 related: ["programming-formalisms", "mpi-intro"]
 
-scientific_domains: ["computational-science", "engineering", "computational-physics"]
-learning_paths: ["beginner", "developer"]
-tags: ["cpp", "eigen", "linear-algebra", "matrix-computing", "array-computing"]
+#scientific_domains: ["computational-science", "engineering", "computational-physics"]
+#learning_paths: ["beginner", "developer"]
+#tags: ["cpp", "eigen", "linear-algebra", "matrix-computing", "array-computing"]
+
+scientific_domains: ["computer-science", "mathematics-statistics"]
+tags: ["cpp", "linear-algebra", "eigen", "numerical-computing", "performance"]
 
 icon: lucide/book-open
 ---

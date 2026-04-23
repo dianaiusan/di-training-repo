@@ -18,9 +18,8 @@ registration_url: "https://nextcloud.naiss.se/apps/forms/s/pr3eSLQkYC224ogZ2oFNn
 prerequisites: []
 related: []
 
-scientific_domains: []
-learning_paths: []
-tags: ["python", "hpc", "jupyter"]
+scientific_domains: ["ai-data", "physics", "chemistry", "life-sciences", "social-sciences"]
+tags: ["python", "hpc-intro", "slurm", "environment-management", "jupyter", "data-analysis", "machine-learning", "gpu"]
 
 icon: lucide/code
 ---

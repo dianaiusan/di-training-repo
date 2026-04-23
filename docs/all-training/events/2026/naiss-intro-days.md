@@ -17,9 +17,12 @@ registration_url: ""
 prerequisites: []
 related: ["naiss-intro-week", "file-transfer-201"]
 
-scientific_domains: ["general-hpc", "computational-science"]
-learning_paths: ["beginner"]
-tags: ["linux", "file-transfer", "slurm", "modules", "hpc-basics"]
+#scientific_domains: ["general-hpc", "computational-science"]
+#learning_paths: ["beginner"]
+#tags: ["linux", "file-transfer", "slurm", "modules", "hpc-basics"]
+
+scientific_domains: ["life-science", "social-science", "engineering"]
+tags: ["hpc-intro", "linux", "file-transfer", "slurm", "modules", "environment-management"]
 
 icon: lucide/book-open  # Lucide icon for the page
 ---

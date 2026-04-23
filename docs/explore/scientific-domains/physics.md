@@ -1,0 +1,11 @@
+---
+title: "Physics"
+---
+
+# Physics
+
+Courses tagged under Physics:
+
+- [Scientific Visualization with ParaView](/all-training/events/2026/paraview/)
+
+[Back to Scientific Domains Overview](./index.md)

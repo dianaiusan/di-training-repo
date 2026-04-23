@@ -17,9 +17,12 @@ short_description: "This 1-day course lets you write and run Python code on an H
 prerequisites: []
 related: [combined-python-intro-and-python-hpc]
 
-scientific_domains: ["general-hpc", "computational-science", "data-science"]
-learning_paths: ["beginner", "developer"]
-tags: ["python", "hpc", "scripting", "file-io"] # "matplotlib", "command-line"
+#scientific_domains: ["general-hpc", "computational-science", "data-science"]
+#learning_paths: ["beginner", "developer"]
+#tags: ["python", "hpc", "scripting", "file-io"] # "matplotlib", "command-line"
+
+scientific_domains: ["life-science"]
+tags: ["python", "hpc-intro", "programming", "linux"]
 
 icon: lucide/book-open
 ---

@@ -89,7 +89,7 @@ Explore training courses organized by scientific domain:
   <div class="sd-card">
     <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/circuit-board.svg" alt=""/></div>
     <h3 class="sd-card-title">Engineering</h3>
-    <p class="sd-card-meta">1 course</p>
+    <p class="sd-card-meta">2 courses</p>
   </div>
 </a>
 <a class="sd-card-link" href="./general-hpc/">
@@ -125,6 +125,34 @@ Explore training courses organized by scientific domain:
     <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/chart-scatter.svg" alt=""/></div>
     <h3 class="sd-card-title">Statistics</h3>
     <p class="sd-card-meta">0 courses</p>
+  </div>
+</a>
+<a class="sd-card-link" href="./earth-sciences/">
+  <div class="sd-card">
+    <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/atom.svg" alt=""/></div>
+    <h3 class="sd-card-title">Earth Sciences</h3>
+    <p class="sd-card-meta">1 course</p>
+  </div>
+</a>
+<a class="sd-card-link" href="./life-sciences/">
+  <div class="sd-card">
+    <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/atom.svg" alt=""/></div>
+    <h3 class="sd-card-title">Life Sciences</h3>
+    <p class="sd-card-meta">1 course</p>
+  </div>
+</a>
+<a class="sd-card-link" href="./materials-science/">
+  <div class="sd-card">
+    <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/atom.svg" alt=""/></div>
+    <h3 class="sd-card-title">Materials Science</h3>
+    <p class="sd-card-meta">1 course</p>
+  </div>
+</a>
+<a class="sd-card-link" href="./physics/">
+  <div class="sd-card">
+    <div class="sd-card-icon"><img class="sd-card-icon-img" src="../../assets/images/icons/atom.svg" alt=""/></div>
+    <h3 class="sd-card-title">Physics</h3>
+    <p class="sd-card-meta">1 course</p>
   </div>
 </a>
 </div>

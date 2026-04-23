@@ -18,9 +18,11 @@ registration_url: "https://nextcloud.naiss.se/apps/forms/s/yMZo4ZfpwfcgNFaWxNJT8
 prerequisites: ["hpc-basics"]
 related: ["gpu-python", "parallel-python-mpi"]
 
-scientific_domains: ["machine-learning", "computational-science", "general-hpc"]
-learning_paths: ["data-science", "developer"]
-tags: ["ai", "deep-learning", "machine-learning", "pytorch", "gpu", "parallel-programming", "hpc", "ai-safety"]
+#learning_paths: ["data-science", "developer"]
+#tags: ["ai", "deep-learning", "machine-learning", "pytorch", "gpu", "parallel-programming", "hpc", "ai-safety"]
+
+scientific_domains: ["ai-data", "computer-science"]
+tags: ["machine-learning", "deep-learning", "pytorch", "gpu", "parallel-programming", "hpc-advanced"]
 
 icon: lucide/book-open
 ---

@@ -13,8 +13,17 @@ A unified catalogue of all events and self-study training resources.
       <span class="ev-card-date">2026-03-03</span>
       <div class='ev-card-title'>Intro to Python for HPC</div>
       <div class='ev-card-desc'>This 1-day course lets you write and run Python code on an HPC cluster.</div>
-      <div><a class="ev-tag ev-tag-event" href="/all-training/events/2026/python-intro/">event</a> <a class="ev-tag ev-tag-self-study" href="/all-training/events/2026/python-intro/">self-study</a></div>
+      <div><a class="ev-tag ev-tag-event" href="/all-training/events/2026/python-intro/">event</a> <a class="ev-tag ev-tag-self-study" href="/all-training/self-study/python-intro/">self-study</a></div>
       <div class='ev-card-meta'>Level: beginner | Tags: file-io, hpc, python, scripting</div>
+    </div>
+    
+
+    <div class='ev-card'>
+      <span class="ev-card-date">2026-02-09</span>
+      <div class='ev-card-title'>Basic Singularity/Apptainer</div>
+      <div class='ev-card-desc'>An introduction to the basic concepts of containerised software environment solution within the Singularity/Apptainer framework (run, build, etc.)</div>
+      <div><a class="ev-tag ev-tag-event" href="/all-training/events/2026/singularity-apptainer/">event</a> <a class="ev-tag ev-tag-self-study" href="/all-training/self-study/singularity-apptainer/">self-study</a></div>
+      <div class='ev-card-meta'>Level: beginner | Tags: apptainer, containers, reproducibility, singularity, software-environments</div>
     </div>
     
 
@@ -95,7 +104,7 @@ A unified catalogue of all events and self-study training resources.
       <div class='ev-card-title'>Scientific Visualization with ParaView</div>
       <div class='ev-card-desc'>Participants will first learn the fundamentals of ParaView, including data loading, basic visualization techniques, and essential features for scientific data exploration. During the training, several example data sets will be examined and visualized.</div>
       <div><a class="ev-tag ev-tag-event" href="/all-training/events/2026/paraview/">event</a></div>
-      <div class='ev-card-meta'>Level: - | Tags: ...</div>
+      <div class='ev-card-meta'>Level: - | Tags: paraview, python, pyvista, vedo, visualization, vtk</div>
     </div>
     
 
@@ -105,15 +114,6 @@ A unified catalogue of all events and self-study training resources.
       <div class='ev-card-desc'>Developing academic software that you can trust to be 'good enough'.</div>
       <div><a class="ev-tag ev-tag-event" href="/all-training/events/2026/programming-formalisms/">event</a></div>
       <div class='ev-card-meta'>Level: intermediate | Tags: algorithms, code-quality, modular-programming, performance-optimization, software-development, testing</div>
-    </div>
-    
-
-    <div class='ev-card'>
-      <span class="ev-card-date">2026-02-09</span>
-      <div class='ev-card-title'>Basic Singularity/Apptainer</div>
-      <div class='ev-card-desc'>An introduction to the basic concepts of containerised software environment solution within the Singularity/Apptainer framework (run, build, etc.)</div>
-      <div><a class="ev-tag ev-tag-event" href="/all-training/events/2026/singularity-apptainer/">event</a></div>
-      <div class='ev-card-meta'>Level: beginner | Tags: apptainer, containers, reproducibility, singularity, software-environments</div>
     </div>
     
 </div>

@@ -19,43 +19,54 @@ OUTPUT_DIR = Path("docs/explore/scientific-domains")
 INDEX_FILE = OUTPUT_DIR / "index.md"
 
 DOMAIN_ICON_KEYS: dict[str, str] = {
-    "ai": "brain",
-    "big-data": "database",
-    "bioinformatics": "file-terminal",
-    "biomedical": "heart-pulse",
-    "climate-science": "earth",
-    "clinical-research": "stethoscope",
-    "computational-biology": "leaf",
-    "computational-chemistry": "flask-conical",
-    "computational-physics": "magnet",
-    "computational-science": "code-2",
-    "data-science": "chart-line",
+    "ai-data": "brain",
+    "chemistry": "flask-conical",
+    "computer-science": "code-2",
+    "earth-climate": "earth",
     "engineering": "circuit-board",
-    "general-hpc": "computer",
-    "genomics": "dna",
-    "machine-learning": "text-search",
+    "life-sciences": "dna",
+    "mathematics-statistics": "chart-scatter",
+    "physics": "magnet",
     "social-sciences": "message-circle-check",
-    "statistics": "chart-scatter",
 }
 
 DOMAIN_META: dict[str, dict[str, str]] = {
-    "ai": {"title": "AI"},
-    "big-data": {"title": "Big Data"},
-    "bioinformatics": {"title": "Bioinformatics"},
-    "biomedical": {"title": "Biomedical"},
-    "climate-science": {"title": "Climate Science"},
-    "clinical-research": {"title": "Clinical Research"},
-    "computational-biology": {"title": "Computational Biology"},
-    "computational-chemistry": {"title": "Computational Chemistry"},
-    "computational-physics": {"title": "Computational Physics"},
-    "computational-science": {"title": "Computational Science"},
-    "data-science": {"title": "Data Science"},
-    "engineering": {"title": "Engineering"},
-    "general-hpc": {"title": "General HPC"},
-    "genomics": {"title": "Genomics"},
-    "machine-learning": {"title": "Machine Learning"},
-    "social-sciences": {"title": "Social Sciences"},
-    "statistics": {"title": "Statistics"},
+    "ai-data": {
+        "title": "AI & Data",
+        "description": "Machine learning, artificial intelligence, data mining, and large-scale data processing.",
+    },
+    "chemistry": {
+        "title": "Chemistry",
+        "description": "Molecular modeling, computational chemistry, materials science, and chemical simulations.",
+    },
+    "computer-science": {
+        "title": "Computer Science",
+        "description": "Algorithms, software engineering, parallel programming, and computational methods for advanced computing systems.",
+    },
+    "earth-climate": {
+        "title": "Earth & Climate",
+        "description": "Weather prediction, climate modeling, geoscience, and environmental simulations.",
+    },
+    "engineering": {
+        "title": "Engineering",
+        "description": "Simulation-driven design, computational fluid dynamics, structural analysis, and engineering optimization.",
+    },
+    "life-sciences": {
+        "title": "Life Sciences",
+        "description": "Genomics, bioinformatics, biomedical research, and biological data analysis.",
+    },
+    "mathematics-statistics": {
+        "title": "Mathematics & Statistics",
+        "description": "Numerical methods, mathematical modeling, statistical analysis, and data science techniques.",
+    },
+    "physics": {
+        "title": "Physics",
+        "description": "Electronic structure, materials physics, particle physics, and large-scale physical simulations.",
+    },
+    "social-sciences": {
+        "title": "Social Sciences",
+        "description": "Computational economics, digital humanities, social network analysis, and large-scale social data studies.",
+    },
 }
 
 DOMAIN_ORDER = list(DOMAIN_META.keys())
@@ -132,7 +143,10 @@ def humanize_slug(value: str) -> str:
 
 def ensure_domain_meta(domain_slug: str) -> None:
     if domain_slug not in DOMAIN_META:
-        DOMAIN_META[domain_slug] = {"title": humanize_slug(domain_slug)}
+        DOMAIN_META[domain_slug] = {
+            "title": humanize_slug(domain_slug),
+            "description": "",
+        }
 
 
 def write_index(grouped: dict[str, list[dict]], domains: list[str]) -> None:
@@ -178,6 +192,7 @@ def write_index(grouped: dict[str, list[dict]], domains: list[str]) -> None:
 
 def write_domain_page(domain_slug: str, courses: list[dict]) -> None:
     title = DOMAIN_META[domain_slug]["title"]
+    description = DOMAIN_META[domain_slug].get("description", "")
     lines: list[str] = [
         "---",
         f'title: "{title}"',
@@ -185,9 +200,12 @@ def write_domain_page(domain_slug: str, courses: list[dict]) -> None:
         "",
         f"# {title}",
         "",
-        f"Courses tagged under {title}:",
-        "",
     ]
+
+    if description:
+        lines.extend([description, ""])
+
+    lines.extend([f"Courses tagged under {title}:", ""])
 
     if courses:
         for course in courses:

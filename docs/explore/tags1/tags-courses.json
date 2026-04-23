@@ -1,0 +1,377 @@
+{
+  "mpi": [
+    {
+      "title": "An introduction to parallel programming using Message Passing with MPI",
+      "slug": "mpi-intro",
+      "link": "/all-training/events/2026/mpi-intro/"
+    },
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    }
+  ],
+  "parallel-programming": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    },
+    {
+      "title": "An introduction to parallel programming using Message Passing with MPI",
+      "slug": "mpi-intro",
+      "link": "/all-training/events/2026/mpi-intro/"
+    },
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    }
+  ],
+  "distributed-memory": [
+    {
+      "title": "An introduction to parallel programming using Message Passing with MPI",
+      "slug": "mpi-intro",
+      "link": "/all-training/events/2026/mpi-intro/"
+    }
+  ],
+  "gpu": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    },
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    }
+  ],
+  "cuda": [
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    }
+  ],
+  "hpc": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    },
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    },
+    {
+      "title": "Intro to Python for HPC",
+      "slug": "python-intro",
+      "link": "/all-training/events/2026/python-intro/"
+    },
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    }
+  ],
+  "arm": [
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    }
+  ],
+  "performance-optimization": [
+    {
+      "title": "Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius",
+      "slug": "grace-hopper-gpu",
+      "link": "/all-training/events/2026/grace-hopper-gpu/"
+    },
+    {
+      "title": "Programming Formalisms",
+      "slug": "programming-formalisms",
+      "link": "/all-training/events/2026/programming-formalisms/"
+    }
+  ],
+  "file-transfer": [
+    {
+      "title": "File Transfer 201",
+      "slug": "file-transfer-201",
+      "link": "/all-training/events/2026/file-transfer-201/"
+    },
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    }
+  ],
+  "terminal-tools": [
+    {
+      "title": "File Transfer 201",
+      "slug": "file-transfer-201",
+      "link": "/all-training/events/2026/file-transfer-201/"
+    }
+  ],
+  "paraview": [
+    {
+      "title": "Scientific Visualization with ParaView",
+      "slug": "paraview",
+      "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "vtk": [
+    {
+      "title": "Scientific Visualization with ParaView",
+      "slug": "paraview",
+      "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "pyvista": [
+    {
+      "title": "Scientific Visualization with ParaView",
+      "slug": "paraview",
+      "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "vedo": [
+    {
+      "title": "Scientific Visualization with ParaView",
+      "slug": "paraview",
+      "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "python": [
+    {
+      "title": "Intro to Python for HPC",
+      "slug": "python-intro",
+      "link": "/all-training/events/2026/python-intro/"
+    },
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    },
+    {
+      "title": "Scientific Visualization with ParaView",
+      "slug": "paraview",
+      "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "visualization": [
+    {
+      "title": "Scientific Visualization with ParaView",
+      "slug": "paraview",
+      "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "scripting": [
+    {
+      "title": "Intro to Python for HPC",
+      "slug": "python-intro",
+      "link": "/all-training/events/2026/python-intro/"
+    }
+  ],
+  "file-io": [
+    {
+      "title": "Intro to Python for HPC",
+      "slug": "python-intro",
+      "link": "/all-training/events/2026/python-intro/"
+    }
+  ],
+  "linux": [
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    }
+  ],
+  "slurm": [
+    {
+      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
+      "slug": "bianca-intermediate",
+      "link": "/all-training/events/2026/bianca-intermediate/"
+    },
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    }
+  ],
+  "modules": [
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    }
+  ],
+  "hpc-basics": [
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    }
+  ],
+  "software-development": [
+    {
+      "title": "Programming Formalisms",
+      "slug": "programming-formalisms",
+      "link": "/all-training/events/2026/programming-formalisms/"
+    }
+  ],
+  "algorithms": [
+    {
+      "title": "Programming Formalisms",
+      "slug": "programming-formalisms",
+      "link": "/all-training/events/2026/programming-formalisms/"
+    }
+  ],
+  "testing": [
+    {
+      "title": "Programming Formalisms",
+      "slug": "programming-formalisms",
+      "link": "/all-training/events/2026/programming-formalisms/"
+    }
+  ],
+  "modular-programming": [
+    {
+      "title": "Programming Formalisms",
+      "slug": "programming-formalisms",
+      "link": "/all-training/events/2026/programming-formalisms/"
+    }
+  ],
+  "code-quality": [
+    {
+      "title": "Programming Formalisms",
+      "slug": "programming-formalisms",
+      "link": "/all-training/events/2026/programming-formalisms/"
+    }
+  ],
+  "containers": [
+    {
+      "title": "Basic Singularity/Apptainer",
+      "slug": "singularity-apptainer",
+      "link": "/all-training/events/2026/singularity-apptainer/"
+    }
+  ],
+  "singularity": [
+    {
+      "title": "Basic Singularity/Apptainer",
+      "slug": "singularity-apptainer",
+      "link": "/all-training/events/2026/singularity-apptainer/"
+    }
+  ],
+  "apptainer": [
+    {
+      "title": "Basic Singularity/Apptainer",
+      "slug": "singularity-apptainer",
+      "link": "/all-training/events/2026/singularity-apptainer/"
+    }
+  ],
+  "reproducibility": [
+    {
+      "title": "Basic Singularity/Apptainer",
+      "slug": "singularity-apptainer",
+      "link": "/all-training/events/2026/singularity-apptainer/"
+    }
+  ],
+  "software-environments": [
+    {
+      "title": "Basic Singularity/Apptainer",
+      "slug": "singularity-apptainer",
+      "link": "/all-training/events/2026/singularity-apptainer/"
+    }
+  ],
+  "sensitive-data": [
+    {
+      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
+      "slug": "bianca-intermediate",
+      "link": "/all-training/events/2026/bianca-intermediate/"
+    }
+  ],
+  "bianca": [
+    {
+      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
+      "slug": "bianca-intermediate",
+      "link": "/all-training/events/2026/bianca-intermediate/"
+    }
+  ],
+  "jupyter": [
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    }
+  ],
+  "ai": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    }
+  ],
+  "deep-learning": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    }
+  ],
+  "machine-learning": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    }
+  ],
+  "pytorch": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    }
+  ],
+  "ai-safety": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    }
+  ],
+  "cpp": [
+    {
+      "title": "Array computing in C++ using Eigen",
+      "slug": "eigen-cpp",
+      "link": "/all-training/events/2026/eigen-cpp/"
+    }
+  ],
+  "eigen": [
+    {
+      "title": "Array computing in C++ using Eigen",
+      "slug": "eigen-cpp",
+      "link": "/all-training/events/2026/eigen-cpp/"
+    }
+  ],
+  "linear-algebra": [
+    {
+      "title": "Array computing in C++ using Eigen",
+      "slug": "eigen-cpp",
+      "link": "/all-training/events/2026/eigen-cpp/"
+    }
+  ],
+  "matrix-computing": [
+    {
+      "title": "Array computing in C++ using Eigen",
+      "slug": "eigen-cpp",
+      "link": "/all-training/events/2026/eigen-cpp/"
+    }
+  ],
+  "array-computing": [
+    {
+      "title": "Array computing in C++ using Eigen",
+      "slug": "eigen-cpp",
+      "link": "/all-training/events/2026/eigen-cpp/"
+    }
+  ]
+}

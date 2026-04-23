@@ -19,9 +19,11 @@ registration_url: "https://nextcloud.naiss.se/apps/forms/s/BqNkHE9HEi5TzdoqwaaaA
 prerequisites: ["bianca-intro"]
 related: ["bianca-intro"]
 
-scientific_domains: ["...", "..."]
-learning_paths: ["sensitive-data"]
-tags: ["sensitive-data", "bianca", "slurm"]
+#learning_paths: ["sensitive-data"]
+#tags: ["sensitive-data", "bianca", "slurm"]
+
+scientific_domains: ["life-sciences", "social-sciences"]
+tags: ["sensitive-data", "data-management", "slurm", "environment-management", "file-transfer", "hpc-advanced"]
 
 icon: lucide/book-open  # Lucide icon for the page
 ---

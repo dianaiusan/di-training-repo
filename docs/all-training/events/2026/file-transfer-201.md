@@ -18,9 +18,12 @@ registration_url: "https://nextcloud.naiss.se/apps/forms/s/6jnjp2YZk7cKNpEnsTB7T
 prerequisites: ["file-transfer-101"]
 related: ["file-transfer-101"]
 
-scientific_domains: []
-learning_paths: []
-tags: ["file-transfer", "terminal-tools"]
+#scientific_domains: []
+#learning_paths: []
+#tags: ["file-transfer", "terminal-tools"]
+
+scientific_domains: ["life-sciences", "social-sciences"]
+tags: ["file-transfer", "data-management", "hpc-intro", "storage"]
 
 icon: lucide/book-open
 ---

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tags (Dynamic)</title>
+  <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+  <style>
+    .tag-list { display: flex; flex-wrap: wrap; gap: 0.5em; margin-bottom: 1.5em; }
+    .tag-btn { padding: 0.4em 1em; border: 1px solid #aaa; border-radius: 1em; background: #f8f8f8; cursor: pointer; transition: background 0.2s, color 0.2s; }
+    .tag-btn.selected { background: #0077cc; color: #fff; border-color: #0077cc; }
+    .course-list { list-style: none; padding: 0; }
+    .course-list li { margin-bottom: 0.5em; }
+  </style>
+</head>
+<body>
+  <h1>Tags (Dynamic)</h1>
+  <div id="tags2-app">
+    <div class="tag-list" id="tagList"></div>
+    <div id="selectedTagInfo"></div>
+    <ul class="course-list" id="courseList"></ul>
+  </div>
+  <script src="../../assets/javascripts/tags2.js"></script>
+</body>
+</html>

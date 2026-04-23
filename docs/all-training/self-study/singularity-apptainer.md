@@ -18,9 +18,12 @@ registration_url: ""
 prerequisites: ["linux-command-line", "hpc-basics"]
 related: ["naiss-intro-days", "bianca-intermediate"]
 
-scientific_domains: ["general-hpc", "computational-science", "data-science"]
-learning_paths: ["beginner", "developer"]
-tags: ["containers", "singularity", "apptainer", "reproducibility", "software-environments"]
+#scientific_domains: ["general-hpc", "computational-science", "data-science"]
+#learning_paths: ["beginner", "developer"]
+#tags: ["containers", "singularity", "apptainer", "reproducibility", "software-environments"]
+
+scientific_domains: ["physics", "chemistry", "engineering"]
+tags: ["singularity", "containers", "reproducibility", "environment-management", "hpc-intro"]
 
 icon: lucide/book-open  # Lucide icon for the page
 ---

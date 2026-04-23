@@ -16,9 +16,12 @@ registration_url: ""
 prerequisites: ["basic-programming", "linux-command-line"]
 related: ["cr-tools-workshop"]
 
-scientific_domains: ["computational-science", "general-hpc"]
-learning_paths: ["developer"]
-tags: ["software-development", "algorithms", "testing", "modular-programming", "code-quality", "performance-optimization"]
+#scientific_domains: ["computational-science", "general-hpc"]
+#learning_paths: ["developer"]
+#tags: ["software-development", "algorithms", "testing", "modular-programming", "code-quality", "performance-optimization"]
+
+scientific_domains: ["life-science"]
+tags: ["programming", "algorithms", "data-structures", "software-design", "modular-programming", "testing", "performance"]
 
 icon: lucide/book-open
 ---

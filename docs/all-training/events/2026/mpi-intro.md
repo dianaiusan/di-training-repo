@@ -16,9 +16,12 @@ registration_url: "https://nextcloud.naiss.se/apps/forms/s/8GFk3PDLkJeCtY7xyc2Ms
 prerequisites: []
 related: []
 
-scientific_domains: []
-learning_paths: [parallel-programming]
-tags: ["mpi", "parallel-programming", "distributed-memory"]
+#scientific_domains: []
+#learning_paths: [parallel-programming]
+#tags: ["mpi", "parallel-programming", "distributed-memory"]
+
+scientific_domains: ["physics", "chemistry", "engineering", "computer-science"]
+tags: ["mpi", "parallel-programming", "distributed-memory", "hpc-intro"]
 
 icon: lucide/book-open
 ---

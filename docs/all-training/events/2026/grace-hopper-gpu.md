@@ -18,9 +18,12 @@ short_description: "Efficient use of the Grace Hopper GPU nodes on Dardel and Ar
 prerequisites: ["hpc-basics", "mpi-intro"]
 related: [] # Arrhenius CPU event
 
-scientific_domains: ["general-hpc", "computational-physics", "computational-science"]
-learning_paths: ["developer"]
-tags: ["gpu", "cuda", "hpc", "mpi", "parallel-programming", "arm", "performance-optimization"]
+#scientific_domains: ["general-hpc", "computational-physics", "computational-science"]
+#learning_paths: ["developer"]
+#tags: ["gpu", "cuda", "hpc", "mpi", "parallel-programming", "arm", "performance-optimization"]
+
+scientific_domains: ["ai-data", "computer-science", "physics", "chemistry", "engineering"]
+tags: ["gpu", "cuda", "performance", "profiling", "parallel-programming", "hpc-advanced"]
 
 materials: []  # List of self-study materials, e.g.:
 # materials:
