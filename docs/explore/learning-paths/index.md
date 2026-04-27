@@ -36,6 +36,13 @@ Choose a learning path tailored to your role and goals:
     <p class="lp-card-desc">A deep technical path for developers building scalable, high-performance, and reproducible scientific software.</p>
   </div>
 </a>
+<a class="lp-card-link" href="./dynamic-hpc-path/">
+  <div class="lp-card">
+    <div class="lp-card-icon"><img class="lp-card-icon-img" src="../../assets/images/icons/route.svg" alt=""/></div>
+    <h3 class="lp-card-title">Dynamic HPC Learning Path</h3>
+    <p class="lp-card-desc">A prototype learning path that starts with HPC foundations and increases in intensity as skills build.</p>
+  </div>
+</a>
 <a class="lp-card-link" href="./sensitive-data/">
   <div class="lp-card">
     <div class="lp-card-icon"><img class="lp-card-icon-img" src="../../assets/images/icons/shield-plus.svg" alt=""/></div>

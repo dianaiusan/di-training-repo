@@ -16,9 +16,16 @@ A practical route for working safely with sensitive data and secure HPC workflow
 
 <div class="lp-swimlane">
   <div class="lp-phase">
-    <div class="lp-phase-header">Operations</div>
+    <div class="lp-phase-header">
+      <span class="lp-phase-title">Operations</span>
+    </div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="/all-training/events/2026/file-transfer-201/">File Transfer 201</a></div>
+      <div class="lp-course-item">
+        <span class="lp-course-num">1</span>
+        <div class="lp-course-copy">
+          <a href="/all-training/events/2026/file-transfer-201/">File Transfer 201</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

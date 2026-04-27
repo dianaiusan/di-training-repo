@@ -18,16 +18,30 @@ A deep technical path for developers building scalable, high-performance, and re
 
 <div class="lp-swimlane">
   <div class="lp-phase">
-    <div class="lp-phase-header">Foundation</div>
+    <div class="lp-phase-header">
+      <span class="lp-phase-title">Foundation</span>
+    </div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="/all-training/events/2026/programming-formalisms/">Programming Formalisms</a></div>
+      <div class="lp-course-item">
+        <span class="lp-course-num">1</span>
+        <div class="lp-course-copy">
+          <a href="/all-training/events/2026/programming-formalisms/">Programming Formalisms</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
-    <div class="lp-phase-header">Parallel Programming</div>
+    <div class="lp-phase-header">
+      <span class="lp-phase-title">Parallel Programming</span>
+    </div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="/all-training/events/2026/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a></div>
+      <div class="lp-course-item">
+        <span class="lp-course-num">2</span>
+        <div class="lp-course-copy">
+          <a href="/all-training/events/2026/mpi-intro/">An introduction to parallel programming using Message Passing with MPI</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

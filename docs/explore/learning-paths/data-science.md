@@ -18,16 +18,30 @@ A path for researchers and analysts who need scalable data analysis, AI, and rep
 
 <div class="lp-swimlane">
   <div class="lp-phase">
-    <div class="lp-phase-header">Analysis Visualisation</div>
+    <div class="lp-phase-header">
+      <span class="lp-phase-title">Analysis Visualisation</span>
+    </div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">1</span><a href="/all-training/events/2026/paraview/">Scientific Visualization with ParaView</a></div>
+      <div class="lp-course-item">
+        <span class="lp-course-num">1</span>
+        <div class="lp-course-copy">
+          <a href="/all-training/events/2026/paraview/">Scientific Visualization with ParaView</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="lp-phase-arrow">&darr;</div>
   <div class="lp-phase">
-    <div class="lp-phase-header">Ai Gpu</div>
+    <div class="lp-phase-header">
+      <span class="lp-phase-title">Ai Gpu</span>
+    </div>
     <div class="lp-phase-body">
-      <div class="lp-course-item"><span class="lp-course-num">2</span><a href="/all-training/events/2026/ai-hpc/">AI and HPC</a></div>
+      <div class="lp-course-item">
+        <span class="lp-course-num">2</span>
+        <div class="lp-course-copy">
+          <a href="/all-training/events/2026/ai-hpc/">AI and HPC</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
