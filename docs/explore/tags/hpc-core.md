@@ -16,6 +16,7 @@ Core HPC usage topics including systems, schedulers, modules, and environments.
     <li><a class="tag-course-link" href="/all-training/events/2026/bianca-intermediate/">Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/naiss-intro-days/">NAISS Introduction Training Days</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 <div class="tag-card">
@@ -35,6 +36,7 @@ Core HPC usage topics including systems, schedulers, modules, and environments.
     <li><a class="tag-course-link" href="/all-training/events/2026/python-intro/">Intro to Python for HPC</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/naiss-intro-days/">NAISS Introduction Training Days</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 <div class="tag-card">
@@ -56,6 +58,7 @@ Core HPC usage topics including systems, schedulers, modules, and environments.
     <li><a class="tag-course-link" href="/all-training/events/2026/bianca-intermediate/">Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/naiss-intro-days/">NAISS Introduction Training Days</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 </div>

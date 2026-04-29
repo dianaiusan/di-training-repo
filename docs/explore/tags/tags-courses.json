@@ -36,6 +36,11 @@
       "title": "NAISS Introduction Training Days",
       "slug": "naiss-intro-days",
       "link": "/all-training/events/2026/naiss-intro-days/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
     }
   ],
   "mpi": [
@@ -96,6 +101,11 @@
       "title": "Introduction to Python and Using Python in an HPC environment",
       "slug": "combined-python-intro-and-python-hpc",
       "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
     }
   ],
   "hpc-advanced": [
@@ -185,6 +195,11 @@
       "title": "Scientific Visualization with ParaView",
       "slug": "paraview",
       "link": "/all-training/events/2026/paraview/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
     }
   ],
   "paraview": [
@@ -209,6 +224,11 @@
       "title": "Scientific Visualization with ParaView",
       "slug": "paraview",
       "link": "/all-training/events/2026/paraview/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
     }
   ],
   "visualization": [
@@ -223,6 +243,84 @@
       "title": "Scientific Visualization with ParaView",
       "slug": "paraview",
       "link": "/all-training/events/2026/paraview/"
+    }
+  ],
+  "slurm": [
+    {
+      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
+      "slug": "bianca-intermediate",
+      "link": "/all-training/events/2026/bianca-intermediate/"
+    },
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    },
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
+    }
+  ],
+  "environment-management": [
+    {
+      "title": "Basic Singularity/Apptainer",
+      "slug": "singularity-apptainer",
+      "link": "/all-training/events/2026/singularity-apptainer/"
+    },
+    {
+      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
+      "slug": "bianca-intermediate",
+      "link": "/all-training/events/2026/bianca-intermediate/"
+    },
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    },
+    {
+      "title": "NAISS Introduction Training Days",
+      "slug": "naiss-intro-days",
+      "link": "/all-training/events/2026/naiss-intro-days/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
+    }
+  ],
+  "jupyter": [
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
+    }
+  ],
+  "machine-learning": [
+    {
+      "title": "AI and HPC",
+      "slug": "ai-hpc",
+      "link": "/all-training/events/2026/ai-hpc/"
+    },
+    {
+      "title": "Introduction to Python and Using Python in an HPC environment",
+      "slug": "combined-python-intro-and-python-hpc",
+      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
+    },
+    {
+      "title": "Using Python in an HPC Environment",
+      "slug": "python-hpc",
+      "link": "/all-training/events/2026/python-hpc/"
     }
   ],
   "linux": [
@@ -249,46 +347,7 @@
       "link": "/all-training/events/2026/programming-formalisms/"
     }
   ],
-  "environment-management": [
-    {
-      "title": "Basic Singularity/Apptainer",
-      "slug": "singularity-apptainer",
-      "link": "/all-training/events/2026/singularity-apptainer/"
-    },
-    {
-      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
-      "slug": "bianca-intermediate",
-      "link": "/all-training/events/2026/bianca-intermediate/"
-    },
-    {
-      "title": "Introduction to Python and Using Python in an HPC environment",
-      "slug": "combined-python-intro-and-python-hpc",
-      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
-    },
-    {
-      "title": "NAISS Introduction Training Days",
-      "slug": "naiss-intro-days",
-      "link": "/all-training/events/2026/naiss-intro-days/"
-    }
-  ],
   "modules": [
-    {
-      "title": "NAISS Introduction Training Days",
-      "slug": "naiss-intro-days",
-      "link": "/all-training/events/2026/naiss-intro-days/"
-    }
-  ],
-  "slurm": [
-    {
-      "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
-      "slug": "bianca-intermediate",
-      "link": "/all-training/events/2026/bianca-intermediate/"
-    },
-    {
-      "title": "Introduction to Python and Using Python in an HPC environment",
-      "slug": "combined-python-intro-and-python-hpc",
-      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
-    },
     {
       "title": "NAISS Introduction Training Days",
       "slug": "naiss-intro-days",
@@ -377,25 +436,6 @@
       "title": "Bianca In-Depth Workshop/Hackathon: Improve Your Handling of Sensitive Research Data",
       "slug": "bianca-intermediate",
       "link": "/all-training/events/2026/bianca-intermediate/"
-    }
-  ],
-  "jupyter": [
-    {
-      "title": "Introduction to Python and Using Python in an HPC environment",
-      "slug": "combined-python-intro-and-python-hpc",
-      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
-    }
-  ],
-  "machine-learning": [
-    {
-      "title": "AI and HPC",
-      "slug": "ai-hpc",
-      "link": "/all-training/events/2026/ai-hpc/"
-    },
-    {
-      "title": "Introduction to Python and Using Python in an HPC environment",
-      "slug": "combined-python-intro-and-python-hpc",
-      "link": "/all-training/events/2026/combined-python-intro-and-python-hpc/"
     }
   ],
   "ai-safety": [

@@ -13,7 +13,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/code-2.svg" alt=""/></div>
   <h3 class="tg-card-title">Programming Languages</h3>
   <p class="tg-card-desc">Programming languages used across the training catalogue.</p>
-  <p class="tg-card-meta">2 tags · 4 course references</p>
+  <p class="tg-card-meta">2 tags · 5 course references</p>
 </div>
 </a>
 <a class="tg-card-link" href="./hpc-core/">
@@ -21,7 +21,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/server.svg" alt=""/></div>
   <h3 class="tg-card-title">HPC Core</h3>
   <p class="tg-card-desc">Core HPC usage topics including systems, schedulers, modules, and environments.</p>
-  <p class="tg-card-meta">6 tags · 19 course references</p>
+  <p class="tg-card-meta">6 tags · 22 course references</p>
 </div>
 </a>
 <a class="tg-card-link" href="./parallel-performance/">
@@ -29,7 +29,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/chart-no-axes-column-increasing.svg" alt=""/></div>
   <h3 class="tg-card-title">Parallel & Performance</h3>
   <p class="tg-card-desc">Parallel programming models, accelerators, profiling, and performance work.</p>
-  <p class="tg-card-meta">8 tags · 15 course references</p>
+  <p class="tg-card-meta">8 tags · 16 course references</p>
 </div>
 </a>
 <a class="tg-card-link" href="./data-ai/">
@@ -37,7 +37,7 @@ Explore training tags grouped into broader categories:
   <div class="tg-card-icon"><img class="tg-card-icon-img" src="../../assets/images/icons/database.svg" alt=""/></div>
   <h3 class="tg-card-title">Data & AI</h3>
   <p class="tg-card-desc">Data analysis, machine learning, deep learning, and notebook-based workflows.</p>
-  <p class="tg-card-meta">6 tags · 8 course references</p>
+  <p class="tg-card-meta">6 tags · 11 course references</p>
 </div>
 </a>
 <a class="tg-card-link" href="./software-engineering/">

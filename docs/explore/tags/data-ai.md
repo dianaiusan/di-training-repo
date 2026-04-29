@@ -20,6 +20,7 @@ Data analysis, machine learning, deep learning, and notebook-based workflows.
   <ul class="tag-card-courses">
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/paraview/">Scientific Visualization with ParaView</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 <div class="tag-card">
@@ -32,6 +33,7 @@ Data analysis, machine learning, deep learning, and notebook-based workflows.
   <h4 class="tag-card-name">Jupyter</h4>
   <ul class="tag-card-courses">
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 <div class="tag-card">
@@ -39,6 +41,7 @@ Data analysis, machine learning, deep learning, and notebook-based workflows.
   <ul class="tag-card-courses">
     <li><a class="tag-course-link" href="/all-training/events/2026/ai-hpc/">AI and HPC</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 <div class="tag-card">

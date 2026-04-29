@@ -9,6 +9,7 @@ Simulation-driven design, computational fluid dynamics, structural analysis, and
 Courses tagged under Engineering:
 
 - [An introduction to parallel programming using Message Passing with MPI](/all-training/events/2026/mpi-intro/)
+- [Array computing in C++ using Eigen](/all-training/events/2026/eigen-cpp/)
 - [Basic Singularity/Apptainer](/all-training/events/2026/singularity-apptainer/)
 - [Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius](/all-training/events/2026/grace-hopper-gpu/)
 - [NAISS Introduction Training Days](/all-training/events/2026/naiss-intro-days/)

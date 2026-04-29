@@ -33,6 +33,7 @@ Parallel programming models, accelerators, profiling, and performance work.
     <li><a class="tag-course-link" href="/all-training/events/2026/ai-hpc/">AI and HPC</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/grace-hopper-gpu/">Efficient Use of the Grace Hopper GPU Nodes on Dardel and Arrhenius</a></li>
     <li><a class="tag-course-link" href="/all-training/events/2026/combined-python-intro-and-python-hpc/">Introduction to Python and Using Python in an HPC environment</a></li>
+    <li><a class="tag-course-link" href="/all-training/events/2026/python-hpc/">Using Python in an HPC Environment</a></li>
   </ul>
 </div>
 <div class="tag-card">

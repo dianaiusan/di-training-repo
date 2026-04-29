@@ -14,8 +14,9 @@ level: "beginner"
 
 short_description: "This 1-day course lets you write and run Python code on an HPC cluster."
 #registration_url: ""
-prerequisites: []
+prerequisites: [naiss-intro-days]
 related: [combined-python-intro-and-python-hpc]
+progression: [python-hpc]
 
 #learning_paths: ["beginner", "developer"]
 
