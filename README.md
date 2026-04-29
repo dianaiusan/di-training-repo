@@ -1,6 +1,6 @@
 # NAISS Training (DI's WIP)
 
-Rendered page: https://gh-username.github.io/di-training-repo/
+Rendered page: https://dianaiusan.github.io/di-training-repo/
 
 ## Collaborator Note
 
